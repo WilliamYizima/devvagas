@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { REPO_OWNER, REPO_NAME } from '../lib/github';
 ---
-<BaseLayout title="Fale Comigo" activeSection="contato" breadcrumb="contato/index.ts">
+<BaseLayout title="Contato" activeSection="contato" breadcrumb="contato/index.ts">
 
 <div class="contact-shell">
 
@@ -14,71 +13,11 @@ import { REPO_OWNER, REPO_NAME } from '../lib/github';
     <div class="ct-gutter" id="ct-gutter"></div>
     <div class="ct-content" id="ct-content">
 
-      <span class="cl cm">// ── FALE COMIGO ─────────────────────────────────────────</span>
-      <span class="cl cm">// Tem uma vaga, sugestão ou quer contribuir com o projeto?</span>
+      <span class="cl cm">// quer falar comigo?</span>
       <span class="cl"></span>
       <span class="cl"><span class="cb">const</span> <span class="ck">contato</span> = <span class="cb">{`{`}</span></span>
-      <span class="cl">  <span class="ck">github</span><span class="cp">:</span>    <span class="cs">"github.com/{REPO_OWNER}/{REPO_NAME}"</span><span class="cp">,</span></span>
-      <span class="cl">  <span class="ck">issues</span><span class="cp">:</span>    <span class="cs">"github.com/{REPO_OWNER}/{REPO_NAME}/issues"</span><span class="cp">,</span></span>
+      <span class="cl">  <span class="ck">links</span><span class="cp">:</span> <a href="https://blog.whatwill.tech/" target="_blank" rel="noopener" class="cs">"blog.whatwill.tech"</a><span class="cp">,</span></span>
       <span class="cl"><span class="cb">{`}`}</span><span class="cp">;</span></span>
-      <span class="cl"></span>
-
-      <div class="ct-section-label">// enviar mensagem</div>
-
-      <div class="ct-form" id="ct-form">
-        <div class="cf-row">
-          <label class="cf-label">nome<span class="cf-req">*</span></label>
-          <input class="cf-input" id="cf-nome" type="text" placeholder="seu nome..." autocomplete="name" />
-        </div>
-        <div class="cf-row">
-          <label class="cf-label">email<span class="cf-req">*</span></label>
-          <input class="cf-input" id="cf-email" type="email" placeholder="seu@email.com" autocomplete="email" />
-        </div>
-        <div class="cf-row">
-          <label class="cf-label">assunto</label>
-          <div class="cf-select-wrap">
-            <select class="cf-input cf-select" id="cf-assunto">
-              <option value="vaga">Publicar uma vaga</option>
-              <option value="bug">Reportar um bug</option>
-              <option value="sugestao">Sugestão de melhoria</option>
-              <option value="parceria">Parceria</option>
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-        </div>
-        <div class="cf-row cf-row-tall">
-          <label class="cf-label">mensagem<span class="cf-req">*</span></label>
-          <textarea class="cf-input cf-textarea" id="cf-msg" placeholder="escreva aqui..."></textarea>
-        </div>
-
-        <div class="cf-footer">
-          <span class="cf-hint">// campos com <span class="cf-req">*</span> são obrigatórios</span>
-          <button class="cf-btn" id="cf-submit">
-            <span id="cf-btn-text">ENVIAR_MENSAGEM()</span>
-            <span class="cf-arrow">→</span>
-          </button>
-        </div>
-
-        <div class="cf-alt">
-          <span class="cm-text">// prefere o GitHub?</span>
-          <a href={`https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/new`} target="_blank" rel="noopener" class="cf-gh-link">
-            Abrir uma Issue →
-          </a>
-        </div>
-      </div>
-
-      <!-- Success state (hidden) -->
-      <div class="ct-success" id="ct-success" style="display:none">
-        <span class="cl cm">// mensagem enviada com sucesso!</span>
-        <span class="cl"></span>
-        <span class="cl"><span class="cb">const</span> <span class="ck">result</span> = <span class="cb">{`{`}</span></span>
-        <span class="cl">  <span class="ck">status</span><span class="cp">:</span>  <span class="cs">"ok"</span><span class="cp">,</span></span>
-        <span class="cl">  <span class="ck">message</span><span class="cp">:</span> <span class="cs">"Obrigado! Retornaremos em breve."</span><span class="cp">,</span></span>
-        <span class="cl"><span class="cb">{`}`}</span><span class="cp">;</span></span>
-        <div class="ct-back-btn-wrap">
-          <a href="/" class="ct-back-btn">← voltar às vagas</a>
-        </div>
-      </div>
 
       <div style="height:4rem"></div>
     </div>
@@ -123,99 +62,13 @@ import { REPO_OWNER, REPO_NAME } from '../lib/github';
 .cl { font-size: 0.72rem; line-height: 1.9; display: block; white-space: pre-wrap; }
 .cl.cm { color: var(--muted); font-style: italic; }
 .ck { color: #9cdcfe; }
-.cs { color: #ce9178; }
+.cs { color: #ce9178; text-decoration: none; transition: opacity 0.15s; }
+.cs:hover { opacity: 0.7; }
 .cb { color: #569cd6; }
 .cp { color: #d4d4d4; }
-
-.ct-section-label {
-  font-size: 0.6rem; text-transform: uppercase;
-  letter-spacing: 0.1em; color: var(--muted);
-  margin: 1.5rem 0 1.25rem;
-  display: flex; align-items: center; gap: 0.6rem;
-}
-.ct-section-label::after { content:''; flex:1; height:1px; background:var(--border); }
-
-/* Form */
-.ct-form { display: flex; flex-direction: column; gap: 0.75rem; }
-
-.cf-row {
-  display: grid; grid-template-columns: 100px 1fr;
-  align-items: center; gap: 1rem;
-}
-.cf-row-tall { align-items: flex-start; }
-
-.cf-label {
-  font-size: 0.65rem; color: var(--muted);
-  font-family: var(--font);
-}
-.cf-req { color: var(--green); margin-left: 2px; }
-
-.cf-input {
-  background: var(--darker); border: 1px solid var(--border2);
-  color: var(--text); font-family: var(--font); font-size: 0.72rem;
-  padding: 0.45rem 0.7rem; outline: none;
-  transition: border-color 0.15s;
-  width: 100%;
-}
-.cf-input:focus { border-color: var(--green); }
-.cf-input::placeholder { color: var(--muted2); }
-
-.cf-select { cursor: pointer; }
-.cf-select option { background: var(--darker); }
-.cf-select-wrap { position: relative; }
-
-.cf-textarea {
-  min-height: 120px; resize: vertical;
-  line-height: 1.6;
-}
-
-.cf-footer {
-  display: flex; align-items: center; justify-content: space-between;
-  padding-top: 0.5rem;
-}
-.cf-hint { font-size: 0.62rem; color: var(--muted); }
-
-.cf-btn {
-  display: flex; align-items: center; gap: 0.5rem;
-  background: transparent; border: 1px solid var(--green);
-  color: var(--green); font-family: var(--font);
-  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em;
-  padding: 0.55rem 1.1rem; cursor: pointer;
-  position: relative; overflow: hidden;
-  transition: color 0.2s;
-}
-.cf-btn::before {
-  content: ''; position: absolute; inset: 0;
-  background: var(--green); transform: translateX(-101%);
-  transition: transform 0.2s; z-index: 0;
-}
-.cf-btn:hover { color: var(--black); }
-.cf-btn:hover::before { transform: none; }
-.cf-btn > * { position: relative; z-index: 1; }
-.cf-arrow { transition: transform 0.2s; }
-.cf-btn:hover .cf-arrow { transform: translateX(3px); }
-
-.cf-alt {
-  display: flex; align-items: center; gap: 1rem;
-  padding-top: 0.5rem; font-size: 0.65rem;
-}
-.cm-text { color: var(--muted); font-style: italic; }
-.cf-gh-link { color: var(--cyan); transition: opacity 0.15s; }
-.cf-gh-link:hover { opacity: 0.7; }
-
-/* Success */
-.ct-success { padding: 0.5rem 0; }
-.ct-back-btn-wrap { margin-top: 1.5rem; }
-.ct-back-btn {
-  display: inline-flex; padding: 0.5rem 1rem;
-  border: 1px solid var(--border2); color: var(--muted);
-  font-size: 0.7rem; transition: all 0.15s;
-}
-.ct-back-btn:hover { border-color: var(--cyan); color: var(--cyan); }
 </style>
 
 <script>
-  // Gutter
   const content = document.getElementById('ct-content')!;
   const gutter  = document.getElementById('ct-gutter')!;
   const lineH   = 0.72 * 16 * 1.9;
@@ -224,19 +77,4 @@ import { REPO_OWNER, REPO_NAME } from '../lib/github';
     `<div style="font-size:0.6rem;color:var(--muted2);text-align:right;padding-right:0.6rem;line-height:${lineH}px">${i+1}</div>`
   ).join('');
   content.addEventListener('scroll', () => { gutter.scrollTop = content.scrollTop; });
-
-  // Form submit (demo — integre com Formspree, Netlify Forms etc.)
-  document.getElementById('cf-submit')?.addEventListener('click', () => {
-    const nome  = (document.getElementById('cf-nome')  as HTMLInputElement).value.trim();
-    const email = (document.getElementById('cf-email') as HTMLInputElement).value.trim();
-    const msg   = (document.getElementById('cf-msg')   as HTMLTextAreaElement).value.trim();
-    if (!nome || !email || !msg) {
-      (document.getElementById('cf-nome') as HTMLElement).style.borderColor = !nome  ? 'var(--red)' : '';
-      (document.getElementById('cf-email') as HTMLElement).style.borderColor = !email ? 'var(--red)' : '';
-      (document.getElementById('cf-msg')  as HTMLElement).style.borderColor = !msg   ? 'var(--red)' : '';
-      return;
-    }
-    document.getElementById('ct-form')!.style.display = 'none';
-    document.getElementById('ct-success')!.style.display = 'block';
-  });
 </script>

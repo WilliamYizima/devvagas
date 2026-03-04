@@ -58,6 +58,10 @@ const postUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/new?labels
           <span class="mf-desc">Selecione: <span class="md-code">Júnior</span> · <span class="md-code">Pleno</span> · <span class="md-code">Sênior</span> · <span class="md-code">Lead</span> · <span class="md-code">Especialista</span></span>
         </div>
         <div class="mf-row">
+          <span class="mf-field">Área <span class="mf-req">*</span></span>
+          <span class="mf-desc">Selecione: <span class="md-code">Dev</span> · <span class="md-code">Business</span></span>
+        </div>
+        <div class="mf-row">
           <span class="mf-field">Tipo <span class="mf-req">*</span></span>
           <span class="mf-desc">Selecione: <span class="md-code">Remoto</span> · <span class="md-code">Híbrido</span> · <span class="md-code">Presencial</span></span>
         </div>
@@ -104,40 +108,6 @@ const postUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/new?labels
       <div class="md-p">Você também pode pausar temporariamente removendo a label <span class="md-code">vaga</span> sem fechar a issue.</div>
       <div class="md-blank"></div>
 
-      <div class="md-h2">## 💰 Custos</div>
-      <div class="md-blank"></div>
-      <div class="md-table">
-        <div class="mt-row mt-head">
-          <span>Recurso</span><span>Custo</span><span>Limite gratuito</span>
-        </div>
-        <div class="mt-row">
-          <span>GitHub Pages</span><span class="green">Gratuito</span><span>Repos públicos</span>
-        </div>
-        <div class="mt-row">
-          <span>GitHub Actions</span><span class="green">Gratuito</span><span>2.000 min/mês</span>
-        </div>
-        <div class="mt-row">
-          <span>GitHub API</span><span class="green">Gratuito</span><span>60 req/hora</span>
-        </div>
-        <div class="mt-row">
-          <span>Domínio custom</span><span class="yellow">Opcional</span><span>~R$ 40/ano</span>
-        </div>
-      </div>
-      <div class="md-blank"></div>
-
-      <div class="md-h2">## 🛠 Setup local</div>
-      <div class="md-blank"></div>
-      <div class="md-code-block">
-        <div class="mcb-line"><span class="cmt"># clone o repositório</span></div>
-        <div class="mcb-line"><span class="cb">git</span> clone https://github.com/SEU-USUARIO/SEU-REPO</div>
-        <div class="mcb-line"><span class="cb">cd</span> SEU-REPO</div>
-        <div class="mcb-line"></div>
-        <div class="mcb-line"><span class="cmt"># instale as dependências</span></div>
-        <div class="mcb-line"><span class="cb">npm</span> install</div>
-        <div class="mcb-line"></div>
-        <div class="mcb-line"><span class="cmt"># inicie o servidor de desenvolvimento</span></div>
-        <div class="mcb-line"><span class="cb">npm</span> run dev   <span class="cmt"># → http://localhost:4321</span></div>
-      </div>
       <div style="height:4rem"></div>
     </div>
   </div>
