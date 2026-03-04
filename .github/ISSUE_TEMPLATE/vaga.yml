@@ -8,7 +8,7 @@ body:
     id: empresa
     attributes:
       label: Empresa
-      placeholder: Ex: Nubank
+      placeholder: "Ex: Nubank"
 
   - type: dropdown
     id: nivel
@@ -23,11 +23,10 @@ body:
     validations:
       required: true
 
-
   - type: dropdown
-    id: nivel
+    id: area
     attributes:
-      label: Nível
+      label: Área
       options:
         - Dev
         - Business
@@ -49,7 +48,7 @@ body:
     id: local
     attributes:
       label: Localização
-      placeholder: Ex: São Paulo/SP ou Remoto BR
+      placeholder: "Ex: São Paulo/SP ou Remoto BR"
     validations:
       required: true
 
@@ -57,13 +56,13 @@ body:
     id: salario
     attributes:
       label: Salário
-      placeholder: Ex: R$ 10k–15k ou A combinar
+      placeholder: "Ex: R$ 10k–15k ou A combinar"
 
   - type: input
     id: stack
     attributes:
       label: Stack
-      placeholder: Ex: React, TypeScript, Node.js, Figma, Jira
+      placeholder: "Ex: React, TypeScript, Node.js, Figma, Jira"
     validations:
       required: true
 
@@ -91,7 +90,7 @@ body:
     id: aplicar
     attributes:
       label: Como se candidatar
-      placeholder: Ex: https://empresa.com/vagas ou jobs@empresa.com
+      placeholder: "Ex: https://empresa.com/vagas ou jobs@empresa.com"
     validations:
       required: true
 
