@@ -1,0 +1,275 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { REPO_OWNER, REPO_NAME, VAGA_LABEL } from '../lib/github';
+const postUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/new?labels=${VAGA_LABEL}&template=vaga.yml`;
+---
+<BaseLayout title="Ajuda" activeSection="ajuda" breadcrumb="ajuda/README.md">
+
+<div class="doc-shell">
+
+  <div class="doc-tabs">
+    <div class="dtab active"><span class="td md"></span>README.md</div>
+  </div>
+
+  <div class="doc-area">
+    <div class="doc-gutter" id="doc-gutter"></div>
+    <div class="doc-content" id="doc-content">
+
+      <div class="md-h1"># DevVagas — Como funciona</div>
+      <div class="md-blank"></div>
+      <div class="md-p">
+        O DevVagas usa o GitHub como infraestrutura completa: as vagas são criadas como
+        <span class="md-code">Issues</span>, hospedadas via <span class="md-code">GitHub Pages</span>
+        e implantadas automaticamente pelo <span class="md-code">GitHub Actions</span>.
+      </div>
+      <div class="md-blank"></div>
+
+      <div class="md-h2">## ⚡ Fluxo</div>
+      <div class="md-blank"></div>
+      <div class="md-code-block">
+        <div class="mcb-line"><span class="cmt">// o ciclo de vida de uma vaga</span></div>
+        <div class="mcb-line"><span class="cb">Recrutador</span> abre Issue</div>
+        <div class="mcb-line">  └→ GitHub Actions detecta evento</div>
+        <div class="mcb-line">     └→ Astro faz rebuild estático</div>
+        <div class="mcb-line">        └→ GitHub Pages publica (~1 min)</div>
+        <div class="mcb-line">           └→ Vaga aparece no site ✓</div>
+      </div>
+      <div class="md-blank"></div>
+
+      <div class="md-h2">## 📋 Publicando uma vaga</div>
+      <div class="md-blank"></div>
+      <div class="md-list">
+        <div class="md-li"><span class="md-bullet">1.</span> Clique no botão abaixo ou acesse <span class="md-code">Issues → New Issue → Publicar Vaga</span></div>
+        <div class="md-li"><span class="md-bullet">2.</span> Preencha o formulário com os campos abaixo</div>
+        <div class="md-li"><span class="md-bullet">3.</span> Marque a caixa de confirmação e clique em <span class="md-code">Submit new issue</span></div>
+        <div class="md-li"><span class="md-bullet">4.</span> Aguarde ~1 minuto para a vaga aparecer no site</div>
+      </div>
+      <div class="md-blank"></div>
+
+      <div class="md-h3">### Campos do formulário</div>
+      <div class="md-blank"></div>
+      <div class="md-fields">
+        <div class="mf-row">
+          <span class="mf-field">Empresa <span class="mf-req">*</span></span>
+          <span class="mf-desc">Nome da empresa. Ex: <span class="md-code">Nubank</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Nível <span class="mf-req">*</span></span>
+          <span class="mf-desc">Selecione: <span class="md-code">Júnior</span> · <span class="md-code">Pleno</span> · <span class="md-code">Sênior</span> · <span class="md-code">Lead</span> · <span class="md-code">Especialista</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Tipo <span class="mf-req">*</span></span>
+          <span class="mf-desc">Selecione: <span class="md-code">Remoto</span> · <span class="md-code">Híbrido</span> · <span class="md-code">Presencial</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Localização <span class="mf-req">*</span></span>
+          <span class="mf-desc">Cidade/Estado ou "Remoto BR". Ex: <span class="md-code">São Paulo/SP</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Salário</span>
+          <span class="mf-desc">Faixa salarial ou "A combinar". Ex: <span class="md-code">R$ 10k–15k</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Stack <span class="mf-req">*</span></span>
+          <span class="mf-desc">Tecnologias separadas por vírgula. Ex: <span class="md-code">React, TypeScript, Node.js</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Descrição <span class="mf-req">*</span></span>
+          <span class="mf-desc">Sobre a empresa, responsabilidades, requisitos e benefícios</span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Candidatura <span class="mf-req">*</span></span>
+          <span class="mf-desc">Link ou e-mail para candidatura. Ex: <span class="md-code">https://empresa.com/vagas</span></span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">LinkedIn?</span>
+          <span class="mf-desc">Selecione <span class="md-code">Sim</span> se a vaga está publicada no LinkedIn</span>
+        </div>
+        <div class="mf-row">
+          <span class="mf-field">Internacional?</span>
+          <span class="mf-desc">Selecione <span class="md-code">Sim</span> se a vaga é aberta para candidatos internacionais ou é de empresa estrangeira</span>
+        </div>
+      </div>
+      <div class="md-hint"><span class="mf-req">*</span> campo obrigatório</div>
+      <div class="md-blank"></div>
+      <a href={postUrl} target="_blank" rel="noopener" class="md-cta">
+        → Publicar vaga agora
+      </a>
+      <div class="md-blank"></div>
+
+      <div class="md-h2">## 🔒 Fechando uma vaga</div>
+      <div class="md-blank"></div>
+      <div class="md-p">Para remover uma vaga do site, basta <strong>fechar a Issue</strong> correspondente no GitHub. O site atualiza automaticamente.</div>
+      <div class="md-blank"></div>
+      <div class="md-p">Você também pode pausar temporariamente removendo a label <span class="md-code">vaga</span> sem fechar a issue.</div>
+      <div class="md-blank"></div>
+
+      <div class="md-h2">## 💰 Custos</div>
+      <div class="md-blank"></div>
+      <div class="md-table">
+        <div class="mt-row mt-head">
+          <span>Recurso</span><span>Custo</span><span>Limite gratuito</span>
+        </div>
+        <div class="mt-row">
+          <span>GitHub Pages</span><span class="green">Gratuito</span><span>Repos públicos</span>
+        </div>
+        <div class="mt-row">
+          <span>GitHub Actions</span><span class="green">Gratuito</span><span>2.000 min/mês</span>
+        </div>
+        <div class="mt-row">
+          <span>GitHub API</span><span class="green">Gratuito</span><span>60 req/hora</span>
+        </div>
+        <div class="mt-row">
+          <span>Domínio custom</span><span class="yellow">Opcional</span><span>~R$ 40/ano</span>
+        </div>
+      </div>
+      <div class="md-blank"></div>
+
+      <div class="md-h2">## 🛠 Setup local</div>
+      <div class="md-blank"></div>
+      <div class="md-code-block">
+        <div class="mcb-line"><span class="cmt"># clone o repositório</span></div>
+        <div class="mcb-line"><span class="cb">git</span> clone https://github.com/SEU-USUARIO/SEU-REPO</div>
+        <div class="mcb-line"><span class="cb">cd</span> SEU-REPO</div>
+        <div class="mcb-line"></div>
+        <div class="mcb-line"><span class="cmt"># instale as dependências</span></div>
+        <div class="mcb-line"><span class="cb">npm</span> install</div>
+        <div class="mcb-line"></div>
+        <div class="mcb-line"><span class="cmt"># inicie o servidor de desenvolvimento</span></div>
+        <div class="mcb-line"><span class="cb">npm</span> run dev   <span class="cmt"># → http://localhost:4321</span></div>
+      </div>
+      <div style="height:4rem"></div>
+    </div>
+  </div>
+</div>
+
+</BaseLayout>
+
+<style>
+.doc-shell {
+  display: flex; flex-direction: column;
+  height: calc(100vh - 36px - 24px);
+}
+
+.doc-tabs {
+  display: flex; background: var(--darker);
+  border-bottom: 1px solid var(--border); height: 36px; flex-shrink: 0;
+}
+.dtab {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0 1rem; height: 100%;
+  font-size: 0.65rem; color: var(--text);
+  border-right: 1px solid var(--border);
+  border-top: 2px solid var(--cyan);
+  background: var(--black);
+}
+.td { width: 8px; height: 8px; border-radius: 50%; }
+.td.md { background: #6b7280; }
+
+.doc-area {
+  display: flex; flex: 1; overflow: hidden;
+}
+
+.doc-gutter {
+  width: 44px; background: var(--darker);
+  border-right: 1px solid var(--border); flex-shrink: 0;
+}
+
+.doc-content {
+  flex: 1; overflow-y: auto;
+  padding: 1.5rem 3rem; max-width: 820px;
+}
+
+.md-h1 { font-size: 1.3rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
+.md-h2 {
+  font-size: 0.85rem; font-weight: 700; color: var(--cyan);
+  margin-bottom: 0.5rem; margin-top: 1rem;
+}
+.md-p { font-size: 0.75rem; line-height: 1.8; color: #8aacca; margin-bottom: 0.5rem; }
+.md-p strong { color: var(--text); }
+.md-blank { height: 0.5rem; }
+.md-code {
+  font-family: var(--font); background: var(--mid);
+  border: 1px solid var(--border2); color: var(--cyan);
+  padding: 0.1rem 0.4rem; font-size: 0.85em;
+}
+
+.md-code-block {
+  background: var(--darker); border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  padding: 1rem 1.25rem; font-size: 0.72rem; line-height: 1.9;
+  margin-bottom: 0.5rem;
+}
+.mcb-line { display: block; }
+.cmt { color: var(--muted); font-style: italic; }
+.cb  { color: #569cd6; }
+
+.md-list { margin-bottom: 0.5rem; }
+.md-li { display: flex; gap: 0.5rem; font-size: 0.75rem; color: #8aacca; line-height: 1.8; }
+.md-bullet { color: var(--green); flex-shrink: 0; width: 1.2rem; }
+
+.md-h3 {
+  font-size: 0.78rem; font-weight: 700; color: var(--text);
+  margin-bottom: 0.5rem; margin-top: 1rem;
+}
+
+.md-fields {
+  border: 1px solid var(--border); font-size: 0.72rem;
+  margin-bottom: 0.25rem;
+}
+.mf-row {
+  display: grid; grid-template-columns: 140px 1fr;
+  padding: 0.45rem 0.8rem; gap: 1rem;
+  border-bottom: 1px solid var(--border);
+  align-items: baseline;
+}
+.mf-row:last-child { border: none; }
+.mf-field { color: var(--text); font-weight: 600; }
+.mf-req { color: var(--red, #f87171); font-size: 0.75em; }
+.mf-desc { color: #8aacca; line-height: 1.6; }
+
+.md-hint {
+  font-size: 0.62rem; color: var(--muted); margin-bottom: 0.5rem;
+}
+
+.md-cta {
+  display: inline-flex; align-items: center;
+  background: transparent; border: 1px solid var(--green);
+  color: var(--green); padding: 0.5rem 1.2rem;
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+  transition: all 0.2s; position: relative; overflow: hidden;
+}
+.md-cta::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--green); transform: translateX(-101%);
+  transition: transform 0.2s; z-index: 0;
+}
+.md-cta:hover { color: var(--black); }
+.md-cta:hover::before { transform: none; }
+.md-cta > * { position: relative; z-index: 1; }
+
+.md-table {
+  border: 1px solid var(--border); font-size: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.mt-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  padding: 0.4rem 0.8rem; gap: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.mt-row:last-child { border: none; }
+.mt-head { background: var(--darker); color: var(--muted); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.green  { color: var(--green); }
+.yellow { color: var(--yellow); }
+</style>
+
+<script>
+  const content = document.getElementById('doc-content')!;
+  const gutter  = document.getElementById('doc-gutter')!;
+  const lineH   = 0.72 * 16 * 1.9;
+  const count   = Math.ceil((content.scrollHeight || 600) / lineH) + 10;
+  gutter.innerHTML = Array.from({length: Math.max(count, 40)}, (_, i) =>
+    `<div style="font-size:0.6rem;color:var(--muted2);text-align:right;padding-right:0.6rem;line-height:${lineH}px">${i+1}</div>`
+  ).join('');
+  content.addEventListener('scroll', () => { gutter.scrollTop = content.scrollTop; });
+</script>

@@ -1,0 +1,498 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { fetchJobs, REPO_OWNER, REPO_NAME, VAGA_LABEL } from '../../lib/github';
+import type { ParsedJob } from '../../lib/github';
+
+export async function getStaticPaths() {
+  const jobs = await fetchJobs();
+  return jobs.map(job => ({ params: { id: String(job.id) }, props: { job } }));
+}
+
+const { job } = Astro.props as { job: ParsedJob };
+const postUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/new?labels=${VAGA_LABEL}&template=vaga.yml`;
+const issueUrl = `https://github.com/${REPO_OWNER}/${REPO_NAME}/issues/${job.id}`;
+
+function fmtDate(d: string) {
+  return new Date(d).toLocaleDateString('pt-BR', { day:'2-digit', month:'short', year:'numeric' });
+}
+function timeAgo(d: string) {
+  const s = (Date.now() - new Date(d).getTime()) / 1000;
+  if (s < 86400)   return `${Math.floor(s/3600)}h atrás`;
+  if (s < 2592000) return `${Math.floor(s/86400)}d atrás`;
+  return fmtDate(d);
+}
+function fmt(s: string) {
+  return s
+    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.+?)\*/g, '<em>$1</em>')
+    .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
+}
+function parseDesc(raw: string): string {
+  const lines = raw.split('\n');
+  let html = '';
+  let inList = false;
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t) {
+      if (inList) { html += '</ul>'; inList = false; }
+      continue;
+    }
+    if (/^#{1,3}\s/.test(t)) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<h3>${fmt(t.replace(/^#{1,3}\s+/, ''))}</h3>`;
+    } else if (/^[-*]\s/.test(t)) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      html += `<li>${fmt(t.replace(/^[-*]\s+/, ''))}</li>`;
+    } else {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<p>${fmt(t)}</p>`;
+    }
+  }
+  if (inList) html += '</ul>';
+  return html;
+}
+---
+
+<BaseLayout
+  title={`${job.title} — ${job.empresa}`}
+  activeSection="vagas"
+  breadcrumb={`vagas/${job.empresa?.toLowerCase().replace(/\s+/g,'-') ?? 'job'}/${job.id}.ts`}
+>
+
+<div class="detail-shell">
+
+  <!-- TABS BAR -->
+  <div class="tabs-bar">
+    <a href="/vagas" class="tab-back">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 5l-7 7 7 7"/>
+      </svg>
+      explorador
+    </a>
+    <div class="tabs-list">
+      <div class="tab active">
+        <span class="tab-dot ts"></span>
+        {job.empresa?.toLowerCase().replace(/\s+/g,'-') ?? 'job'}-{job.id}.ts
+        <span class="tab-x">×</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN 3-COL LAYOUT -->
+  <div class="detail-grid">
+
+    <!-- LEFT META PANEL -->
+    <aside class="meta-panel">
+      <div class="mp-section">
+        <div class="mp-label">// detalhes</div>
+        <div class="mp-row"><span class="mp-k">empresa</span><span class="mp-v">{job.empresa}</span></div>
+        <div class="mp-row"><span class="mp-k">nível</span><span class="mp-v yellow">{job.nivel}</span></div>
+        <div class="mp-row">
+          <span class="mp-k">regime</span>
+          <span class={`mp-v ${job.isRemote ? 'green' : ''}`}>{job.tipo}</span>
+        </div>
+        <div class="mp-row"><span class="mp-k">local</span><span class="mp-v">{job.local}</span></div>
+        <div class="mp-row"><span class="mp-k">salário</span><span class="mp-v green">{job.salario}</span></div>
+        <div class="mp-row"><span class="mp-k">criado</span><span class="mp-v muted">{timeAgo(job.createdAt)}</span></div>
+      </div>
+
+      {job.labels.length > 0 && (
+        <div class="mp-section">
+          <div class="mp-label">// labels</div>
+          {job.labels.map(l => (
+            <div class="mp-label-tag">{l}</div>
+          ))}
+        </div>
+      )}
+
+      <div class="mp-section">
+        <div class="mp-label">// tipo de trabalho</div>
+        <div class="mp-chips">
+          {job.isRemote
+            ? <span class="mp-chip chip-remote">remoto</span>
+            : /híbrido|hibrido/i.test(job.tipo ?? '')
+              ? <span class="mp-chip chip-hibrido">híbrido</span>
+              : /presencial/i.test(job.tipo ?? '')
+                ? <span class="mp-chip chip-presencial">presencial</span>
+                : job.tipo && <span class="mp-chip">{job.tipo}</span>}
+        </div>
+      </div>
+
+      <div class="mp-section">
+        <div class="mp-label">// stack</div>
+        <div class="mp-chips">
+          {job.stack.map(s => (
+            <span class="mp-chip">{s}</span>
+          ))}
+        </div>
+      </div>
+
+      <div class="mp-section" style="border:none">
+        <div class="mp-label">// links</div>
+        <a href={issueUrl} target="_blank" rel="noopener" class="mp-nav-item mp-link">
+          <span class="mp-dot cyan"></span>ver Issue GitHub
+        </a>
+        <a href={postUrl} target="_blank" rel="noopener" class="mp-nav-item mp-link">
+          <span class="mp-dot green"></span>publicar vaga
+        </a>
+        <a href="/vagas" class="mp-nav-item mp-link">
+          <span class="mp-dot"></span>← todas as vagas
+        </a>
+      </div>
+    </aside>
+
+    <!-- CENTER: EDITOR -->
+    <main class="editor-panel">
+      <div class="editor-area">
+        <div class="editor-content" id="editor-content">
+
+          {job.descricao ? (
+            <div class="desc-block" set:html={parseDesc(job.descricao)} />
+          ) : (
+            <p class="desc-empty">Sem descrição — <a href={issueUrl} target="_blank" rel="noopener">ver Issue no GitHub →</a></p>
+          )}
+          <div style="height:4rem"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <aside class="right-panel">
+
+      <div class="rp-section">
+        <div class="rp-label">// candidatura</div>
+        <a
+          href={job.aplicar?.startsWith('http') ? job.aplicar : `https://${job.aplicar ?? '#'}`}
+          target="_blank" rel="noopener"
+          class="apply-btn"
+        >
+          <span>CANDIDATAR-SE</span>
+          <span class="apply-arrow">→</span>
+        </a>
+        <div class="apply-sub">
+          ou <a href={issueUrl} target="_blank" rel="noopener">ver Issue →</a>
+        </div>
+      </div>
+
+      <div class="rp-section">
+        <div class="rp-label">// timeline</div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot filled"></div>
+            <div>
+              <div class="tl-k">Publicado</div>
+              <div class="tl-d">{fmtDate(job.createdAt)}</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot filled"></div>
+            <div>
+              <div class="tl-k">Deploy automático</div>
+              <div class="tl-d">~2 min após Issue</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <div class="tl-k" style="color:var(--muted2)">Aguardando fechamento</div>
+              <div class="tl-d">—</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rp-section">
+        <div class="rp-label">// compartilhar</div>
+        <button class="share-btn" onclick={`navigator.clipboard.writeText(location.href)`}>⎘ copiar link</button>
+        <a class="share-btn"
+           href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(job.title + ' @ ' + job.empresa)}&url=${encodeURIComponent('https://devvagas.github.io/vaga/' + job.id)}`}
+           target="_blank" rel="noopener">↗ Twitter/X</a>
+        <a class="share-btn"
+           href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://devvagas.github.io/vaga/' + job.id)}`}
+           target="_blank" rel="noopener">↗ LinkedIn</a>
+      </div>
+
+      <!-- Minimap -->
+      <div class="minimap">
+        <div class="mm-label">// minimap</div>
+        <div class="mm-lines">
+          {Array.from({length: 32}, (_, i) => (
+            <div class={`mm-line ${i % 7 === 0 ? 'bright' : ''} ${i % 11 === 0 ? 'green' : ''}`}
+                 style={`width:${40 + Math.sin(i*0.8)*30}%`}></div>
+          ))}
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+</BaseLayout>
+
+<style>
+/* ── DETAIL SHELL ─────────────────────────────────────────── */
+.detail-shell {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 36px - 24px);
+}
+
+/* ── TABS BAR ─────────────────────────────────────────────── */
+.tabs-bar {
+  display: flex; align-items: center;
+  background: var(--darker); border-bottom: 1px solid var(--border);
+  height: 36px; flex-shrink: 0;
+}
+
+.tab-back {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0 1rem; height: 100%;
+  font-size: 0.62rem; color: var(--muted);
+  border-right: 1px solid var(--border);
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+}
+.tab-back:hover { color: var(--text); background: var(--mid); }
+
+.tabs-list { display: flex; }
+.tab {
+  display: flex; align-items: center; gap: 0.4rem;
+  padding: 0 1rem; height: 36px;
+  font-size: 0.65rem; color: var(--text);
+  border-right: 1px solid var(--border);
+  border-top: 2px solid var(--green);
+  background: var(--black);
+}
+.tab-dot { width: 6px; height: 6px; border-radius: 50%; }
+.tab-dot.ts { background: #3178c6; }
+.tab-x { color: var(--muted2); font-size: 0.6rem; cursor: pointer; }
+
+/* ── DETAIL GRID ──────────────────────────────────────────── */
+.detail-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr 260px;
+  flex: 1; overflow: hidden;
+}
+
+/* ── META PANEL ───────────────────────────────────────────── */
+.meta-panel {
+  border-right: 1px solid var(--border);
+  background: var(--darker);
+  overflow-y: auto; padding: 1rem 0;
+}
+
+.mp-section {
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+.mp-label {
+  font-size: 0.55rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--muted);
+  margin-bottom: 0.6rem;
+}
+.mp-row {
+  display: flex; justify-content: space-between;
+  padding: 0.25rem 0; font-size: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+.mp-row:last-child { border: none; }
+.mp-k { color: var(--muted); }
+.mp-v { color: var(--cyan); }
+.mp-v.green  { color: var(--green); }
+.mp-v.yellow { color: var(--yellow); }
+.mp-v.cyan   { color: var(--cyan); }
+.mp-v.muted  { color: var(--muted); }
+
+.mp-label-tag {
+  font-size: 0.62rem; color: var(--muted);
+  border: 1px solid var(--border2);
+  padding: 0.15rem 0.5rem; margin-bottom: 0.3rem;
+  display: inline-block;
+}
+
+.mp-nav-item {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.3rem 0; font-size: 0.65rem; color: var(--muted);
+}
+.mp-link { transition: color 0.12s; }
+.mp-link:hover { color: var(--green); }
+
+.mp-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--muted2); flex-shrink: 0;
+}
+.mp-dot.cyan  { background: var(--cyan); }
+.mp-dot.green { background: var(--green); }
+
+.mp-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.mp-chip {
+  font-size: 0.58rem; padding: 0.18rem 0.5rem;
+  border: 1px solid var(--border2); color: var(--muted);
+  border-radius: 2px; font-family: var(--font);
+}
+.mp-chip.chip-remote    { border-color: rgba(0,255,157,0.35);   color: var(--green); }
+.mp-chip.chip-hibrido   { border-color: rgba(251,191,36,0.35);  color: #fbbf24; }
+.mp-chip.chip-presencial{ border-color: rgba(167,139,250,0.35); color: #a78bfa; }
+
+/* ── EDITOR PANEL ─────────────────────────────────────────── */
+.editor-panel { overflow: hidden; display: flex; flex-direction: column; }
+
+.editor-area {
+  display: flex; flex: 1; overflow: hidden;
+}
+
+.editor-content {
+  flex: 1; overflow-y: auto;
+  padding: 1.25rem 2rem;
+  display: flex; flex-direction: column;
+}
+
+/* code lines */
+.cl {
+  font-size: 0.72rem; line-height: 1.9;
+  white-space: pre-wrap; display: block;
+  min-height: 1.37rem;
+}
+.cl.hl {
+  background: rgba(0,255,157,0.04);
+  border-left: 2px solid var(--green);
+  padding-left: 0.5rem; margin-left: -0.5rem;
+}
+.cl.cm { color: var(--muted); font-style: italic; }
+
+.ck { color: #9cdcfe; }
+.cs { color: #ce9178; }
+.cb { color: #569cd6; }
+.cp { color: #d4d4d4; }
+.cn { color: #b5cea8; }
+.cm { color: var(--muted); font-style: italic; }
+
+.desc-empty { font-size: 0.72rem; color: var(--muted); }
+.desc-empty a { color: var(--cyan); }
+
+/* description */
+.desc-block {
+  font-size: 0.74rem; line-height: 1.9; color: var(--muted2);
+}
+:global(.desc-block h3) {
+  color: var(--cyan); font-size: 0.65rem;
+  text-transform: uppercase; letter-spacing: 0.1em;
+  margin: 1.6rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+}
+:global(.desc-block h3:first-child) { margin-top: 0; }
+:global(.desc-block ul) {
+  padding-left: 0; margin: 0.4rem 0 1rem; list-style: none;
+}
+:global(.desc-block li) {
+  padding: 0.18rem 0 0.18rem 1.2rem;
+  position: relative; color: var(--muted2);
+}
+:global(.desc-block li::before) {
+  content: '▸'; position: absolute; left: 0;
+  color: var(--green); font-size: 0.6rem; top: 0.28rem;
+}
+:global(.desc-block p) {
+  margin-bottom: 0.55rem; color: var(--muted2);
+}
+:global(.desc-block strong) { color: var(--text); font-weight: 600; }
+:global(.desc-block em)     { color: var(--yellow); font-style: normal; }
+:global(.desc-block a)      { color: var(--cyan); text-decoration: underline; }
+
+/* ── RIGHT PANEL ──────────────────────────────────────────── */
+.right-panel {
+  border-left: 1px solid var(--border);
+  background: var(--darker);
+  overflow-y: auto;
+  display: flex; flex-direction: column;
+}
+
+.rp-section {
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--border);
+}
+.rp-label {
+  font-size: 0.55rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+/* Apply button */
+.apply-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 0.7rem 0.9rem;
+  background: transparent; border: 1px solid var(--green);
+  color: var(--green); font-family: var(--font);
+  font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.08em;
+  position: relative; overflow: hidden;
+  transition: color 0.22s;
+}
+.apply-btn::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--green); transform: translateX(-101%);
+  transition: transform 0.22s ease; z-index: 0;
+}
+.apply-btn:hover { color: var(--black); }
+.apply-btn:hover::before { transform: translateX(0); }
+.apply-btn > * { position: relative; z-index: 1; }
+.apply-arrow { transition: transform 0.22s; }
+.apply-btn:hover .apply-arrow { transform: translateX(4px); }
+
+.apply-sub {
+  font-size: 0.6rem; color: var(--muted);
+  text-align: center; margin-top: 0.5rem;
+}
+.apply-sub a { color: var(--cyan); }
+
+/* Timeline */
+.timeline { display: flex; flex-direction: column; gap: 0.5rem; }
+.tl-item { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.63rem; }
+.tl-dot {
+  width: 7px; height: 7px; border: 1px solid var(--muted2);
+  border-radius: 50%; flex-shrink: 0; margin-top: 0.15rem;
+  position: relative;
+}
+.tl-dot.filled { background: var(--green); border-color: var(--green); }
+.tl-dot::after {
+  content: ''; position: absolute; top: 7px; left: 2px;
+  width: 1px; height: 18px; background: var(--border);
+}
+.tl-item:last-child .tl-dot::after { display: none; }
+.tl-k { color: var(--text); margin-bottom: 0.1rem; }
+.tl-d { color: var(--muted); font-size: 0.58rem; }
+
+/* Share */
+.share-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 0.38rem 0.55rem; margin-bottom: 0.3rem;
+  background: none; border: 1px solid var(--border2);
+  color: var(--muted); font-family: var(--font); font-size: 0.63rem;
+  transition: all 0.15s;
+}
+.share-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+
+/* Minimap */
+.minimap { flex: 1; padding: 1rem 1.1rem; overflow: hidden; }
+.mm-label {
+  font-size: 0.55rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--muted); margin-bottom: 0.75rem;
+}
+.mm-lines { opacity: 0.45; }
+.mm-line { height: 2px; background: var(--border2); margin-bottom: 3px; transition: width 0.3s; }
+.mm-line.bright { background: var(--cyan); opacity: 0.7; }
+.mm-line.green  { background: var(--green); opacity: 0.6; }
+
+@media (max-width: 1100px) {
+  .detail-grid { grid-template-columns: 200px 1fr; }
+  .right-panel { display: none; }
+}
+@media (max-width: 720px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .meta-panel { display: none; }
+}
+</style>
+
+

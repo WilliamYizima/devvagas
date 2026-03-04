@@ -1,0 +1,473 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { fetchJobs } from '../lib/github';
+
+const jobs = await fetchJobs();
+
+// Stacks dinâmicas ordenadas por frequência
+const stackFreq = new Map<string, number>();
+jobs.forEach(j => j.stack.forEach(s => stackFreq.set(s, (stackFreq.get(s) || 0) + 1)));
+const allStacks = [...stackFreq.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([s]) => s);
+
+const total = jobs.length;
+
+---
+
+<BaseLayout title="DevVagas" breadcrumb="search.ts" activeSection="filtro">
+
+<div class="search-page">
+  <div class="search-card">
+
+    <!-- Logo -->
+    <div class="sc-logo">◆</div>
+    <h1 class="sc-title">DevVagas</h1>
+    <p class="sc-sub">vou te ajudar a encontrar vagas</p>
+
+    <!-- Search / Tag input -->
+    <div class="sc-tag-area" id="sc-tag-area">
+      <div class="sc-search-wrap" id="sc-tag-wrap">
+        <span class="sc-ico">⌕</span>
+        <div class="sc-chips" id="sc-chips"></div>
+        <input
+          id="sc-input"
+          type="text"
+          placeholder="cargo, empresa, tecnologia..."
+          autocomplete="off"
+        />
+      </div>
+      <div class="sc-ac-drop" id="sc-ac-drop"></div>
+    </div>
+
+    <!-- Stack (collapsível) -->
+    <div class="sc-section">
+      <div class="sc-label sc-label-toggle" id="stack-toggle" role="button" tabindex="0">
+        // stack
+        <span class="sc-sel-count" id="stack-sel-count"></span>
+        <span class="sc-label-line"></span>
+        <span class="sc-chevron" id="stack-chevron">▾</span>
+      </div>
+      <div class="sc-collapse-body" id="stack-body">
+        <div class="sc-tags">
+          {allStacks.map(s => (
+            <button class="sc-tag" data-group="stack" data-val={s.toLowerCase()}>{s}</button>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Tipo de trabalho -->
+    <div class="sc-section">
+      <div class="sc-label">// tipo de trabalho</div>
+      <div class="sc-tags">
+        {['Remoto', 'Híbrido', 'Presencial'].map(m => (
+          <button class="sc-tag" data-group="modo" data-val={m.toLowerCase()}>{m}</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Nível -->
+    <div class="sc-section">
+      <div class="sc-label">// nível</div>
+      <div class="sc-tags">
+        {['Júnior', 'Pleno', 'Sênior', 'Lead', 'Especialista'].map(n => (
+          <button class="sc-tag" data-group="nivel" data-val={n.toLowerCase()}>{n}</button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Localidade -->
+    <div class="sc-section">
+      <div class="sc-label">// localidade</div>
+      <div class="sc-tags">
+        <button class="sc-tag" data-group="extras" data-val="nacional">Nacional</button>
+        <button class="sc-tag" data-group="extras" data-val="internacional">Internacional</button>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <button id="sc-btn" class="sc-cta">
+      <span id="sc-label">buscar vagas</span>
+      <span class="sc-arrow">→</span>
+    </button>
+
+    <p class="sc-hint">
+      <a href="/vagas">{total} {total === 1 ? 'vaga aberta' : 'vagas abertas'} → ver todas</a>
+    </p>
+
+  </div>
+</div>
+
+</BaseLayout>
+
+<script id="sug-data" type="application/json" set:html={JSON.stringify({
+  stacks:    allStacks,
+  companies: [...new Set(jobs.map(j => j.empresa).filter(Boolean))],
+})}></script>
+
+<style>
+.search-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 36px - 24px);
+  padding: 2rem;
+}
+
+.search-card {
+  width: 100%;
+  max-width: 660px;
+  text-align: center;
+}
+
+/* Logo */
+.sc-logo {
+  font-size: 2.8rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+  display: block;
+}
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-7px)} }
+
+.sc-title {
+  font-family: var(--display);
+  font-size: 2rem; font-weight: 900;
+  color: var(--text); letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.sc-sub {
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+/* Search / Tag input */
+.sc-tag-area { position: relative; margin-bottom: 2rem; }
+.sc-search-wrap {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 0.35rem;
+  background: var(--dark); border: 1px solid var(--border2);
+  padding: 0.6rem 1rem;
+  transition: border-color 0.15s;
+}
+.sc-search-wrap:focus-within { border-color: var(--green); }
+.sc-ico { font-size: 1rem; color: var(--muted); flex-shrink: 0; }
+#sc-input {
+  flex: 1; min-width: 100px; background: none; border: none; outline: none;
+  font-family: var(--font); font-size: 0.8rem; color: var(--text);
+}
+#sc-input::placeholder { color: var(--muted); }
+
+/* Chips */
+.sc-chips { display: contents; }
+.sc-chip {
+  display: inline-flex; align-items: center; gap: 0.3rem;
+  background: rgba(0,255,157,0.1); border: 1px solid rgba(0,255,157,0.35);
+  color: var(--green); font-size: 0.65rem; font-weight: 600;
+  padding: 0.2rem 0.5rem; white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+.sc-chip-rm {
+  all: unset; cursor: pointer;
+  color: rgba(0,255,157,0.5); font-size: 0.9em; line-height: 1;
+  transition: color 0.15s;
+}
+.sc-chip-rm:hover { color: var(--green); }
+
+/* Autocomplete dropdown */
+.sc-ac-drop {
+  display: none; position: absolute; left: 0; right: 0; top: 100%;
+  background: var(--darker); border: 1px solid var(--border2);
+  border-top: 1px solid var(--border); z-index: 200;
+  max-height: 220px; overflow-y: auto; text-align: left;
+}
+.sc-ac-item {
+  display: flex; align-items: center; gap: 0.7rem;
+  padding: 0.4rem 1rem; font-size: 0.72rem; cursor: pointer;
+  border-bottom: 1px solid var(--border); color: var(--text);
+}
+.sc-ac-item:last-child { border: none; }
+.sc-ac-item:hover, .sc-ac-item.focused { background: var(--mid); }
+.sc-ac-type {
+  font-size: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 0.1rem 0.35rem; border: 1px solid var(--border2);
+  background: var(--mid); color: var(--muted2); flex-shrink: 0; min-width: 44px;
+  text-align: center;
+}
+.sc-ac-type.t-stack   { border-color: rgba(0,212,255,0.25); color: var(--cyan); }
+.sc-ac-type.t-empresa { border-color: rgba(251,191,36,0.25); color: #fbbf24; }
+.sc-ac-text b { color: var(--green); font-weight: 700; }
+
+/* Stack collapse */
+.sc-label-toggle { cursor: pointer; user-select: none; }
+.sc-label-toggle:hover { color: var(--text); }
+.sc-label-toggle::after { display: none; } /* usa sc-label-line em vez do pseudo-elemento */
+.sc-label-line { flex: 1; height: 1px; background: var(--border); }
+.sc-chevron {
+  font-size: 0.65rem; color: var(--muted);
+  transition: transform 0.2s;
+}
+.sc-chevron.open { transform: rotate(180deg); }
+.sc-sel-count {
+  font-size: 0.5rem; background: rgba(0,255,157,0.12);
+  border: 1px solid rgba(0,255,157,0.3); color: var(--green);
+  padding: 0.05rem 0.35rem; min-width: 1rem; text-align: center;
+  letter-spacing: 0.04em;
+}
+.sc-collapse-body { display: none; padding-top: 0.5rem; }
+
+/* Filter sections */
+.sc-section { text-align: left; margin-bottom: 1.5rem; }
+
+.sc-label {
+  font-size: 0.58rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--muted);
+  margin-bottom: 0.7rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.sc-label::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+.sc-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.sc-tag {
+  background: var(--mid);
+  border: 1px solid var(--border2);
+  color: var(--muted2);
+  font-family: var(--font);
+  font-size: 0.65rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  letter-spacing: 0.01em;
+}
+.sc-tag:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.06); }
+.sc-tag.on {
+  background: rgba(0,255,157,0.1);
+  border-color: var(--green);
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* CTA button */
+.sc-cta {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 0.85rem 1.2rem; margin-top: 0.5rem;
+  background: transparent; border: 1px solid var(--green);
+  color: var(--green); font-family: var(--font);
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em;
+  cursor: pointer; position: relative; overflow: hidden;
+  transition: color 0.2s;
+}
+.sc-cta::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--green); transform: translateX(-101%);
+  transition: transform 0.2s ease; z-index: 0;
+}
+.sc-cta:hover { color: var(--black); }
+.sc-cta:hover::before { transform: translateX(0); }
+.sc-cta > * { position: relative; z-index: 1; }
+.sc-arrow { transition: transform 0.2s; }
+.sc-cta:hover .sc-arrow { transform: translateX(4px); }
+
+/* Hint */
+.sc-hint {
+  font-size: 0.62rem; color: var(--muted);
+  text-align: center; margin-top: 1rem;
+}
+.sc-hint a { color: var(--muted2); transition: color 0.15s; }
+.sc-hint a:hover { color: var(--cyan); }
+
+@media (max-width: 720px) {
+  .search-page { padding: 1.5rem 1rem; align-items: flex-start; padding-top: 2.5rem; }
+  .sc-title { font-size: 1.5rem; }
+}
+</style>
+
+<script>
+// ── Tipos e estado ──────────────────────────────────────────────
+type Group = 'stack' | 'modo' | 'nivel' | 'extras';
+const sel: Record<Group, Set<string>> = {
+  stack: new Set(), modo: new Set(), nivel: new Set(), extras: new Set(),
+};
+
+// ── Sugestões (stacks + empresas) ──────────────────────────────
+const sugRaw = JSON.parse(document.getElementById('sug-data')?.textContent ?? '{}');
+const suggestions: { text: string; type: string }[] = [
+  ...(sugRaw.stacks    || []).map((s: string) => ({ text: s, type: 'stack' })),
+  ...(sugRaw.companies || []).map((c: string) => ({ text: c, type: 'empresa' })),
+];
+
+// ── Stack collapse ──────────────────────────────────────────────
+let stackOpen = false;
+
+function setStackCollapse(open: boolean) {
+  stackOpen = open;
+  const body    = document.getElementById('stack-body')!;
+  const chevron = document.getElementById('stack-chevron')!;
+  body.style.display = open ? 'block' : 'none';
+  chevron.classList.toggle('open', open);
+}
+
+document.getElementById('stack-toggle')?.addEventListener('click', () => {
+  setStackCollapse(!stackOpen);
+});
+
+// ── Chips (stacks selecionados via autocomplete ou botão) ───────
+function renderChips() {
+  const container = document.getElementById('sc-chips')!;
+  container.innerHTML = [...sel.stack].map(v => {
+    const label = suggestions.find(s => s.text.toLowerCase() === v)?.text ?? v;
+    return `<span class="sc-chip">${label}<button class="sc-chip-rm" data-val="${v}" aria-label="remover">×</button></span>`;
+  }).join('');
+  container.querySelectorAll<HTMLButtonElement>('.sc-chip-rm').forEach(btn => {
+    btn.addEventListener('click', e => { e.stopPropagation(); removeStack(btn.dataset.val!); });
+  });
+  updateStackSelCount();
+}
+
+function updateStackSelCount() {
+  const el = document.getElementById('stack-sel-count');
+  if (el) el.textContent = sel.stack.size > 0 ? String(sel.stack.size) : '';
+}
+
+function addStack(val: string) {
+  if (sel.stack.has(val)) return;
+  sel.stack.add(val);
+  document.querySelector<HTMLElement>(`.sc-tag[data-group="stack"][data-val="${val}"]`)?.classList.add('on');
+  renderChips();
+  updateLabel();
+  setStackCollapse(true);   // abre o collapse para o user ver
+  const inp = document.getElementById('sc-input') as HTMLInputElement;
+  inp.value = '';
+  hideDropdown();
+}
+
+function removeStack(val: string) {
+  sel.stack.delete(val);
+  document.querySelector<HTMLElement>(`.sc-tag[data-group="stack"][data-val="${val}"]`)?.classList.remove('on');
+  renderChips();
+  updateLabel();
+}
+
+// ── Botões de filtro (modo, nivel, extras) + stack buttons ──────
+document.querySelectorAll<HTMLButtonElement>('.sc-tag').forEach(tag => {
+  tag.addEventListener('click', () => {
+    const g = tag.dataset.group as Group;
+    const v = tag.dataset.val!;
+    if (g === 'stack') {
+      if (sel.stack.has(v)) removeStack(v);
+      else addStack(v);
+    } else {
+      if (sel[g].has(v)) { sel[g].delete(v); tag.classList.remove('on'); }
+      else               { sel[g].add(v);    tag.classList.add('on'); }
+      updateLabel();
+    }
+  });
+});
+
+// ── Autocomplete dropdown ───────────────────────────────────────
+let acIdx = -1;
+let acFiltered: typeof suggestions = [];
+
+function showDropdown(q: string) {
+  const drop = document.getElementById('sc-ac-drop')!;
+  if (!q) { hideDropdown(); return; }
+  acFiltered = suggestions
+    .filter(s => s.text.toLowerCase().includes(q.toLowerCase()) && !sel.stack.has(s.text.toLowerCase()))
+    .slice(0, 8);
+  if (!acFiltered.length) { hideDropdown(); return; }
+  acIdx = -1;
+  const esc = (t: string) => t.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]!));
+  drop.innerHTML = acFiltered.map((s, i) => {
+    const hl = esc(s.text).replace(new RegExp(`(${esc(q)})`, 'gi'), '<b>$1</b>');
+    return `<div class="sc-ac-item" data-idx="${i}"><span class="sc-ac-type t-${s.type}">${s.type}</span><span class="sc-ac-text">${hl}</span></div>`;
+  }).join('');
+  drop.querySelectorAll<HTMLElement>('.sc-ac-item').forEach(item => {
+    item.addEventListener('mousedown', e => {
+      e.preventDefault();
+      selectSuggestion(acFiltered[Number(item.dataset.idx)]);
+    });
+  });
+  drop.style.display = 'block';
+}
+
+function hideDropdown() {
+  const drop = document.getElementById('sc-ac-drop');
+  if (drop) drop.style.display = 'none';
+  acIdx = -1;
+}
+
+function selectSuggestion(sug: { text: string; type: string }) {
+  if (sug.type === 'stack') {
+    addStack(sug.text.toLowerCase());
+  } else {
+    // empresa: coloca no input e fecha
+    const inp = document.getElementById('sc-input') as HTMLInputElement;
+    inp.value = sug.text;
+    hideDropdown();
+  }
+}
+
+// ── Input listeners ─────────────────────────────────────────────
+const inp = document.getElementById('sc-input') as HTMLInputElement;
+
+inp?.addEventListener('input', () => showDropdown(inp.value.trim()));
+
+inp?.addEventListener('keydown', e => {
+  const drop = document.getElementById('sc-ac-drop')!;
+  const items = drop.querySelectorAll<HTMLElement>('.sc-ac-item');
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    acIdx = Math.min(acIdx + 1, items.length - 1);
+    items.forEach((it, i) => it.classList.toggle('focused', i === acIdx));
+    return;
+  }
+  if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    acIdx = Math.max(acIdx - 1, -1);
+    items.forEach((it, i) => it.classList.toggle('focused', i === acIdx));
+    return;
+  }
+  if (e.key === 'Enter') {
+    if (acIdx >= 0 && acFiltered[acIdx]) { e.preventDefault(); selectSuggestion(acFiltered[acIdx]); }
+    else { hideDropdown(); go(); }
+    return;
+  }
+  if (e.key === 'Escape') { hideDropdown(); return; }
+  if (e.key === 'Backspace' && inp.value === '' && sel.stack.size > 0) {
+    removeStack([...sel.stack].pop()!); return;
+  }
+});
+
+document.addEventListener('click', e => {
+  if (!(e.target as HTMLElement).closest('#sc-tag-area')) hideDropdown();
+});
+
+// ── Label / go ──────────────────────────────────────────────────
+function countSelected() {
+  return sel.stack.size + sel.modo.size + sel.nivel.size + sel.extras.size;
+}
+
+function updateLabel() {
+  const n = countSelected();
+  const el = document.getElementById('sc-label');
+  if (el) el.textContent = n > 0 ? `buscar vagas (${n} filtro${n > 1 ? 's' : ''})` : 'buscar vagas';
+}
+
+function go() {
+  const q = inp?.value.trim() ?? '';
+  const p = new URLSearchParams();
+  if (q)               p.set('q',      q);
+  if (sel.stack.size)  p.set('stack',  [...sel.stack].join(','));
+  if (sel.nivel.size)  p.set('nivel',  [...sel.nivel].join(','));
+  if (sel.modo.size)   p.set('modo',   [...sel.modo].join(','));
+  if (sel.extras.size) p.set('extras', [...sel.extras].join(','));
+  window.location.href = '/vagas' + (p.toString() ? '?' + p : '');
+}
+
+document.getElementById('sc-btn')?.addEventListener('click', go);
+</script>

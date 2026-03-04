@@ -1,0 +1,140 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  activeSection?: 'filtro' | 'vagas' | 'ajuda' | 'contato' | 'none';
+  breadcrumb?: string;
+}
+const {
+  title = 'DevVagas',
+  description = 'Vagas tech via GitHub Issues',
+  activeSection = 'none',
+  breadcrumb = 'index.ts',
+} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} // DevVagas</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div style="display:flex;align-items:center;gap:1.5rem">
+    <a href="/" class="topbar-logo">DEVVAGAS</a>
+    <span class="topbar-path" id="topbar-path">
+      <span class="seg">~/vagas</span>
+      <span class="sep">/</span>
+      <span class="seg" style="color:var(--green)" id="topbar-file">{breadcrumb}</span>
+    </span>
+  </div>
+  <div class="topbar-right">
+    <span><span class="status-dot"></span>ONLINE</span>
+    <span>branch: <span style="color:var(--cyan)">main</span></span>
+    <span id="clock">--:--:--</span>
+  </div>
+</header>
+
+<!-- ACTIVITY BAR -->
+<nav class="activity-bar" id="activity-bar">
+  <!-- Filtro / Busca -->
+  <a href="/" class={`ab-icon ${activeSection === 'filtro' ? 'active' : ''}`} data-section="filtro">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
+    </svg>
+    <div class="ab-tooltip">Buscar Vagas</div>
+  </a>
+
+  <!-- Vagas -->
+  <a href="/vagas" class={`ab-icon ${activeSection === 'vagas' ? 'active' : ''}`} data-section="vagas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M3 7h18M3 12h18M3 17h18"/>
+    </svg>
+    <div class="ab-tooltip">Vagas</div>
+  </a>
+
+  <!-- Ajuda -->
+  <a href="/ajuda" class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
+    </svg>
+    <div class="ab-tooltip">Ajuda</div>
+  </a>
+
+  <!-- Fale Comigo -->
+  <a href="/contato" class={`ab-icon ${activeSection === 'contato' ? 'active' : ''}`} data-section="contato">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <div class="ab-tooltip">Fale Comigo</div>
+  </a>
+
+  <!-- GitHub link (bottom) -->
+  <a href="https://github.com/SEU-USUARIO/SEU-REPO" target="_blank" rel="noopener"
+     class="ab-icon ab-bottom">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+    </svg>
+    <div class="ab-tooltip">GitHub</div>
+  </a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="page-shell">
+  <slot />
+</div>
+
+<!-- STATUS BAR -->
+<footer class="statusbar">
+  <div class="sb-item">⎇ main</div>
+  <div class="sb-item" id="sb-section">
+    {activeSection === 'filtro'  && '⌕ buscar/'}
+    {activeSection === 'vagas'   && '📋 vagas/'}
+    {activeSection === 'ajuda'   && '❓ ajuda/'}
+    {activeSection === 'contato' && '✉ contato/'}
+  </div>
+  <div class="sb-item" id="sb-status"><span class="status-dot" style="background:var(--black)"></span>online</div>
+  <div class="sb-right">
+    <div class="sb-item" id="sb-lang">TypeScript</div>
+    <div class="sb-item">UTF-8</div>
+    <div class="sb-item" id="sb-extra">{breadcrumb}</div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+<script>
+  // ── Clock ──────────────────────────────────────────────────────
+  function tick() {
+    const el = document.getElementById('clock');
+    if (el) el.textContent = new Date().toLocaleTimeString('pt-BR', { hour12: false });
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  // ── Animate page entry ─────────────────────────────────────────
+  document.addEventListener('astro:page-load', () => {
+    tick();
+    // highlight current activity bar item
+    const path = window.location.pathname;
+    document.querySelectorAll('.ab-icon').forEach(el => {
+      const section = (el as HTMLElement).dataset.section;
+      el.classList.toggle('active',
+        section === 'filtro'  ? path === '/' :
+        section === 'vagas'   ? (path === '/vagas' || path.startsWith('/vaga'))  :
+        section === 'ajuda'   ? path === '/ajuda' :
+        section === 'contato' ? path === '/contato' : false
+      );
+    });
+  });
+</script>

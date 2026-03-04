@@ -1,0 +1,1015 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { fetchJobs } from '../lib/github';
+
+const jobs = await fetchJobs();
+
+const stackFreq = new Map<string, number>();
+jobs.forEach(j => j.stack.forEach(s => stackFreq.set(s, (stackFreq.get(s) || 0) + 1)));
+const allStacks = [...stackFreq.entries()]
+  .sort((a, b) => b[1] - a[1])
+  .map(([s]) => s);
+
+// ── Chart data ──────────────────────────────────────────────────
+const chartTotal = jobs.length;
+
+function describeArc(r: number, startPct: number, endPct: number): string {
+  const GAP = 0.7;
+  const startDeg = startPct * 3.6 + GAP;
+  const endDeg   = endPct   * 3.6 - GAP;
+  if (endDeg <= startDeg) return '';
+  const rad = (d: number) => (d - 90) * Math.PI / 180;
+  const x1 = r * Math.cos(rad(startDeg)), y1 = r * Math.sin(rad(startDeg));
+  const x2 = r * Math.cos(rad(endDeg)),   y2 = r * Math.sin(rad(endDeg));
+  const large = (endDeg - startDeg) > 180 ? 1 : 0;
+  return `M${x1.toFixed(2)},${y1.toFixed(2)} A${r},${r} 0 ${large},1 ${x2.toFixed(2)},${y2.toFixed(2)}`;
+}
+
+interface Seg { label: string; pct: number; color: string; }
+function buildRing(segs: Seg[], r: number, sw: number, prefix: string) {
+  let cur = 0;
+  return segs.map((s, i) => {
+    const st = cur; cur += s.pct;
+    const midDeg = ((st + cur) / 2) * 3.6;
+    return { ...s, path: describeArc(r, st, cur), midDeg, r, sw, arcId: `${prefix}-${i}` };
+  });
+}
+
+// Outer ring: top 4 stacks
+const SCOL = ['#00ff9d', '#00d4ff', '#fbbf24', '#f87171', '#3f4756'];
+const sfSorted = [...stackFreq.entries()].sort((a, b) => b[1] - a[1]);
+const sfTotal  = sfSorted.reduce((a, [, c]) => a + c, 0);
+const top4 = sfSorted.slice(0, 4).map(([label, count], i) => ({
+  label, pct: sfTotal ? Math.round(count / sfTotal * 100) : 0, color: SCOL[i],
+}));
+const othersPct = sfTotal ? 100 - top4.reduce((a, s) => a + s.pct, 0) : 0;
+if (othersPct > 0) top4.push({ label: 'Outros', pct: othersPct, color: SCOL[4] });
+const outerRing = buildRing(top4, 136, 20, 'outer');
+
+// Middle ring: Internacional vs Nacional
+const intlCount = jobs.filter(j => (j as any).isInternacional).length;
+const intlPct   = chartTotal ? Math.round(intlCount / chartTotal * 100) : 0;
+const midRing   = buildRing([
+  { label: 'Internacional', pct: intlPct,           color: '#00ff9d' },
+  { label: 'Nacional',      pct: 100 - intlPct,     color: '#00d4ff' },
+], 108, 18, 'mid');
+
+// Inner ring: LinkedIn vs Outros
+const liCount = jobs.filter(j => (j as any).isLinkedin).length;
+const liPct   = chartTotal ? Math.round(liCount / chartTotal * 100) : 0;
+const innerRing = buildRing([
+  { label: 'Via LinkedIn', pct: liPct,        color: '#0ea5e9' },
+  { label: 'Outros',       pct: 100 - liPct,  color: '#a78bfa' },
+], 82, 16, 'inner');
+
+
+function timeAgo(d: string) {
+  const s = (Date.now() - new Date(d).getTime()) / 1000;
+  if (s < 3600)    return `${Math.floor(s/60)}m`;
+  if (s < 86400)   return `${Math.floor(s/3600)}h`;
+  if (s < 2592000) return `${Math.floor(s/86400)}d`;
+  return new Date(d).toLocaleDateString('pt-BR', { day:'2-digit', month:'short' });
+}
+---
+
+<BaseLayout title="Vagas" activeSection="vagas" breadcrumb="vagas/index.ts">
+
+<div class="ide-layout">
+
+  <!-- LEFT: File Explorer / Job List -->
+  <aside class="explorer" id="explorer">
+
+    <div class="exp-header">
+      <span class="exp-title">VAGAS ABERTAS</span>
+      <span class="exp-count">{jobs.length}</span>
+    </div>
+
+    <!-- Search + Filters -->
+    <div class="exp-search">
+      <div class="search-wrap">
+        <span class="search-ico">⌕</span>
+        <input id="search" type="search" placeholder="nome da vaga ou empresa..." autocomplete="off" />
+      </div>
+    </div>
+
+    <!-- Stack filter (collapsível) -->
+    <div class="stack-filter-wrap">
+      <div class="sf-header" id="sf-toggle" role="button" tabindex="0">
+        <span class="sf-label">// stack</span>
+        <span class="sf-sel-count" id="sf-sel-count"></span>
+        <span class="sf-line"></span>
+        <span class="sf-chevron" id="sf-chevron">▾</span>
+      </div>
+      <div class="sf-body" id="sf-body">
+        <div class="sf-tags">
+          {allStacks.map(s => (
+            <button class="sf-tag" data-stack={s.toLowerCase()}>{s}</button>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Job rows -->
+    <div class="job-rows" id="job-rows">
+      {jobs.map((job, i) => (
+        <a
+          href={`/vaga/${job.id}`}
+          class="job-row"
+          data-id={job.id}
+          data-search={`${job.title} ${job.empresa} ${job.stack.join(' ')} ${job.labels.join(' ')} ${job.nivel} ${job.tipo}`.toLowerCase()}
+          data-remote={job.isRemote ? 'true' : 'false'}
+          data-internacional={job.isInternacional ? 'true' : 'false'}
+          data-linkedin={job.isLinkedin ? 'true' : 'false'}
+          style={`animation-delay:${i * 0.04}s`}
+        >
+          <div class="jr-top">
+            <span class="jr-company">
+              {job.isLinkedin && (
+                <svg class="jr-li-icon" viewBox="0 0 24 24" fill="currentColor" aria-label="LinkedIn">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              )}
+              {job.empresa || job.author.login}
+            </span>
+            <span class="jr-time">{timeAgo(job.createdAt)}</span>
+          </div>
+          <div class="jr-title">{job.title}</div>
+          <div class="jr-meta">
+            {job.isRemote
+              ? <span class="jr-tag remote">remoto</span>
+              : /híbrido|hibrido/i.test(job.tipo ?? '')
+                ? <span class="jr-tag hibrido">híbrido</span>
+                : /presencial/i.test(job.tipo ?? '')
+                  ? <span class="jr-tag presencial">presencial</span>
+                  : (job.tipo || job.local) && <span class="jr-tag">{job.tipo || job.local}</span>}
+            {job.nivel && <span class="jr-tag nivel">{job.nivel}</span>}
+            {job.isInternacional && <span class="jr-tag intl">internacional</span>}
+            {job.salario && <span class="jr-salary">{job.salario}</span>}
+          </div>
+        </a>
+      ))}
+    </div>
+
+  </aside>
+
+  <!-- RIGHT: Preview panel -->
+  <section class="preview-panel" id="preview-panel">
+
+    <!-- Welcome state — chart overview -->
+    <div class="welcome-state" id="welcome-state">
+      <div class="ws-chart">
+
+        <svg viewBox="-160 -160 320 320" class="ws-svg">
+          <!-- Background tracks -->
+          <circle r="136" cx="0" cy="0" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="20"/>
+          <circle r="108" cx="0" cy="0" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="18"/>
+          <circle r="82"  cx="0" cy="0" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="16"/>
+
+          <!-- Outer ring: stacks -->
+          {outerRing.filter(s => s.path).map(s => (
+            <path
+              d={s.path} fill="none" stroke={s.color}
+              stroke-width="20" stroke-linecap="round"
+              class="ws-arc"
+              data-arc-id={s.arcId}
+              data-mid-deg={s.midDeg.toFixed(1)}
+              data-r={s.r} data-sw={s.sw}
+              data-color={s.color} data-label={s.label} data-pct={s.pct}
+            />
+          ))}
+
+          <!-- Middle ring: internacional -->
+          {midRing.filter(s => s.path).map(s => (
+            <path
+              d={s.path} fill="none" stroke={s.color}
+              stroke-width="18" stroke-linecap="round"
+              class="ws-arc"
+              data-arc-id={s.arcId}
+              data-mid-deg={s.midDeg.toFixed(1)}
+              data-r={s.r} data-sw={s.sw}
+              data-color={s.color} data-label={s.label} data-pct={s.pct}
+            />
+          ))}
+
+          <!-- Inner ring: linkedin -->
+          {innerRing.filter(s => s.path).map(s => (
+            <path
+              d={s.path} fill="none" stroke={s.color}
+              stroke-width="16" stroke-linecap="round"
+              class="ws-arc"
+              data-arc-id={s.arcId}
+              data-mid-deg={s.midDeg.toFixed(1)}
+              data-r={s.r} data-sw={s.sw}
+              data-color={s.color} data-label={s.label} data-pct={s.pct}
+            />
+          ))}
+
+          <!-- Center decorative ring -->
+          <circle r="54" cx="0" cy="0" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+          <!-- Center -->
+          <text x="0" y="-6" text-anchor="middle" class="ws-cnum">{chartTotal}</text>
+          <text x="0" y="16" text-anchor="middle" class="ws-csub">vagas abertas</text>
+
+          <!-- Callout (shown on arc hover via JS) -->
+          <g id="ws-callout" style="display:none; pointer-events:none">
+            <line id="ws-cl-r" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+            <line id="ws-cl-h" stroke-width="1" stroke-linecap="round" opacity="0.8"/>
+            <circle id="ws-cd" r="3"/>
+            <text id="ws-ct-name" class="ws-ct-name" dominant-baseline="auto"/>
+            <text id="ws-ct-pct"  class="ws-ct-pct"  dominant-baseline="auto"/>
+          </g>
+        </svg>
+
+        <p class="ws-hint">◈ selecione no gráfico ou na legenda para filtrar</p>
+
+        <!-- Legends -->
+        <div class="ws-legs">
+          <div class="ws-leg-group">
+            <div class="ws-leg-title">// stack</div>
+            {outerRing.map(s => (
+              <div class="ws-leg-item" data-arc-id={s.arcId}>
+                <span class="ws-leg-bar" style={`background:${s.color};box-shadow:0 0 4px ${s.color}`}></span>
+                <span class="ws-leg-name">{s.label}</span>
+                <span class="ws-leg-pct">{s.pct}%</span>
+              </div>
+            ))}
+          </div>
+          <div class="ws-leg-group">
+            <div class="ws-leg-title">// distribuição</div>
+            {midRing.map(s => (
+              <div class="ws-leg-item" data-arc-id={s.arcId}>
+                <span class="ws-leg-bar" style={`background:${s.color};box-shadow:0 0 4px ${s.color}`}></span>
+                <span class="ws-leg-name">{s.label}</span>
+                <span class="ws-leg-pct">{s.pct}%</span>
+              </div>
+            ))}
+          </div>
+          <div class="ws-leg-group">
+            <div class="ws-leg-title">// origem</div>
+            {innerRing.map(s => (
+              <div class="ws-leg-item" data-arc-id={s.arcId}>
+                <span class="ws-leg-bar" style={`background:${s.color};box-shadow:0 0 4px ${s.color}`}></span>
+                <span class="ws-leg-name">{s.label}</span>
+                <span class="ws-leg-pct">{s.pct}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Job preview (populated by JS) -->
+    <div class="job-preview" id="job-preview" style="display:none">
+      <!-- header -->
+      <div class="jp-header">
+        <div class="jp-avatar" id="jp-avatar">NU</div>
+        <div class="jp-info">
+          <h2 class="jp-title" id="jp-title">—</h2>
+          <p class="jp-company" id="jp-company">—</p>
+          <div class="jp-badges" id="jp-badges"></div>
+        </div>
+        <div class="jp-actions">
+          <a class="jp-apply-btn" id="jp-apply" href="#">CANDIDATAR →</a>
+          <a class="jp-detail-link" id="jp-detail" href="#">ver detalhe completo ↗</a>
+        </div>
+      </div>
+
+      <!-- stack -->
+      <div class="jp-section-label">// stack</div>
+      <div class="jp-stack" id="jp-stack"></div>
+
+      <!-- description preview -->
+      <div class="jp-section-label">// descrição</div>
+      <div class="jp-desc" id="jp-desc"></div>
+    </div>
+
+  </section>
+
+</div>
+
+</BaseLayout>
+
+<style>
+/* ── IDE LAYOUT ──────────────────────────────────────────── */
+.ide-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: calc(100vh - 36px - 24px);
+  overflow: hidden;
+}
+
+/* ── EXPLORER ────────────────────────────────────────────── */
+.explorer {
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--darker);
+}
+
+.exp-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.75rem 1rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+.exp-title {
+  font-size: 0.55rem; text-transform: uppercase;
+  letter-spacing: 0.15em; color: var(--muted);
+}
+.exp-count {
+  font-size: 0.6rem; color: var(--green);
+  background: rgba(0,255,157,0.08);
+  border: 1px solid rgba(0,255,157,0.2);
+  padding: 0.1rem 0.4rem;
+}
+
+.exp-search { padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); flex-shrink: 0; }
+
+.search-wrap {
+  display: flex; align-items: center; gap: 0.5rem;
+  background: var(--dark); border: 1px solid var(--border2);
+  padding: 0.35rem 0.6rem;
+  transition: border-color 0.15s;
+}
+.search-wrap:focus-within { border-color: var(--green); }
+.search-ico { font-size: 0.9rem; color: var(--muted); }
+#search {
+  flex: 1; background: none; border: none; outline: none;
+  font-family: var(--font); font-size: 0.72rem; color: var(--text);
+}
+#search::placeholder { color: var(--muted); }
+
+/* Job rows */
+.job-rows {
+  flex: 1; overflow-y: auto; padding: 0.25rem 0;
+}
+
+.job-row {
+  display: block;
+  padding: 0.7rem 1rem;
+  border-left: 2px solid transparent;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+  animation: rowIn 0.3s ease both;
+  text-decoration: none; color: inherit;
+}
+@keyframes rowIn { from { opacity:0; transform:translateX(-6px); } to { opacity:1; transform:none; } }
+
+.job-row:hover { background: var(--mid); border-left-color: var(--border2); }
+.job-row.selected { background: var(--dark); border-left-color: var(--green); }
+.job-row.hidden { display: none; }
+
+.jr-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.2rem; }
+.jr-company { font-size: 0.62rem; color: var(--muted); display: flex; align-items: center; gap: 0.3rem; }
+.jr-li-icon { width: 10px; height: 10px; color: #0a66c2; flex-shrink: 0; }
+.jr-time    { font-size: 0.58rem; color: var(--muted2); }
+.jr-title   { font-size: 0.78rem; color: var(--text); margin-bottom: 0.4rem; line-height: 1.3; font-weight: 500; }
+.jr-meta    { display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; }
+
+.jr-tag {
+  font-size: 0.58rem; padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border2); color: var(--muted);
+  border-radius: 2px;
+}
+.jr-tag.remote    { border-color: rgba(0,255,157,0.3);   color: var(--green); }
+.jr-tag.nivel     { border-color: rgba(0,212,255,0.3);   color: var(--cyan); }
+.jr-tag.hibrido   { border-color: rgba(251,191,36,0.35); color: #fbbf24; }
+.jr-tag.presencial{ border-color: rgba(167,139,250,0.35);color: #a78bfa; }
+.jr-tag.intl      { border-color: rgba(14,165,233,0.35); color: #0ea5e9; }
+.jr-salary        { margin-left: auto; font-size: 0.6rem; color: var(--green); }
+
+/* ── STACK FILTER ────────────────────────────────────────── */
+.stack-filter-wrap {
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.sf-header {
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  cursor: pointer; user-select: none;
+}
+.sf-header:hover .sf-label { color: var(--text); }
+
+.sf-label {
+  font-size: 0.58rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--muted);
+  white-space: nowrap;
+}
+
+.sf-sel-count {
+  font-size: 0.5rem; background: rgba(0,255,157,0.12);
+  border: 1px solid rgba(0,255,157,0.3); color: var(--green);
+  padding: 0.05rem 0.35rem; min-width: 1rem; text-align: center;
+}
+
+.sf-line { flex: 1; height: 1px; background: var(--border); }
+
+.sf-chevron {
+  font-size: 0.65rem; color: var(--muted);
+  transition: transform 0.2s;
+}
+.sf-chevron.open { transform: rotate(180deg); }
+
+.sf-body { display: none; padding: 0 0.75rem 0.6rem; }
+
+.sf-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+
+.sf-tag {
+  background: var(--mid);
+  border: 1px solid var(--border2);
+  color: var(--muted2);
+  font-family: var(--font);
+  font-size: 0.6rem;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.sf-tag:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.06); }
+.sf-tag.on {
+  background: rgba(0,255,157,0.1);
+  border-color: var(--green);
+  color: var(--green);
+  font-weight: 600;
+}
+
+/* ── PREVIEW PANEL ───────────────────────────────────────── */
+.preview-panel {
+  overflow-y: auto;
+  background: var(--black);
+  position: relative;
+}
+
+/* WELCOME STATE — CHART */
+.welcome-state {
+  height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  padding: 2rem;
+}
+
+.ws-chart {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 1.75rem;
+  animation: wsIn 0.5s ease both;
+}
+@keyframes wsIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.ws-svg { width: 320px; height: 320px; overflow: visible; }
+
+/* Arc glow + interaction */
+.ws-arc {
+  filter: drop-shadow(0 0 5px currentColor);
+  transition: filter 0.2s, opacity 0.2s;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.ws-arc.ws-arc-hi  { filter: drop-shadow(0 0 14px currentColor); opacity: 1; }
+.ws-arc.ws-arc-dim  { filter: none; opacity: 0.18; }
+.ws-arc.ws-arc-sel  { filter: drop-shadow(0 0 12px currentColor); opacity: 1; }
+.ws-arc.ws-arc-unsel{ filter: none; opacity: 0.22; }
+
+/* Callout */
+.ws-ct-name {
+  font-size: 10px; font-family: var(--font); font-weight: 600;
+}
+.ws-ct-pct {
+  font-size: 9px; font-family: var(--font);
+  fill: rgba(255,255,255,0.5);
+}
+
+.ws-cnum {
+  font-family: var(--display); font-size: 34px; font-weight: 900;
+  fill: var(--text); letter-spacing: 0.04em;
+}
+.ws-csub {
+  font-family: var(--font); font-size: 8.5px;
+  fill: var(--muted); text-transform: uppercase; letter-spacing: 0.18em;
+}
+
+/* Legend */
+.ws-hint {
+  font-size: 0.56rem; color: var(--muted);
+  letter-spacing: 0.1em; text-transform: uppercase;
+  text-align: center; margin: -0.5rem 0 0;
+  opacity: 0.7;
+}
+
+.ws-legs {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem 2.5rem; width: 100%; max-width: 580px;
+}
+
+.ws-leg-group { display: flex; flex-direction: column; gap: 0.65rem; }
+
+.ws-leg-title {
+  font-size: 0.56rem; text-transform: uppercase;
+  letter-spacing: 0.12em; color: var(--muted);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.05rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.ws-leg-title::after {
+  content: '↕ clique';
+  font-size: 0.46rem; letter-spacing: 0.06em;
+  color: var(--muted2); opacity: 0.5;
+  text-transform: lowercase;
+}
+
+.ws-leg-item {
+  display: flex; align-items: center; gap: 0.6rem;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+.ws-leg-item.ws-leg-dim  { opacity: 0.2; }
+.ws-leg-item.ws-leg-hi   { opacity: 1; }
+.ws-leg-item.ws-leg-hi .ws-leg-name  { color: var(--text); font-weight: 600; }
+.ws-leg-item.ws-leg-hi .ws-leg-pct   { color: var(--green); font-size: 0.78rem; }
+.ws-leg-item.ws-leg-hi .ws-leg-bar   { width: 22px; }
+.ws-leg-item.ws-leg-sel  { opacity: 1; }
+.ws-leg-item.ws-leg-sel .ws-leg-name { color: var(--text); font-weight: 600; }
+.ws-leg-item.ws-leg-sel .ws-leg-pct  { color: var(--green); font-size: 0.78rem; }
+.ws-leg-item.ws-leg-sel .ws-leg-bar  { width: 22px; }
+.ws-leg-item.ws-leg-unsel{ opacity: 0.2; }
+
+.ws-leg-bar {
+  width: 16px; height: 3px; border-radius: 2px; flex-shrink: 0;
+  transition: width 0.2s;
+}
+
+.ws-leg-name {
+  flex: 1; font-size: 0.68rem; color: var(--muted2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.ws-leg-pct {
+  font-size: 0.7rem; font-weight: 700; color: var(--text);
+  flex-shrink: 0; font-variant-numeric: tabular-nums;
+  transition: font-size 0.15s, color 0.15s;
+}
+
+/* JOB PREVIEW */
+.job-preview { padding: 2rem; animation: previewIn 0.25s ease both; }
+@keyframes previewIn { from { opacity:0; transform:translateX(10px); } to { opacity:1; transform:none; } }
+
+.jp-header {
+  display: grid; grid-template-columns: 52px 1fr auto;
+  gap: 1rem; align-items: start;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+.jp-avatar {
+  width: 52px; height: 52px;
+  background: var(--mid); border: 1px solid var(--border2);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--display); font-size: 0.85rem; font-weight: 900;
+  color: var(--green); flex-shrink: 0;
+}
+.jp-title   { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.25rem; }
+.jp-company { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.6rem; }
+.jp-badges  { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+
+.jp-badge {
+  font-size: 0.62rem; padding: 0.15rem 0.5rem;
+  border: 1px solid var(--border2); color: var(--muted);
+  border-radius: 2px;
+}
+.jp-badge.nivel  { border-color: rgba(0,212,255,0.35); color: var(--cyan); }
+.jp-badge.remote { border-color: rgba(0,255,157,0.35); color: var(--green); }
+.jp-badge.salary { color: var(--green); border-color: rgba(0,255,157,0.3); font-weight: 600; }
+
+.jp-actions {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem;
+  flex-shrink: 0;
+}
+.jp-apply-btn {
+  background: transparent; border: 1px solid var(--green);
+  color: var(--green); padding: 0.5rem 1rem;
+  font-family: var(--font); font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.06em; cursor: pointer;
+  position: relative; overflow: hidden; transition: color 0.2s;
+}
+.jp-apply-btn::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--green); transform: translateX(-100%);
+  transition: transform 0.2s ease; z-index: 0;
+}
+.jp-apply-btn:hover { color: var(--black); }
+.jp-apply-btn:hover::before { transform: translateX(0); }
+.jp-apply-btn span { position: relative; z-index: 1; }
+
+.jp-detail-link {
+  font-size: 0.62rem; color: var(--muted);
+  transition: color 0.15s;
+}
+.jp-detail-link:hover { color: var(--cyan); }
+
+
+.jp-section-label {
+  font-size: 0.6rem; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--muted);
+  margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.6rem;
+}
+.jp-section-label::after { content:''; flex:1; height:1px; background:var(--border); }
+
+.jp-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+.jp-chip {
+  background: var(--mid);
+  border: 1px solid var(--border2);
+  color: var(--muted2);
+  font-family: var(--font);
+  font-size: 0.6rem;
+  padding: 0.25rem 0.6rem;
+  transition: all 0.15s;
+}
+.jp-chip:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.06); }
+
+.jp-desc {
+  font-size: 0.72rem; line-height: 1.85; color: #8aacca;
+}
+.jp-desc h3 { color: var(--cyan); font-size: 0.68rem; margin: 1rem 0 0.4rem; }
+.jp-desc ul  { padding-left: 1.2rem; }
+.jp-desc li  { margin-bottom: 0.2rem; }
+.jp-desc li::marker { color: var(--green); content: '▸ '; }
+
+@media (max-width: 780px) {
+  .ide-layout { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  .preview-panel { display: none; }
+  .preview-panel.mobile-show { display: block; }
+}
+</style>
+
+<script>
+// ── URL param pre-filters ───────────────────────────────────────
+const _p = new URLSearchParams(location.search);
+const _q0      = _p.get('q') || '';
+const _stacks  = (_p.get('stack')  || '').split(',').filter(Boolean).map(s => s.toLowerCase());
+const _niveis  = (_p.get('nivel')  || '').split(',').filter(Boolean).map(s => s.toLowerCase());
+const _modos   = (_p.get('modo')   || '').split(',').filter(Boolean).map(s => s.toLowerCase());
+const _extras  = (_p.get('extras') || '').split(',').filter(Boolean).map(s => s.toLowerCase());
+
+if (_q0) {
+  const si = document.getElementById('search') as HTMLInputElement;
+  if (si) si.value = _q0;
+}
+
+// ── Data embedded from server ──────────────────────────────────
+const JOBS: Record<number, any> = {};
+
+document.querySelectorAll<HTMLElement>('.job-row').forEach(row => {
+  const id = Number(row.dataset.id);
+  JOBS[id] = {
+    id,
+    title:   row.querySelector('.jr-title')?.textContent?.trim() ?? '',
+    company: row.querySelector('.jr-company')?.textContent?.trim() ?? '',
+  };
+});
+
+// ── Chart filter state ─────────────────────────────────────────
+const top4Labels: string[] = (() => {
+  try { return (JSON.parse(document.getElementById('chart-data')?.textContent ?? '{}') as any).top4 ?? []; }
+  catch { return []; }
+})();
+const selectedMidFilters   = new Set<string>(); // 'internacional' | 'nacional'
+const selectedInnerFilters = new Set<string>(); // 'linkedin' | 'outros'
+let   selectedStackOthers  = false;
+
+// ── Stack filter (UI) ───────────────────────────────────────────
+const selectedStacks = new Set<string>();
+let sfOpen = false;
+
+function setSfOpen(open: boolean) {
+  sfOpen = open;
+  const body    = document.getElementById('sf-body')!;
+  const chevron = document.getElementById('sf-chevron')!;
+  body.style.display = open ? 'block' : 'none';
+  chevron.classList.toggle('open', open);
+}
+
+function updateSfCount() {
+  const el = document.getElementById('sf-sel-count');
+  if (el) el.textContent = selectedStacks.size > 0 ? String(selectedStacks.size) : '';
+}
+
+function hasAnyArcSelection() {
+  return selectedStacks.size > 0 || selectedMidFilters.size > 0 ||
+         selectedInnerFilters.size > 0 || selectedStackOthers;
+}
+
+function syncArcVisuals() {
+  const anySelected = hasAnyArcSelection();
+  document.querySelectorAll<SVGPathElement>('.ws-arc').forEach(arc => {
+    const arcId = arc.dataset.arcId!;
+    const label = (arc.dataset.label ?? '').toLowerCase();
+    let sel = false;
+    if (arcId.startsWith('outer')) {
+      sel = label === 'outros' ? selectedStackOthers : selectedStacks.has(label);
+    } else if (arcId.startsWith('mid')) {
+      sel = selectedMidFilters.has(label === 'internacional' ? 'internacional' : 'nacional');
+    } else if (arcId.startsWith('inner')) {
+      sel = selectedInnerFilters.has(label.includes('linkedin') ? 'linkedin' : 'outros');
+    }
+    arc.classList.toggle('ws-arc-sel',   sel);
+    arc.classList.toggle('ws-arc-unsel', !sel && anySelected);
+  });
+  document.querySelectorAll<HTMLElement>('.ws-leg-item').forEach(item => {
+    const arcId = item.dataset.arcId ?? '';
+    const arc   = document.querySelector<SVGPathElement>(`.ws-arc[data-arc-id="${arcId}"]`);
+    const sel   = arc?.classList.contains('ws-arc-sel') ?? false;
+    item.classList.toggle('ws-leg-sel',   sel);
+    item.classList.toggle('ws-leg-unsel', !sel && anySelected);
+  });
+}
+
+document.getElementById('sf-toggle')?.addEventListener('click', () => setSfOpen(!sfOpen));
+
+document.querySelectorAll<HTMLButtonElement>('.sf-tag').forEach(tag => {
+  tag.addEventListener('click', () => {
+    const v = tag.dataset.stack!;
+    if (selectedStacks.has(v)) { selectedStacks.delete(v); tag.classList.remove('on'); }
+    else                        { selectedStacks.add(v);    tag.classList.add('on'); }
+    updateSfCount();
+    syncArcVisuals();
+    applyFilters();
+  });
+});
+
+// ── Filter logic ───────────────────────────────────────────────
+let searchQ = _q0.toLowerCase();
+
+function applyFilters() {
+  let visible = 0;
+  document.querySelectorAll<HTMLElement>('.job-row').forEach(row => {
+    const hay = row.dataset.search ?? '';
+    const rem = row.dataset.remote === 'true';
+    const matchSearch = !searchQ || hay.includes(searchQ);
+    const matchUrlStack = _stacks.length === 0 || _stacks.some(s => hay.includes(s));
+    // Outer ring (stack dimension): OR between all selected stack categories
+    const outerAnySelected = selectedStacks.size > 0 || selectedStackOthers;
+    const matchOuterStack = !outerAnySelected || (
+      (selectedStacks.size > 0 && [...selectedStacks].some(s => hay.includes(s))) ||
+      (selectedStackOthers && !top4Labels.some(s => hay.includes(s)))
+    );
+    const matchStack  = matchUrlStack && matchOuterStack;
+    const matchNivel  = _niveis.length === 0 || _niveis.some(n => hay.includes(n));
+    const matchModo   = _modos.length  === 0 || _modos.some(m =>
+      m === 'remoto' ? (rem || hay.includes('remoto')) : hay.includes(m));
+    const matchExtras = _extras.length === 0 || _extras.every(e => {
+      if (e === 'internacional') return row.dataset.internacional === 'true';
+      if (e === 'nacional')      return row.dataset.internacional !== 'true';
+      if (e === 'linkedin')      return row.dataset.linkedin === 'true';
+      return true;
+    });
+    const matchMidFilter    = selectedMidFilters.size === 0 || selectedMidFilters.size >= 2 ||
+      (selectedMidFilters.has('internacional')
+        ? row.dataset.internacional === 'true'
+        : row.dataset.internacional !== 'true');
+    const matchInnerFilter  = selectedInnerFilters.size === 0 || selectedInnerFilters.size >= 2 ||
+      (selectedInnerFilters.has('linkedin')
+        ? row.dataset.linkedin === 'true'
+        : row.dataset.linkedin !== 'true');
+    const show = matchSearch && matchStack && matchNivel && matchModo && matchExtras
+               && matchMidFilter && matchInnerFilter;
+    row.classList.toggle('hidden', !show);
+    if (show) visible++;
+  });
+  const countEl = document.querySelector('.exp-count');
+  if (countEl) countEl.textContent = String(visible);
+}
+
+let searchTimer: ReturnType<typeof setTimeout>;
+document.getElementById('search')?.addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    searchQ = (e.target as HTMLInputElement).value.toLowerCase().trim();
+    applyFilters();
+  }, 150);
+});
+
+// Apply initial URL filters
+if (_q0 || _stacks.length || _niveis.length || _modos.length) {
+  applyFilters();
+}
+
+// ── Preview panel logic ────────────────────────────────────────
+let selectedId: number | null = null;
+
+// Embedded job data as JSON (passed from Astro)
+const jobsData: any[] = JSON.parse(document.getElementById('jobs-data')?.textContent ?? '[]');
+const jobsMap = Object.fromEntries(jobsData.map(j => [j.id, j]));
+
+function initials(name: string) {
+  return name.split(/\s+/).slice(0,2).map((w: string) => w[0]).join('').toUpperCase().slice(0,2) || '??';
+}
+
+
+function renderDesc(raw: string): string {
+  return raw
+    .replace(/###\s*(.+)/g, '<h3>$1</h3>')
+    .replace(/^- (.+)$/gm, '<li>$1</li>')
+    .replace(/(<li>[\s\S]+?<\/li>)+/g, m => `<ul>${m}</ul>`)
+    .replace(/\n\n+/g, '</p><p>')
+    .replace(/^(?!<[hup])(.+)$/gm, '$1');
+}
+
+function showPreview(job: any) {
+  const preview = document.getElementById('job-preview')!;
+  const welcome = document.getElementById('welcome-state')!;
+
+  welcome.style.display  = 'none';
+  preview.style.display  = 'block';
+
+  // animate
+  preview.style.animation = 'none';
+  void preview.offsetWidth;
+  preview.style.animation = '';
+
+  const applyHref = job.aplicar?.startsWith('http') ? job.aplicar : `https://${job.aplicar}`;
+
+  document.getElementById('jp-avatar')!.textContent = initials(job.empresa || job.author?.login || '');
+  document.getElementById('jp-title')!.textContent  = job.title;
+  document.getElementById('jp-company')!.textContent= job.empresa || '';
+
+  const badges = document.getElementById('jp-badges')!;
+  badges.innerHTML = [
+    job.nivel   && `<span class="jp-badge nivel">${job.nivel}</span>`,
+    job.isRemote
+      ? `<span class="jp-badge remote">Remoto</span>`
+      : job.tipo && `<span class="jp-badge">${job.tipo}</span>`,
+    job.salario && `<span class="jp-badge salary">${job.salario}</span>`,
+    ...(job.labels || []).slice(0,3).map((l: string) => `<span class="jp-badge">${l}</span>`)
+  ].filter(Boolean).join('');
+
+  (document.getElementById('jp-apply') as HTMLAnchorElement).href   = applyHref;
+  (document.getElementById('jp-detail') as HTMLAnchorElement).href  = `/vaga/${job.id}`;
+
+  const stack = document.getElementById('jp-stack')!;
+  stack.innerHTML = (job.stack || []).map((s: string) =>
+    `<span class="jp-chip">${s}</span>`).join('');
+
+  const desc = document.getElementById('jp-desc')!;
+  desc.innerHTML = job.descricao ? renderDesc(job.descricao) : '<p style="color:var(--muted)">Sem descrição — veja a Issue no GitHub.</p>';
+}
+
+// ── Chart interaction ──────────────────────────────────────────
+const wsCallout  = document.getElementById('ws-callout')!;
+const wsClR      = document.getElementById('ws-cl-r') as SVGLineElement | null;
+const wsClH      = document.getElementById('ws-cl-h') as SVGLineElement | null;
+const wsCd       = document.getElementById('ws-cd')   as SVGCircleElement | null;
+const wsCtName   = document.getElementById('ws-ct-name') as SVGTextElement | null;
+const wsCtPct    = document.getElementById('ws-ct-pct')  as SVGTextElement | null;
+
+function showCallout(arc: SVGPathElement) {
+  const midDeg = parseFloat(arc.dataset.midDeg!);
+  const r      = parseFloat(arc.dataset.r!);
+  const sw     = parseFloat(arc.dataset.sw!);
+  const color  = arc.dataset.color!;
+  const label  = arc.dataset.label!;
+  const pct    = arc.dataset.pct!;
+  const rad    = (midDeg - 90) * Math.PI / 180;
+  const outerR = r + sw / 2 + 5;
+  const extR   = outerR + 26;
+  const x1 = outerR * Math.cos(rad), y1 = outerR * Math.sin(rad);
+  const x2 = extR   * Math.cos(rad), y2 = extR   * Math.sin(rad);
+  const dir = x2 >= 0 ? 1 : -1;
+  const x3 = x2 + dir * 28, y3 = y2;
+  const tx = x3 + dir * 5;
+  wsClR?.setAttribute('x1', String(x1.toFixed(2))); wsClR?.setAttribute('y1', String(y1.toFixed(2)));
+  wsClR?.setAttribute('x2', String(x2.toFixed(2))); wsClR?.setAttribute('y2', String(y2.toFixed(2)));
+  wsClR?.setAttribute('stroke', color);
+  wsClH?.setAttribute('x1', String(x2.toFixed(2))); wsClH?.setAttribute('y1', String(y2.toFixed(2)));
+  wsClH?.setAttribute('x2', String(x3.toFixed(2))); wsClH?.setAttribute('y2', String(y3.toFixed(2)));
+  wsClH?.setAttribute('stroke', color);
+  wsCd?.setAttribute('cx', String(x1.toFixed(2))); wsCd?.setAttribute('cy', String(y1.toFixed(2)));
+  wsCd?.setAttribute('fill', color);
+  const anchor = dir > 0 ? 'start' : 'end';
+  wsCtName?.setAttribute('x', String(tx.toFixed(2))); wsCtName?.setAttribute('y', String((y3 - 5).toFixed(2)));
+  wsCtName?.setAttribute('text-anchor', anchor); wsCtName?.setAttribute('fill', color);
+  wsCtName!.textContent = label;
+  wsCtPct?.setAttribute('x', String(tx.toFixed(2))); wsCtPct?.setAttribute('y', String((y3 + 8).toFixed(2)));
+  wsCtPct?.setAttribute('text-anchor', anchor);
+  wsCtPct!.textContent = `${pct}%`;
+  wsCallout.style.display = 'block';
+}
+
+document.querySelectorAll<SVGPathElement>('.ws-arc').forEach(arc => {
+  arc.addEventListener('mouseenter', () => {
+    const arcId = arc.dataset.arcId!;
+    // Suspend selection visuals temporarily during hover
+    document.querySelectorAll('.ws-arc').forEach(a => a.classList.remove('ws-arc-sel', 'ws-arc-unsel'));
+    document.querySelectorAll('.ws-leg-item').forEach(item => item.classList.remove('ws-leg-sel', 'ws-leg-unsel'));
+    showCallout(arc);
+    document.querySelectorAll<SVGPathElement>('.ws-arc').forEach(a => {
+      a.classList.toggle('ws-arc-hi',  a === arc);
+      a.classList.toggle('ws-arc-dim', a !== arc);
+    });
+    document.querySelectorAll<HTMLElement>('.ws-leg-item').forEach(item => {
+      const match = item.dataset.arcId === arcId;
+      item.classList.toggle('ws-leg-hi',  match);
+      item.classList.toggle('ws-leg-dim', !match);
+    });
+  });
+
+  arc.addEventListener('mouseleave', () => {
+    wsCallout.style.display = 'none';
+    document.querySelectorAll('.ws-arc').forEach(a => a.classList.remove('ws-arc-hi', 'ws-arc-dim'));
+    document.querySelectorAll('.ws-leg-item').forEach(item => item.classList.remove('ws-leg-hi', 'ws-leg-dim'));
+    syncArcVisuals();
+  });
+
+  arc.addEventListener('click', () => {
+    const arcId    = arc.dataset.arcId!;
+    const label    = arc.dataset.label!;
+    const labelLow = label.toLowerCase();
+    if (arcId.startsWith('outer')) {
+      if (labelLow === 'outros') {
+        selectedStackOthers = !selectedStackOthers;
+      } else {
+        const key = labelLow;
+        if (selectedStacks.has(key)) {
+          selectedStacks.delete(key);
+          document.querySelector<HTMLButtonElement>(`.sf-tag[data-stack="${key}"]`)?.classList.remove('on');
+        } else {
+          selectedStacks.add(key);
+          const tag = document.querySelector<HTMLButtonElement>(`.sf-tag[data-stack="${key}"]`);
+          if (tag) { tag.classList.add('on'); if (!sfOpen) setSfOpen(true); }
+        }
+        updateSfCount();
+      }
+    } else if (arcId.startsWith('mid')) {
+      const key = labelLow === 'internacional' ? 'internacional' : 'nacional';
+      if (selectedMidFilters.has(key)) selectedMidFilters.delete(key);
+      else selectedMidFilters.add(key);
+    } else if (arcId.startsWith('inner')) {
+      const key = labelLow.includes('linkedin') ? 'linkedin' : 'outros';
+      if (selectedInnerFilters.has(key)) selectedInnerFilters.delete(key);
+      else selectedInnerFilters.add(key);
+    }
+    syncArcVisuals();
+    applyFilters();
+  });
+});
+
+// Legend items also clickable (delegates to arc click)
+document.querySelectorAll<HTMLElement>('.ws-leg-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const arcId = item.dataset.arcId;
+    if (!arcId) return;
+    document.querySelector<SVGPathElement>(`.ws-arc[data-arc-id="${arcId}"]`)
+      ?.dispatchEvent(new MouseEvent('click'));
+  });
+});
+
+// Click on row
+document.querySelectorAll<HTMLElement>('.job-row').forEach(row => {
+  row.addEventListener('click', e => {
+    e.preventDefault();
+    const id = Number(row.dataset.id);
+    document.querySelectorAll('.job-row').forEach(r => r.classList.remove('selected'));
+    row.classList.add('selected');
+    selectedId = id;
+
+    const job = jobsMap[id];
+    if (job) showPreview(job);
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (e.key === '/') {
+    e.preventDefault();
+    (document.getElementById('search') as HTMLInputElement)?.focus();
+    return;
+  }
+  const rows = [...document.querySelectorAll<HTMLElement>('.job-row:not(.hidden)')];
+  if (!rows.length) return;
+  const idx = rows.findIndex(r => r.classList.contains('selected'));
+
+  if (e.key === 'ArrowDown') {
+    e.preventDefault();
+    const next = rows[idx + 1] || rows[0];
+    next?.click();
+    next?.scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'ArrowUp') {
+    e.preventDefault();
+    const prev = rows[idx - 1] || rows[rows.length - 1];
+    prev?.click();
+    prev?.scrollIntoView({ block: 'nearest' });
+  } else if (e.key === 'Enter' && selectedId) {
+    window.location.href = `/vaga/${selectedId}`;
+  }
+});
+</script>
+
+<!-- Embed job data for client-side preview -->
+<script id="jobs-data" type="application/json" set:html={JSON.stringify(jobs)}></script>
+<script id="chart-data" type="application/json" set:html={JSON.stringify({ top4: sfSorted.slice(0,4).map(([s]) => s.toLowerCase()) })}></script>

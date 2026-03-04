@@ -1,0 +1,122 @@
+name: Publicar Vaga
+description: Divulgue uma vaga de tecnologia
+title: "[VAGA] "
+labels: [vaga]
+
+body:
+  - type: input
+    id: empresa
+    attributes:
+      label: Empresa
+      placeholder: Ex: Nubank
+
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: Nível
+      options:
+        - Júnior
+        - Pleno
+        - Sênior
+        - Lead
+        - Especialista
+    validations:
+      required: true
+
+
+  - type: dropdown
+    id: nivel
+    attributes:
+      label: Nível
+      options:
+        - Dev
+        - Business
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Remoto
+        - Híbrido
+        - Presencial
+    validations:
+      required: true
+
+  - type: input
+    id: local
+    attributes:
+      label: Localização
+      placeholder: Ex: São Paulo/SP ou Remoto BR
+    validations:
+      required: true
+
+  - type: input
+    id: salario
+    attributes:
+      label: Salário
+      placeholder: Ex: R$ 10k–15k ou A combinar
+
+  - type: input
+    id: stack
+    attributes:
+      label: Stack
+      placeholder: Ex: React, TypeScript, Node.js, Figma, Jira
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição da Vaga
+      description: Responsabilidades, requisitos e benefícios
+      placeholder: |
+        ### Sobre a empresa
+        ...
+
+        ### Responsabilidades
+        - ...
+
+        ### Requisitos
+        - ...
+
+        ### Benefícios
+        - ...
+    validations:
+      required: true
+
+  - type: input
+    id: aplicar
+    attributes:
+      label: Como se candidatar
+      placeholder: Ex: https://empresa.com/vagas ou jobs@empresa.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: linkedin
+    attributes:
+      label: Publicada no LinkedIn?
+      description: Esta vaga está publicada no LinkedIn?
+      options:
+        - "Não"
+        - "Sim"
+
+  - type: dropdown
+    id: internacional
+    attributes:
+      label: Vaga Internacional?
+      description: Vaga aberta para candidatos internacionais ou empresa estrangeira?
+      options:
+        - "Não"
+        - "Sim"
+
+  - type: checkboxes
+    id: confirmacao
+    attributes:
+      label: Confirmação
+      options:
+        - label: Confirmo que esta é uma vaga real e estou autorizado a divulgá-la
+          required: true
