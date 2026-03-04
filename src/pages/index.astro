@@ -273,6 +273,36 @@ const total = jobs.length;
 .sc-arrow { transition: transform 0.2s; }
 .sc-cta:hover .sc-arrow { transform: translateX(4px); }
 
+/* Magic button — loading state */
+.sc-cta.magic {
+  animation: btn-glitch 0.4s steps(1) forwards;
+  pointer-events: none;
+  color: var(--green);
+}
+.sc-cta.magic::before { transform: translateX(0) !important; }
+.sc-cta.magic .sc-label { color: var(--black); }
+.sc-cta.magic .sc-arrow { color: var(--black); }
+
+@keyframes btn-glitch {
+  0%   { transform: none;              filter: none; }
+  15%  { transform: translateX(-3px);  filter: brightness(1.6) hue-rotate(40deg); }
+  30%  { transform: translateX(3px) skewX(2deg); filter: none; }
+  45%  { transform: translateX(-2px);  filter: brightness(2); }
+  60%  { transform: none;              filter: none; }
+}
+
+/* Particles */
+@keyframes particle-fly {
+  0%   { opacity: 1; transform: translate(0,0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--pdx), var(--pdy)) scale(0.2); }
+}
+.magic-particle {
+  position: fixed; pointer-events: none; z-index: 9999;
+  font-family: var(--font, monospace);
+  color: var(--green);
+  animation: particle-fly 0.65s ease-out forwards;
+}
+
 /* Hint */
 .sc-hint {
   font-size: 0.62rem; color: var(--muted);
@@ -458,7 +488,7 @@ function updateLabel() {
   if (el) el.textContent = n > 0 ? `buscar vagas (${n} filtro${n > 1 ? 's' : ''})` : 'buscar vagas';
 }
 
-function go() {
+function buildUrl() {
   const q = inp?.value.trim() ?? '';
   const p = new URLSearchParams();
   if (q)               p.set('q',      q);
@@ -466,7 +496,36 @@ function go() {
   if (sel.nivel.size)  p.set('nivel',  [...sel.nivel].join(','));
   if (sel.modo.size)   p.set('modo',   [...sel.modo].join(','));
   if (sel.extras.size) p.set('extras', [...sel.extras].join(','));
-  window.location.href = '/vagas' + (p.toString() ? '?' + p : '');
+  return '/vagas' + (p.toString() ? '?' + p : '');
+}
+
+function spawnParticles(btn: HTMLElement) {
+  const chars = ['{}', '//', '=>', '<>', '&&', '||', '**', '#!', '[]', '01', ';;', '::'];
+  const rect = btn.getBoundingClientRect();
+  for (let i = 0; i < 28; i++) {
+    const el = document.createElement('span');
+    el.className = 'magic-particle';
+    el.textContent = chars[Math.floor(Math.random() * chars.length)];
+    const sx = rect.left + Math.random() * rect.width;
+    const sy = rect.top  + rect.height * 0.5;
+    const angle = Math.random() * Math.PI * 2;
+    const dist  = 60 + Math.random() * 130;
+    el.style.cssText = `left:${sx}px;top:${sy}px;font-size:${0.45 + Math.random() * 0.45}rem;`
+      + `--pdx:${(Math.cos(angle) * dist).toFixed(1)}px;`
+      + `--pdy:${(Math.sin(angle) * dist - 30).toFixed(1)}px;`
+      + `animation-delay:${(Math.random() * 80).toFixed(0)}ms`;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 800);
+  }
+}
+
+function go() {
+  const btn = document.getElementById('sc-btn') as HTMLElement;
+  btn.classList.add('magic');
+  const label = document.getElementById('sc-label');
+  if (label) label.textContent = '> iniciando busca_';
+  spawnParticles(btn);
+  setTimeout(() => { window.location.href = buildUrl(); }, 650);
 }
 
 document.getElementById('sc-btn')?.addEventListener('click', go);

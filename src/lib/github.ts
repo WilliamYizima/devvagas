@@ -2,15 +2,15 @@
 // ─────────────────────────────────────────────────────────────
 // ⚙️  CONFIGURAÇÃO — troque pelo seu repositório
 // ─────────────────────────────────────────────────────────────
-export const REPO_OWNER = import.meta.env.REPO_OWNER || 'SEU-USUARIO';
-export const REPO_NAME  = import.meta.env.REPO_NAME  || 'SEU-REPO';
+export const REPO_OWNER = import.meta.env.REPO_OWNER || 'WilliamYizima';
+export const REPO_NAME = import.meta.env.REPO_NAME || 'devvagas';
 export const VAGA_LABEL = 'vaga';
 // ─────────────────────────────────────────────────────────────
 
 export interface GitHubIssue {
   number: number;
-  title:  string;
-  body:   string | null;
+  title: string;
+  body: string | null;
   html_url: string;
   created_at: string;
   updated_at: string;
@@ -19,32 +19,32 @@ export interface GitHubIssue {
 }
 
 export interface ParsedJob {
-  id:        number;
-  title:     string;
-  body:      string;
-  url:       string;
+  id: number;
+  title: string;
+  body: string;
+  url: string;
   createdAt: string;
   updatedAt: string;
-  author:    { login: string; avatar: string; url: string };
-  labels:    string[];
-  empresa:   string;
-  nivel:     string;
-  tipo:      string;
-  local:     string;
-  salario:   string;
-  stack:     string[];
+  author: { login: string; avatar: string; url: string };
+  labels: string[];
+  empresa: string;
+  nivel: string;
+  tipo: string;
+  local: string;
+  salario: string;
+  stack: string[];
   descricao: string;
-  aplicar:   string;
-  isRemote:        boolean;
-  isLinkedin:      boolean;
+  aplicar: string;
+  isRemote: boolean;
+  isLinkedin: boolean;
   isInternacional: boolean;
-  slug:            string;
+  slug: string;
 }
 
 function field(body: string, ...keys: string[]): string {
   for (const key of keys) {
     const re = new RegExp(`###\\s*${key}\\s*\\n([^\\n#]+)`, 'i');
-    const m  = body.match(re);
+    const m = body.match(re);
     if (m) return m[1].trim();
   }
   return '';
@@ -52,7 +52,7 @@ function field(body: string, ...keys: string[]): string {
 
 function textareaField(body: string, key: string): string {
   const re = new RegExp(`###\\s*${key}\\s*\\n([\\s\\S]*?)(?=\\n###|$)`, 'i');
-  const m  = body.match(re);
+  const m = body.match(re);
   return m ? m[1].trim() : '';
 }
 
@@ -64,37 +64,37 @@ function toSlug(title: string): string {
 }
 
 export function parseIssue(issue: GitHubIssue): ParsedJob {
-  const body    = issue.body ?? '';
-  const tipo    = field(body, 'Tipo', 'Modelo de Trabalho', 'Regime');
-  const local   = field(body, 'Localização', 'Local', 'Cidade');
-  const stackRaw= field(body, 'Stack', 'Tecnologias', 'Skills');
-  const stack   = stackRaw ? stackRaw.split(/[,;/]/).map(s => s.trim()).filter(Boolean).slice(0, 8) : [];
-  const isRemote        = /remot/i.test(tipo) || /remot/i.test(local) || issue.labels.some(l => /remot/i.test(l.name));
-  const isLinkedin      = /sim/i.test(field(body, 'Publicada no LinkedIn', 'LinkedIn'));
+  const body = issue.body ?? '';
+  const tipo = field(body, 'Tipo', 'Modelo de Trabalho', 'Regime');
+  const local = field(body, 'Localização', 'Local', 'Cidade');
+  const stackRaw = field(body, 'Stack', 'Tecnologias', 'Skills');
+  const stack = stackRaw ? stackRaw.split(/[,;/]/).map(s => s.trim()).filter(Boolean).slice(0, 8) : [];
+  const isRemote = /remot/i.test(tipo) || /remot/i.test(local) || issue.labels.some(l => /remot/i.test(l.name));
+  const isLinkedin = /sim/i.test(field(body, 'Publicada no LinkedIn', 'LinkedIn'));
   const isInternacional = /sim/i.test(field(body, 'Vaga Internacional', 'Internacional'));
   const cleanTitle = issue.title.replace(/^\[VAGA\]\s*/i, '').trim();
 
   return {
-    id:              issue.number,
-    title:           cleanTitle,
+    id: issue.number,
+    title: cleanTitle,
     body,
-    url:             issue.html_url,
-    createdAt:       issue.created_at,
-    updatedAt:       issue.updated_at,
-    author:          { login: issue.user.login, avatar: issue.user.avatar_url, url: issue.user.html_url },
-    labels:          issue.labels.map(l => l.name).filter(n => n !== VAGA_LABEL),
-    empresa:         field(body, 'Empresa'),
-    nivel:           field(body, 'Nível', 'Senioridade'),
+    url: issue.html_url,
+    createdAt: issue.created_at,
+    updatedAt: issue.updated_at,
+    author: { login: issue.user.login, avatar: issue.user.avatar_url, url: issue.user.html_url },
+    labels: issue.labels.map(l => l.name).filter(n => n !== VAGA_LABEL),
+    empresa: field(body, 'Empresa'),
+    nivel: field(body, 'Nível', 'Senioridade'),
     tipo,
     local,
-    salario:         field(body, 'Salário', 'Remuneração', 'Faixa Salarial'),
+    salario: field(body, 'Salário', 'Remuneração', 'Faixa Salarial'),
     stack,
-    descricao:       textareaField(body, 'Descrição da Vaga'),
-    aplicar:         field(body, 'Como se candidatar', 'Aplicar', 'Link'),
+    descricao: textareaField(body, 'Descrição da Vaga'),
+    aplicar: field(body, 'Como se candidatar', 'Aplicar', 'Link'),
     isRemote,
     isLinkedin,
     isInternacional,
-    slug:            toSlug(cleanTitle),
+    slug: toSlug(cleanTitle),
   };
 }
 
