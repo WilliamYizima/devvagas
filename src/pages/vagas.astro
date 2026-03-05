@@ -272,7 +272,6 @@ function timeAgo(d: string) {
           <div class="jp-badges" id="jp-badges"></div>
         </div>
         <div class="jp-actions">
-          <a class="jp-apply-btn" id="jp-apply" href="#">CANDIDATAR →</a>
           <a class="jp-detail-link" id="jp-detail" href="#">ver detalhe completo ↗</a>
         </div>
       </div>
@@ -928,7 +927,6 @@ function showPreview(job: any) {
           ? `<span class="jr-tag">${job.tipo}</span>`
           : '';
 
-  (document.getElementById('jp-apply') as HTMLAnchorElement).href   = applyHref;
   (document.getElementById('jp-detail') as HTMLAnchorElement).href  = `/vaga/${job.id}`;
 
   const stack = document.getElementById('jp-stack')!;
