@@ -129,11 +129,11 @@ function timeAgo(d: string) {
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               )}
-              {job.empresa || job.author.login}
+              {job.empresa || job.author.login}{job.local ? ` (${job.local})` : ''}
             </span>
             <span class="jr-time">{timeAgo(job.createdAt)}</span>
           </div>
-          <div class="jr-title">{job.title}</div>
+          <div class="jr-title">{job.nivel ? `${job.title} (${job.nivel})` : job.title}</div>
           <div class="jr-meta">
             {job.isRemote
               ? <span class="jr-tag remote">remoto</span>
@@ -268,6 +268,7 @@ function timeAgo(d: string) {
         <div class="jp-info">
           <h2 class="jp-title" id="jp-title">—</h2>
           <p class="jp-company" id="jp-company">—</p>
+          <p class="jp-salary-inline" id="jp-salary-inline" style="display:none"></p>
           <div class="jp-badges" id="jp-badges"></div>
         </div>
         <div class="jp-actions">
@@ -275,6 +276,10 @@ function timeAgo(d: string) {
           <a class="jp-detail-link" id="jp-detail" href="#">ver detalhe completo ↗</a>
         </div>
       </div>
+
+      <!-- modelo de trabalho -->
+      <div class="jp-section-label">// modelo de trabalho</div>
+      <div class="jp-vaga" id="jp-modelo"></div>
 
       <!-- stack -->
       <div class="jp-section-label">// stack</div>
@@ -370,16 +375,16 @@ function timeAgo(d: string) {
 .jr-title   { font-size: 0.78rem; color: var(--text); margin-bottom: 0.4rem; line-height: 1.3; font-weight: 500; }
 .jr-meta    { display: flex; align-items: center; gap: 0.3rem; flex-wrap: wrap; }
 
-.jr-tag {
+:global(.jr-tag) {
   font-size: 0.58rem; padding: 0.1rem 0.4rem;
   border: 1px solid var(--border2); color: var(--muted);
   border-radius: 2px;
 }
-.jr-tag.remote    { border-color: rgba(0,255,157,0.3);   color: var(--green); }
-.jr-tag.nivel     { border-color: rgba(0,212,255,0.3);   color: var(--cyan); }
-.jr-tag.hibrido   { border-color: rgba(251,191,36,0.35); color: #fbbf24; }
-.jr-tag.presencial{ border-color: rgba(167,139,250,0.35);color: #a78bfa; }
-.jr-tag.intl      { border-color: rgba(14,165,233,0.35); color: #0ea5e9; }
+:global(.jr-tag.remote)    { border-color: rgba(0,255,157,0.3);   color: var(--green); }
+:global(.jr-tag.nivel)     { border-color: rgba(0,212,255,0.3);   color: var(--cyan); }
+:global(.jr-tag.hibrido)   { border-color: rgba(251,191,36,0.35); color: #fbbf24; }
+:global(.jr-tag.presencial){ border-color: rgba(167,139,250,0.35);color: #a78bfa; }
+:global(.jr-tag.intl)      { border-color: rgba(14,165,233,0.35); color: #0ea5e9; }
 .jr-salary        { margin-left: auto; font-size: 0.6rem; color: var(--green); }
 
 /* ── STACK FILTER ────────────────────────────────────────── */
@@ -573,8 +578,9 @@ function timeAgo(d: string) {
   font-family: var(--display); font-size: 0.85rem; font-weight: 900;
   color: var(--green); flex-shrink: 0;
 }
-.jp-title   { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.25rem; }
-.jp-company { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.6rem; }
+.jp-title         { font-size: 1.1rem; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 0.25rem; }
+.jp-company       { font-size: 0.72rem; color: var(--muted); margin-bottom: 0.25rem; }
+.jp-salary-inline { font-size: 0.78rem; color: var(--green); font-weight: 600; margin-bottom: 0.5rem; letter-spacing: 0.02em; }
 .jp-badges  { display: flex; flex-wrap: wrap; gap: 0.3rem; }
 
 .jp-badge {
@@ -621,17 +627,34 @@ function timeAgo(d: string) {
 }
 .jp-section-label::after { content:''; flex:1; height:1px; background:var(--border); }
 
-.jp-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+.jp-stack { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
 .jp-chip {
-  background: var(--mid);
-  border: 1px solid var(--border2);
-  color: var(--muted2);
   font-family: var(--font);
-  font-size: 0.6rem;
-  padding: 0.25rem 0.6rem;
-  transition: all 0.15s;
+  font-size: 0.63rem;
+  padding: 0.28rem 0.72rem;
+  border: 1px solid var(--border2);
+  border-left-width: 3px;
+  background: var(--mid);
+  color: var(--muted2);
+  letter-spacing: 0.04em;
+  text-transform: lowercase;
+  transition: filter 0.15s;
 }
-.jp-chip:hover { border-color: var(--cyan); color: var(--cyan); background: rgba(0,212,255,0.06); }
+.jp-chip:hover { filter: brightness(1.3); }
+
+.jp-vaga { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.jp-vchip {
+  font-size: 0.68rem; padding: 0.35rem 0.85rem;
+  border: 1px solid var(--border2); border-left-width: 3px;
+  background: var(--mid); color: var(--muted2);
+  font-family: var(--font); letter-spacing: 0.04em;
+  text-transform: lowercase;
+}
+.jp-vchip-nivel     { color: #00d4ff; background: rgba(0,212,255,0.07);   border-color: rgba(0,212,255,0.15);   border-left-color: rgba(0,212,255,0.75); }
+.jp-vchip-remote    { color: #00ff9d; background: rgba(0,255,157,0.07);   border-color: rgba(0,255,157,0.15);   border-left-color: rgba(0,255,157,0.75); }
+.jp-vchip-hibrido   { color: #ffd700; background: rgba(255,215,0,0.07);   border-color: rgba(255,215,0,0.15);   border-left-color: rgba(255,215,0,0.75); }
+.jp-vchip-presencial{ color: #a78bfa; background: rgba(167,139,250,0.07); border-color: rgba(167,139,250,0.15); border-left-color: rgba(167,139,250,0.75); }
+.jp-vchip-salario   { color: #4ade80; background: rgba(74,222,128,0.07);  border-color: rgba(74,222,128,0.15);  border-left-color: rgba(74,222,128,0.75); font-weight: 600; }
 
 .jp-desc {
   font-size: 0.72rem; line-height: 1.85; color: #8aacca;
@@ -821,6 +844,20 @@ function renderDesc(raw: string): string {
     .replace(/^(?!<[hup])(.+)$/gm, '$1');
 }
 
+const STACK_PALETTE = [
+  { color: '#00ff9d', bg: 'rgba(0,255,157,0.07)',  borderDim: 'rgba(0,255,157,0.15)',  borderLeft: 'rgba(0,255,157,0.75)'  },
+  { color: '#00d4ff', bg: 'rgba(0,212,255,0.07)',  borderDim: 'rgba(0,212,255,0.15)',  borderLeft: 'rgba(0,212,255,0.75)'  },
+  { color: '#ffd700', bg: 'rgba(255,215,0,0.07)',  borderDim: 'rgba(255,215,0,0.15)',  borderLeft: 'rgba(255,215,0,0.75)'  },
+  { color: '#a78bfa', bg: 'rgba(167,139,250,0.07)', borderDim: 'rgba(167,139,250,0.15)', borderLeft: 'rgba(167,139,250,0.75)' },
+  { color: '#60a5fa', bg: 'rgba(96,165,250,0.07)', borderDim: 'rgba(96,165,250,0.15)', borderLeft: 'rgba(96,165,250,0.75)' },
+  { color: '#f87171', bg: 'rgba(248,113,113,0.07)', borderDim: 'rgba(248,113,113,0.15)', borderLeft: 'rgba(248,113,113,0.75)' },
+];
+function stackColor(name: string) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffff;
+  return STACK_PALETTE[h % STACK_PALETTE.length];
+}
+
 function showPreview(job: any) {
   const preview = document.getElementById('job-preview')!;
   const welcome = document.getElementById('welcome-state')!;
@@ -836,25 +873,41 @@ function showPreview(job: any) {
   const applyHref = job.aplicar?.startsWith('http') ? job.aplicar : `https://${job.aplicar}`;
 
   document.getElementById('jp-avatar')!.textContent = initials(job.empresa || job.author?.login || '');
-  document.getElementById('jp-title')!.textContent  = job.title;
-  document.getElementById('jp-company')!.textContent= job.empresa || '';
+  document.getElementById('jp-title')!.textContent  = job.nivel ? `${job.title} (${job.nivel})` : job.title;
+  const co = job.empresa || '';
+  document.getElementById('jp-company')!.textContent = job.local ? `${co} (${job.local})` : co;
+
+  const salaryInline = document.getElementById('jp-salary-inline') as HTMLElement;
+  if (job.salario) {
+    salaryInline.textContent = `~ ${job.salario}`;
+    salaryInline.style.display = 'block';
+  } else {
+    salaryInline.style.display = 'none';
+  }
 
   const badges = document.getElementById('jp-badges')!;
-  badges.innerHTML = [
-    job.nivel   && `<span class="jp-badge nivel">${job.nivel}</span>`,
-    job.isRemote
-      ? `<span class="jp-badge remote">Remoto</span>`
-      : job.tipo && `<span class="jp-badge">${job.tipo}</span>`,
-    job.salario && `<span class="jp-badge salary">${job.salario}</span>`,
-    ...(job.labels || []).slice(0,3).map((l: string) => `<span class="jp-badge">${l}</span>`)
-  ].filter(Boolean).join('');
+  badges.innerHTML = (job.labels || []).slice(0,3)
+    .map((l: string) => `<span class="jp-badge">${l}</span>`).join('');
+
+  const modeloEl = document.getElementById('jp-modelo')!;
+  modeloEl.innerHTML = job.isRemote
+    ? `<span class="jr-tag remote">remoto</span>`
+    : /híbrido|hibrido/i.test(job.tipo ?? '')
+      ? `<span class="jr-tag hibrido">híbrido</span>`
+      : /presencial/i.test(job.tipo ?? '')
+        ? `<span class="jr-tag presencial">presencial</span>`
+        : job.tipo
+          ? `<span class="jr-tag">${job.tipo}</span>`
+          : '';
 
   (document.getElementById('jp-apply') as HTMLAnchorElement).href   = applyHref;
   (document.getElementById('jp-detail') as HTMLAnchorElement).href  = `/vaga/${job.id}`;
 
   const stack = document.getElementById('jp-stack')!;
-  stack.innerHTML = (job.stack || []).map((s: string) =>
-    `<span class="jp-chip">${s}</span>`).join('');
+  stack.innerHTML = (job.stack || []).map((s: string) => {
+    const c = stackColor(s);
+    return `<span class="jr-tag" style="border-color:${c.borderLeft};color:${c.color}">${s}</span>`;
+  }).join('');
 
   const desc = document.getElementById('jp-desc')!;
   desc.innerHTML = job.descricao ? renderDesc(job.descricao) : '<p style="color:var(--muted)">Sem descrição — veja a Issue no GitHub.</p>';
