@@ -1,5 +1,38 @@
 [
   {
+    "id": 18,
+    "title": "Arquiteto(a) SAP RISE & Cloud Services - Sênior (Inglês avançado)",
+    "body": "### Empresa\n\nIconIT\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nCENESP/Brasil\n\n### Salário\n\nA combinar\n\n### Stack\n\nSAP S/4HANA, SAP RISE, Cloud Services, Governança de serviços SAP, Auditorias e compliance\n\n### Descrição da Vaga\n\n# Sobre a empresa\nIconIT é uma empresa especializada em tecnologia da informação.\n\n# Responsabilidades\n- Definir, manter e evoluir a arquitetura de sistemas SAP Basis, com foco em SAP S/4HANA e SAP RISE.\n- Atuar como responsável pelo relacionamento operacional com a SAP (serviços, escalonamento de incidentes, governança e follow-ups).\n- Orquestrar atividades SAP com parceiros externos e stakeholders globais.\n- Garantir cumprimento de SLAs e KPIs acordados.\n- Coordenar e gerenciar incidentes críticos e problemas estruturais.\n- Analisar o ambiente SAP e propor melhorias técnicas e estruturais.\n- Implementar e acompanhar medidas de segurança, auditorias e compliance.\n- Monitorar e otimizar performance dos sistemas.\n- Atuar como ponto de ordenação interno e externo nas demandas SAP.\n- Traduzir assuntos técnicos para áreas de negócio, apoiando decisões estratégicas.\n\n# Requisitos\n- Bacharelado em Tecnologia da Informação ou experiência equivalente.\n- Inglês avançado para conversação (obrigatório).\n- Experiência em SAP Rise.\n- Forte atuação em arquitetura SAP.\n- Experiência em ambientes SAP S/4HANA.\n- Vivência com serviços em Cloud.\n- Experiência em gestão de fornecedores e governança de serviços SAP.\n- Conhecimento em segurança SAP, auditorias e compliance.\n- Experiência em ambientes globais e multiculturais.\n\n# Diferenciais\n- Buscamos um(a) profissional sênior, estruturado(a) e organizado(a).\n- Com excelente comunicação e capacidade de transitar entre áreas técnicas e negócio.\n- Proativo(a) e orientado(a) a melhorias contínuas.\n- Analítico(a) e com forte capacidade de resolução de problemas.\n- Com senso de responsabilidade operacional.\n- Colaborativo(a) e confortável em ambientes globais.\n\n# Benefícios\nNão especificados no anúncio.\n\n### Como se candidatar\n\ngiovana.santos@iconit.com.br\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/18",
+    "createdAt": "2026-03-05T18:27:44Z",
+    "updatedAt": "2026-03-05T18:27:44Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "IconIT",
+    "nivel": "Sênior",
+    "tipo": "Híbrido",
+    "local": "CENESP/Brasil",
+    "salario": "A combinar",
+    "stack": [
+      "SAP S",
+      "4HANA",
+      "SAP RISE",
+      "Cloud Services",
+      "Governança de serviços SAP",
+      "Auditorias e compliance"
+    ],
+    "descricao": "# Sobre a empresa\nIconIT é uma empresa especializada em tecnologia da informação.\n\n# Responsabilidades\n- Definir, manter e evoluir a arquitetura de sistemas SAP Basis, com foco em SAP S/4HANA e SAP RISE.\n- Atuar como responsável pelo relacionamento operacional com a SAP (serviços, escalonamento de incidentes, governança e follow-ups).\n- Orquestrar atividades SAP com parceiros externos e stakeholders globais.\n- Garantir cumprimento de SLAs e KPIs acordados.\n- Coordenar e gerenciar incidentes críticos e problemas estruturais.\n- Analisar o ambiente SAP e propor melhorias técnicas e estruturais.\n- Implementar e acompanhar medidas de segurança, auditorias e compliance.\n- Monitorar e otimizar performance dos sistemas.\n- Atuar como ponto de ordenação interno e externo nas demandas SAP.\n- Traduzir assuntos técnicos para áreas de negócio, apoiando decisões estratégicas.\n\n# Requisitos\n- Bacharelado em Tecnologia da Informação ou experiência equivalente.\n- Inglês avançado para conversação (obrigatório).\n- Experiência em SAP Rise.\n- Forte atuação em arquitetura SAP.\n- Experiência em ambientes SAP S/4HANA.\n- Vivência com serviços em Cloud.\n- Experiência em gestão de fornecedores e governança de serviços SAP.\n- Conhecimento em segurança SAP, auditorias e compliance.\n- Experiência em ambientes globais e multiculturais.\n\n# Diferenciais\n- Buscamos um(a) profissional sênior, estruturado(a) e organizado(a).\n- Com excelente comunicação e capacidade de transitar entre áreas técnicas e negócio.\n- Proativo(a) e orientado(a) a melhorias contínuas.\n- Analítico(a) e com forte capacidade de resolução de problemas.\n- Com senso de responsabilidade operacional.\n- Colaborativo(a) e confortável em ambientes globais.\n\n# Benefícios\nNão especificados no anúncio.",
+    "aplicar": "giovana.santos@iconit.com.br",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "arquiteto-a-sap-rise-cloud-services-senior-ingles-avancado"
+  },
+  {
     "id": 17,
     "title": "Desenvolvedor Full Stack Sr",
     "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nVila Olímpia (São Paulo)\n\n### Salário\n\nA combinar\n\n### Stack\n\nNet.Core, React, Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento, Git, CI/CD, Azure, Bancos de dados relacionais\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa indefinida\n\n# Responsabilidades\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Boa vivência como Full Stack: Net.Core no Backend e React no Front end\n- Bons conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Git e CI/CD\n- Atuação em plataformas de nuvem, preferencialmente Azure\n- Bancos de dados relacionais\n\n# Requisitos\n- Experiência com Net.Core no Backend\n- Experiência com React no Front end\n- Conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Conhecimento em Git e CI/CD\n- Atuação híbrida (3 vezes por semana presencial)\n- Disponibilidade para atuar na região da Vila Olímpia (São Paulo)\n\n# Diferenciais\n- CLT + Benefícios\n- Adiantamento dia 15 e Pagamento dia 30\n- VA: R$ 150,00\n- VR: R$ 990,00\n- Assistência Médica e Odontológica: Bradesco sem desconto, com co-participação de até 30% para exames e consultas eletivas\n- Inclusão de dependentes legais arcando com 70% da mensalidade\n- Wellhuby\n- PLR, pagamento passível de resultados e lucros atingidos\n- Seguro de Vida\n- Convênio Sesc e Lincard\n- Auxílio Creche\n- Programa de Vacinação\n\n### Como se candidatar\n\nanapaulagazetta@gmail.com\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
