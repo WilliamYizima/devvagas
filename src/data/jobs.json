@@ -1,39 +1,5 @@
 [
   {
-    "id": 10,
-    "title": "A identificar - Sênior Net.Core - Híbrido",
-    "body": "### Empresa\n\nA identificar\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nCidade/Estado (Vila Olímpia, São Paulo)\n\n### Salário\n\nA combinar\n\n### Stack\n\nNet.Core, React, Git, CI/CD, Azure, Bancos de dados relacionais\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa não identificada.\n\n# Responsabilidades\n- Boa vivência como Full Stack com Net.Core no Backend e React no Front end.\n- Bons conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento.\n- Desenvolvimento de sistemas testáveis e utilização de design patterns.\n- Git e CI/CD.\n- Em plataformas de nuvem, preferencialmente Azure.\n- Bancos de dados relacionais.\n\n# Requisitos\n- Experiência com Net.Core no Backend.\n- Experiência com React no Front end.\n- Conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento.\n- Desenvolvimento de sistemas testáveis e utilização de design patterns.\n- Conhecimento em Git e CI/CD.\n- Experiência com nuvem, preferencialmente Azure.\n- Conhecimentos em Bancos de dados relacionais.\n\n# Diferenciais\n- Atuação híbrida (3 vezes por semana presencial) na região da Vila Olímpia (São Paulo).\n\n# Benefícios\n- CLT + Benefícios.\n- Adiantamento dia 15 e Pagamento dia 30.\n- VA : R$ 150,00.\n- VR : R$ 990,00.\n- Assistência Médica e Odontológica: Bradesco sem desconto, com co-participação de até 30% para exames e consultas eletivas.\n- Inclusão de dependentes legais arcando com 70% da mensalidade.\n- Wellhuby.\n- PLR, pagamento passível de resultados e lucros atingidos.\n- Seguro de Vida.\n- Convenio Sesc e Lincard.\n- Auxílio Creche.\n- Programa de Vacinação.\n\n### Como se candidatar\n\nanapaulagazetta@gmail.com\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
-    "url": "https://github.com/WilliamYizima/devvagas/issues/10",
-    "createdAt": "2026-03-05T15:36:13Z",
-    "updatedAt": "2026-03-05T15:36:13Z",
-    "author": {
-      "login": "phantonRenegate",
-      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
-      "url": "https://github.com/phantonRenegate"
-    },
-    "labels": [],
-    "empresa": "A identificar",
-    "nivel": "Sênior",
-    "tipo": "Híbrido",
-    "local": "Cidade/Estado (Vila Olímpia, São Paulo)",
-    "salario": "A combinar",
-    "stack": [
-      "Net.Core",
-      "React",
-      "Git",
-      "CI",
-      "CD",
-      "Azure",
-      "Bancos de dados relacionais"
-    ],
-    "descricao": "# Sobre a empresa\nEmpresa não identificada.\n\n# Responsabilidades\n- Boa vivência como Full Stack com Net.Core no Backend e React no Front end.\n- Bons conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento.\n- Desenvolvimento de sistemas testáveis e utilização de design patterns.\n- Git e CI/CD.\n- Em plataformas de nuvem, preferencialmente Azure.\n- Bancos de dados relacionais.\n\n# Requisitos\n- Experiência com Net.Core no Backend.\n- Experiência com React no Front end.\n- Conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento.\n- Desenvolvimento de sistemas testáveis e utilização de design patterns.\n- Conhecimento em Git e CI/CD.\n- Experiência com nuvem, preferencialmente Azure.\n- Conhecimentos em Bancos de dados relacionais.\n\n# Diferenciais\n- Atuação híbrida (3 vezes por semana presencial) na região da Vila Olímpia (São Paulo).\n\n# Benefícios\n- CLT + Benefícios.\n- Adiantamento dia 15 e Pagamento dia 30.\n- VA : R$ 150,00.\n- VR : R$ 990,00.\n- Assistência Médica e Odontológica: Bradesco sem desconto, com co-participação de até 30% para exames e consultas eletivas.\n- Inclusão de dependentes legais arcando com 70% da mensalidade.\n- Wellhuby.\n- PLR, pagamento passível de resultados e lucros atingidos.\n- Seguro de Vida.\n- Convenio Sesc e Lincard.\n- Auxílio Creche.\n- Programa de Vacinação.",
-    "aplicar": "anapaulagazetta@gmail.com",
-    "isRemote": false,
-    "isLinkedin": false,
-    "isInternacional": false,
-    "slug": "a-identificar-senior-net-core-hibrido"
-  },
-  {
     "id": 3,
     "title": "Vaga teste",
     "body": "### Empresa\n\nDevVagas\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nSão Paulo\n\n### Salário\n\nR$ 10 K\n\n### Stack\n\nReact, Nodejs, Python, Golang\n\n### Descrição da Vaga\n\nSobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais\n\n### Como se candidatar\n\nhttps://dev-vagas.netlify.app/ajuda/\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
