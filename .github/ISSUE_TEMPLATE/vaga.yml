@@ -96,6 +96,12 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: link-vaga
+    attributes:
+      label: Link para se candidatar
+      placeholder: "Ex: https://empresa.com/vagas ou jobs@empresa.com"
+
   - type: dropdown
     id: linkedin
     attributes:

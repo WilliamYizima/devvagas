@@ -33,6 +33,7 @@ jobs:
         env:
           REPO_OWNER: ${{ github.repository_owner }}
           REPO_NAME: ${{ github.event.repository.name }}
+          ENABLE_AJUDA: false
 
       - uses: actions/upload-pages-artifact@v3
         with:

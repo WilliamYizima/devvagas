@@ -63,20 +63,22 @@ const {
   </a>
 
   <!-- Ajuda -->
-  <a href={`${import.meta.env.BASE_URL}ajuda`} class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <circle cx="12" cy="12" r="10"/>
-      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
-    </svg>
-    <div class="ab-tooltip">Ajuda</div>
-  </a>
+  {import.meta.env.ENABLE_AJUDA === 'true' && (
+    <a href={`${import.meta.env.BASE_URL}ajuda`} class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <circle cx="12" cy="12" r="10"/>
+        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
+      </svg>
+      <div class="ab-tooltip">Ajuda</div>
+    </a>
+  )}
 
   <!-- Fale Comigo -->
   <a href={`${import.meta.env.BASE_URL}contato`} class={`ab-icon ${activeSection === 'contato' ? 'active' : ''}`} data-section="contato">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
     </svg>
-    <div class="ab-tooltip">Fale Comigo</div>
+    <div class="ab-tooltip">Sobre</div>
   </a>
 
   <!-- GitHub link (bottom) -->

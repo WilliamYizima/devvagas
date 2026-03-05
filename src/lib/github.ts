@@ -35,6 +35,7 @@ export interface ParsedJob {
   stack: string[];
   descricao: string;
   aplicar: string;
+  linkVaga: string;
   isRemote: boolean;
   isLinkedin: boolean;
   isInternacional: boolean;
@@ -91,6 +92,7 @@ export function parseIssue(issue: GitHubIssue): ParsedJob {
     stack,
     descricao: textareaField(body, 'Descrição da Vaga'),
     aplicar: field(body, 'Como se candidatar', 'Aplicar', 'Link'),
+    linkVaga: field(body, 'Link para se candidatar'),
     isRemote,
     isLinkedin,
     isInternacional,
@@ -103,7 +105,7 @@ export function parseIssue(issue: GitHubIssue): ParsedJob {
 import jobsData from '../data/jobs.json';
 
 export async function fetchJobs(): Promise<ParsedJob[]> {
-  const jobs = jobsData as ParsedJob[];
+  const jobs = jobsData as unknown as ParsedJob[];
 
   // Use the pre-generated JSON when available.
   if (jobs.length > 0) return jobs;
@@ -131,7 +133,7 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'R$ 18k–26k',
     stack: ['React', 'TypeScript', 'GraphQL', 'Storybook', 'Jest'],
     descricao: `### Sobre a empresa\nO Nubank é uma das maiores fintechs do mundo, com mais de 100 milhões de clientes na América Latina.\n\n### Responsabilidades\n- Construir e evoluir a design system\n- Colaborar com designers e PMs\n- Code reviews e mentoria\n\n### Requisitos\n- 5+ anos com React\n- TypeScript avançado\n- GraphQL (Apollo)\n\n### Benefícios\n- Stock options\n- Home office 100%\n- R$ 6k/ano em educação`,
-    aplicar: 'https://nubank.com.br/carreiras', isRemote: true, isLinkedin: false, isInternacional: false,
+    aplicar: 'https://nubank.com.br/carreiras', linkVaga: '', isRemote: true, isLinkedin: false, isInternacional: false,
   },
   {
     id: 2, slug: 'backend-engineer-nodejs',
@@ -143,7 +145,7 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'R$ 12k–18k',
     stack: ['Node.js', 'AWS', 'PostgreSQL', 'Kafka', 'Docker'],
     descricao: `### Sobre a empresa\nA maior plataforma de delivery do Brasil.\n\n### Responsabilidades\n- Desenvolver APIs de alta disponibilidade\n- Integrar com sistemas de pagamento\n- Monitoramento e observabilidade\n\n### Requisitos\n- 3+ anos com Node.js\n- AWS (Lambda, SQS, RDS)\n- Bancos relacionais`,
-    aplicar: 'https://carreiras.ifood.com.br', isRemote: false, isLinkedin: true, isInternacional: false,
+    aplicar: 'https://carreiras.ifood.com.br', linkVaga: '', isRemote: false, isLinkedin: true, isInternacional: false,
   },
   {
     id: 3, slug: 'fullstack-developer-nextjs-go',
@@ -155,7 +157,7 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'R$ 16k–22k',
     stack: ['Next.js', 'Go', 'Redis', 'Docker', 'k8s'],
     descricao: `### Sobre a empresa\nInfraestrutura de pagamentos para o futuro.\n\n### Responsabilidades\n- APIs de pagamento em Go\n- Dashboard em Next.js\n- Performance e segurança\n\n### Requisitos\n- Go ou Rust em produção\n- Next.js / React\n- Sistemas distribuídos`,
-    aplicar: 'mailto:jobs@pagar.me', isRemote: true, isLinkedin: false, isInternacional: true,
+    aplicar: 'mailto:jobs@pagar.me', linkVaga: '', isRemote: true, isLinkedin: false, isInternacional: true,
   },
   {
     id: 4, slug: 'mobile-engineer-react-native',
@@ -167,7 +169,7 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'USD 3k–4.5k',
     stack: ['React Native', 'TypeScript', 'Jest', 'Detox'],
     descricao: `### Sobre a empresa\nO maior marketplace da América Latina.\n\n### Responsabilidades\n- App iOS e Android\n- Performance em dispositivos low-end\n- CI/CD mobile\n\n### Requisitos\n- React Native em produção\n- TypeScript\n- Testes E2E (Detox)`,
-    aplicar: 'https://jobs.mercadolivre.com', isRemote: true, isLinkedin: true, isInternacional: true,
+    aplicar: 'https://jobs.mercadolivre.com', linkVaga: '', isRemote: true, isLinkedin: true, isInternacional: true,
   },
   {
     id: 5, slug: 'devops-sre-engineer',
@@ -179,7 +181,7 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'R$ 20k–30k',
     stack: ['Kubernetes', 'Terraform', 'GCP', 'Prometheus', 'Grafana'],
     descricao: `### Sobre a empresa\nPlataforma de pagamentos para o comércio brasileiro.\n\n### Responsabilidades\n- Infraestrutura como código\n- SLOs e incident response\n- Kubernetes multi-cluster\n\n### Requisitos\n- k8s em produção\n- Terraform\n- Observabilidade`,
-    aplicar: 'https://stone.com.br/carreiras', isRemote: true, isLinkedin: false, isInternacional: false,
+    aplicar: 'https://stone.com.br/carreiras', linkVaga: '', isRemote: true, isLinkedin: false, isInternacional: false,
   },
   {
     id: 6, slug: 'data-engineer-python',
@@ -191,6 +193,6 @@ export const MOCK_JOBS: ParsedJob[] = [
     salario: 'R$ 7k–11k',
     stack: ['Python', 'Apache Spark', 'Airflow', 'BigQuery', 'dbt'],
     descricao: `### Sobre a empresa\nO maior marketplace de imóveis do Brasil.\n\n### Responsabilidades\n- Pipelines de dados\n- Data quality\n- Dashboards analíticos\n\n### Requisitos\n- Python\n- SQL avançado\n- Conceitos de data warehouse`,
-    aplicar: 'https://loft.com.br/carreiras', isRemote: true, isLinkedin: false, isInternacional: false,
+    aplicar: 'https://loft.com.br/carreiras', linkVaga: '', isRemote: true, isLinkedin: false, isInternacional: false,
   },
 ];

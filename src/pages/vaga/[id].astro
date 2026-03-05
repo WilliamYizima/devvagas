@@ -222,6 +222,16 @@ function parseDesc(raw: string): string {
             >⎘ copiar</button>
           </div>
         )}
+        {job.linkVaga && (
+          <div class="apply-copy-row" style="margin-top:0.4rem">
+            <span class="apply-copy-val">{job.linkVaga}</span>
+            <button
+              class="copy-btn"
+              data-copy={job.linkVaga}
+              onclick="(function(btn){navigator.clipboard.writeText(btn.dataset.copy).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⎘ copiar';btn.classList.remove('copied')},1500)})})(this)"
+            >⎘ copiar</button>
+          </div>
+        )}
         <div class="apply-sub">
           ou <a href={issueUrl} target="_blank" rel="noopener">ver Issue →</a>
         </div>
