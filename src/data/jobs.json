@@ -1,33 +1,37 @@
 [
   {
-    "id": 3,
-    "title": "Vaga teste",
-    "body": "### Empresa\n\nDevVagas\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nSão Paulo\n\n### Salário\n\nR$ 10 K\n\n### Stack\n\nReact, Nodejs, Python, Golang\n\n### Descrição da Vaga\n\nSobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais\n\n### Como se candidatar\n\nhttps://dev-vagas.netlify.app/ajuda/\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
-    "url": "https://github.com/WilliamYizima/devvagas/issues/3",
-    "createdAt": "2026-03-04T17:55:32Z",
-    "updatedAt": "2026-03-05T13:04:04Z",
+    "id": 16,
+    "title": "Desenvolvedor Frontend Pleno",
+    "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nJundiaí/SP\n\n### Salário\n\nA combinar\n\n### Stack\n\nFlutter, JavaScript, TypeScript, HTML5, CSS3, React, Next.js, APIs REST e GraphQL, PostgreSQL, Firestore, MongoDB, Git, Testes unitários e de interface\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa indefinida busca um profissional para atuar em uma posição de Desenvolvedor Frontend Pleno.\n\n# Responsabilidades\n- Desenvolvimento de aplicativos web e mobile usando Flutter.\n- Implementação de funcionalidades front-end utilizando JavaScript, TypeScript, HTML5 e CSS3.\n- Integração com APIs REST e GraphQL.\n- Consultas e leitura de dados em bancos de dados PostgreSQL e NoSQL (Firestore, MongoDB).\n- Controle de versão com Git.\n- Realização de testes unitários e de interface.\n\n# Requisitos\n- Experiência plena como Desenvolvedor Frontend.\n- Conhecimento avançado em Flutter para web e mobile.\n- Domínio em JavaScript e TypeScript.\n- Familiaridade com HTML5, CSS3.\n- Experiência com React e Next.js.\n- Conhecimento de APIs REST e GraphQL.\n- Noções sobre PostgreSQL (consultas, leitura de dados) e bancos NoSQL (Firestore, MongoDB).\n- Habilidade em controle de versão com Git.\n\n# Diferenciais\n- Experiência com testes unitários e de interface.\n\n# Benefícios\nNão especificados.\n\n### Como se candidatar\n\ngislaine_brito@yahoo.com\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/16",
+    "createdAt": "2026-03-05T16:34:43Z",
+    "updatedAt": "2026-03-05T16:34:43Z",
     "author": {
-      "login": "WilliamYizima",
-      "avatar": "https://avatars.githubusercontent.com/u/39131639?v=4",
-      "url": "https://github.com/WilliamYizima"
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
     },
     "labels": [],
-    "empresa": "DevVagas",
-    "nivel": "Sênior",
-    "tipo": "Remoto",
-    "local": "São Paulo",
-    "salario": "R$ 10 K",
+    "empresa": "Empresa indefinida",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "Jundiaí/SP",
+    "salario": "A combinar",
     "stack": [
+      "Flutter",
+      "JavaScript",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
       "React",
-      "Nodejs",
-      "Python",
-      "Golang"
+      "Next.js",
+      "APIs REST e GraphQL"
     ],
-    "descricao": "### Sobre a empresa\n- A maior plataforma de delivery do Brasil.\n### Responsabilidades\n- Desenvolver APIs de alta disponibilidade\n- Integrar com sistemas de pagamento\n- Monitoramento e observabilidade\n### Requisitos\n- 3+ anos com Node.js\n- AWS (Lambda, SQS, RDS)\n- Bancos relacionais",
-    "aplicar": "https://dev-vagas.netlify.app/ajuda/",
-    "isRemote": true,
+    "descricao": "# Sobre a empresa\nEmpresa indefinida busca um profissional para atuar em uma posição de Desenvolvedor Frontend Pleno.\n\n# Responsabilidades\n- Desenvolvimento de aplicativos web e mobile usando Flutter.\n- Implementação de funcionalidades front-end utilizando JavaScript, TypeScript, HTML5 e CSS3.\n- Integração com APIs REST e GraphQL.\n- Consultas e leitura de dados em bancos de dados PostgreSQL e NoSQL (Firestore, MongoDB).\n- Controle de versão com Git.\n- Realização de testes unitários e de interface.\n\n# Requisitos\n- Experiência plena como Desenvolvedor Frontend.\n- Conhecimento avançado em Flutter para web e mobile.\n- Domínio em JavaScript e TypeScript.\n- Familiaridade com HTML5, CSS3.\n- Experiência com React e Next.js.\n- Conhecimento de APIs REST e GraphQL.\n- Noções sobre PostgreSQL (consultas, leitura de dados) e bancos NoSQL (Firestore, MongoDB).\n- Habilidade em controle de versão com Git.\n\n# Diferenciais\n- Experiência com testes unitários e de interface.\n\n# Benefícios\nNão especificados.",
+    "aplicar": "gislaine_brito@yahoo.com",
+    "isRemote": false,
     "isLinkedin": false,
     "isInternacional": false,
-    "slug": "vaga-teste"
+    "slug": "desenvolvedor-frontend-pleno"
   }
 ]
