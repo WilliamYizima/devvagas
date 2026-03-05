@@ -3,9 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
-  workflow_run:
-    workflows: ["Sync Jobs"]
-    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -19,8 +16,6 @@ concurrency:
 
 jobs:
   build:
-    # Se for workflow_run, só roda se o Sync Jobs deu sucesso.
-    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
