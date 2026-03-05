@@ -15,6 +15,7 @@ body:
     attributes:
       label: Nível
       options:
+        - Indefinido
         - Júnior
         - Pleno
         - Sênior
@@ -41,6 +42,7 @@ body:
         - Remoto
         - Híbrido
         - Presencial
+        - Indefinido
     validations:
       required: true
 
