@@ -1,5 +1,40 @@
 [
   {
+    "id": 38,
+    "title": "Desenvolvedor SAP Basis Pleno",
+    "body": "### Empresa\n\nHRin\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nSAP Basis, SAP HANA, Azure, AWS, GCP, STMS, SM37, ST22, SM21\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Suporte técnico a landscapes SAP (S/4HANA / ECC)\n- Análise e resolução de incidentes críticos\n- Otimização de performance (Application + DB + Infraestrutura)\n- Atuação em ambientes RISE with SAP e cenários híbridos\n- Interação com times de infraestrutura, cloud e segurança\n- Participação em projetos técnicos e melhorias contínuas\n\n# Requisitos\n- Espanhol avançado (imprescindível para reuniões e interação LATAM)\n- Experiência como SAP Basis (mínimo 3 anos) em ambientes produtivos\n- Sustentação L2/L3 de ambientes SAP (S/4HANA e/ou ECC)\n- Administração de SAP HANA (backup/restore, performance, troubleshooting)\n- Vivência com ambientes Cloud (Azure, AWS ou GCP) para workloads SAP\n- Experiência com migrações, upgrades, patching e análise de performance\n- Conhecimento de monitoramento e troubleshooting (STMS, SM37, ST22, SM21, etc.)\n\n# Diferenciais\n- Experiência com RISE with SAP\n- Certificação SAP ou Cloud\n- Experiência com automação / scripts\n- Vivência em ambientes multinacionais\n\n### Como se candidatar\n\nalejandra.helen@hrin.com.br, 11 93706-2336\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nSim\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/38",
+    "createdAt": "2026-03-05T20:46:04Z",
+    "updatedAt": "2026-03-05T20:46:04Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "HRin",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "A combinar",
+    "stack": [
+      "SAP Basis",
+      "SAP HANA",
+      "Azure",
+      "AWS",
+      "GCP",
+      "STMS",
+      "SM37",
+      "ST22"
+    ],
+    "descricao": "# Responsabilidades\n- Suporte técnico a landscapes SAP (S/4HANA / ECC)\n- Análise e resolução de incidentes críticos\n- Otimização de performance (Application + DB + Infraestrutura)\n- Atuação em ambientes RISE with SAP e cenários híbridos\n- Interação com times de infraestrutura, cloud e segurança\n- Participação em projetos técnicos e melhorias contínuas\n\n# Requisitos\n- Espanhol avançado (imprescindível para reuniões e interação LATAM)\n- Experiência como SAP Basis (mínimo 3 anos) em ambientes produtivos\n- Sustentação L2/L3 de ambientes SAP (S/4HANA e/ou ECC)\n- Administração de SAP HANA (backup/restore, performance, troubleshooting)\n- Vivência com ambientes Cloud (Azure, AWS ou GCP) para workloads SAP\n- Experiência com migrações, upgrades, patching e análise de performance\n- Conhecimento de monitoramento e troubleshooting (STMS, SM37, ST22, SM21, etc.)\n\n# Diferenciais\n- Experiência com RISE with SAP\n- Certificação SAP ou Cloud\n- Experiência com automação / scripts\n- Vivência em ambientes multinacionais",
+    "aplicar": "alejandra.helen@hrin.com.br, 11 93706-2336",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-sap-basis-pleno"
+  },
+  {
     "id": 37,
     "title": "OPORTUNIDADE 200DEV !",
     "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nOracle, SQL, RAC, DataGuard, GoldenGate, RAT, Exadata, Exalytics, AWR, Traces, SPA, Sharding, ReplicaSets, Ops Manager, SQL Server, MySQL, PostgreSQL, Linux, Microsoft\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Administrar e sustentar ambientes complexos de bancos de dados relacionais e não-relacionais.\n- Garantir a performance e a integridade de dados através de monitoramento e tuning constante.\n- Gerenciar replicação de dados em tempo real e infraestruturas de hardware dedicado (Exadata).\n- Atuar na resolução de problemas complexos envolvendo diferentes sistemas operacionais e plataformas.\n\n# Requisitos\n- Expertise Oracle & SQL: Sólida vivência como DBA Oracle e domínio avançado de SQL.\n- Alta Disponibilidade e Resiliência: Domínio técnico comprovado em RAC, DataGuard, GoldenGate e RAT (Real Application Testing).\n- Infraestrutura de Elite: Vivência prática na administração de ambientes Oracle Exadata e Exalytics.\n- Performance Tuning Avançado: Experiência em otimização de performance utilizando AWR, Traces, SPA e análise profunda de planos de execução.\n- Arquiteturas NoSQL: Experiência real em ambientes NoSQL, incluindo instalação, Sharding, ReplicaSets e Ops Manager.\n- Ecossistema Multibanco: Experiência prática com SQL Server, MySQL e PostgreSQL.\n- Sistemas Operacionais: Conhecimento técnico em ambientes Linux e Microsoft.\n\n### Como se candidatar\n\nmarisa.cardilli@200dev.com\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
