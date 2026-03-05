@@ -1,11 +1,11 @@
 [
   {
     "id": 16,
-    "title": "Desenvolvedor Frontend Pleno",
+    "title": "Desenvolvedor Frontends",
     "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nJundiaí/SP\n\n### Salário\n\nA combinar\n\n### Stack\n\nFlutter, JavaScript, TypeScript, HTML5, CSS3, React, Next.js, APIs REST e GraphQL, PostgreSQL, Firestore, MongoDB, Git, Testes unitários e de interface\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa indefinida busca um profissional para atuar em uma posição de Desenvolvedor Frontend Pleno.\n\n# Responsabilidades\n- Desenvolvimento de aplicativos web e mobile usando Flutter.\n- Implementação de funcionalidades front-end utilizando JavaScript, TypeScript, HTML5 e CSS3.\n- Integração com APIs REST e GraphQL.\n- Consultas e leitura de dados em bancos de dados PostgreSQL e NoSQL (Firestore, MongoDB).\n- Controle de versão com Git.\n- Realização de testes unitários e de interface.\n\n# Requisitos\n- Experiência plena como Desenvolvedor Frontend.\n- Conhecimento avançado em Flutter para web e mobile.\n- Domínio em JavaScript e TypeScript.\n- Familiaridade com HTML5, CSS3.\n- Experiência com React e Next.js.\n- Conhecimento de APIs REST e GraphQL.\n- Noções sobre PostgreSQL (consultas, leitura de dados) e bancos NoSQL (Firestore, MongoDB).\n- Habilidade em controle de versão com Git.\n\n# Diferenciais\n- Experiência com testes unitários e de interface.\n\n# Benefícios\nNão especificados.\n\n### Como se candidatar\n\ngislaine_brito@yahoo.com\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
     "url": "https://github.com/WilliamYizima/devvagas/issues/16",
     "createdAt": "2026-03-05T16:34:43Z",
-    "updatedAt": "2026-03-05T16:34:43Z",
+    "updatedAt": "2026-03-05T17:59:45Z",
     "author": {
       "login": "phantonRenegate",
       "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
@@ -32,6 +32,6 @@
     "isRemote": false,
     "isLinkedin": false,
     "isInternacional": false,
-    "slug": "desenvolvedor-frontend-pleno"
+    "slug": "desenvolvedor-frontends"
   }
 ]
