@@ -1,31 +1,5 @@
 [
   {
-    "id": 9,
-    "title": "A identificar - Sênior Net.Core - Híbrido",
-    "body": "## Empresa\nA identificar\n\n## Nível\nSênior\n\n## Área\nDev\n\n## Tipo\nHíbrido\n\n## Localização\nVila Olímpia, São Paulo\n\n## Salário\nR$ 150 - R$ 990 + benefícios\n\n## Stack\nNet.Core, React, Programação Orientada a Objetos (OOP), SOLID, Git, CI/CD, Azure, Bancos de dados relacionais\n\n## Descrição da Vaga\nDesenvolvedor Full Stack Sr\\nBoa vivencia como Full Stack : Net.Core no Backend e React no Front end\\nBons conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\\nDesenvolvimento de sistemas testáveis e utilização de design patterns\\nGit e CI/CD\\nEm plataformas de nuvem, preferencialmente Azure\\nBancos de dados relacionais\\nAtuação híbrida (3 vezes por semana presencial) na região da Vila Olímpia (São Paulo)\\nCLT + Beneficios\\nAdiantamento dia 15 e Pagamento dia 30\\nVA : 150,00\\nVR : 990,00\\nMas pode flexibilizar como quiser\\nAssistencia Medica e Odontologica : Bradesco sem desconto , com co participação de ate 30% para exames e consultas eletivas\\nInclusao de dependentes legais arcando com 70% da mensalidade\n\n## Como se candidatar\nanapaulagazetta@gmail.com\n\n## Publicada no LinkedIn?\nNão\n\n## Vaga Internacional?\nNão\n\n---\n_Issue criada automaticamente pelo [boro-talent-aquisition-worker](https://github.com/WilliamYizima/boro-talent-aquisition-worker)_",
-    "url": "https://github.com/WilliamYizima/devvagas/issues/9",
-    "createdAt": "2026-03-05T15:15:17Z",
-    "updatedAt": "2026-03-05T15:15:17Z",
-    "author": {
-      "login": "phantonRenegate",
-      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
-      "url": "https://github.com/phantonRenegate"
-    },
-    "labels": [],
-    "empresa": "",
-    "nivel": "",
-    "tipo": "",
-    "local": "",
-    "salario": "",
-    "stack": [],
-    "descricao": "",
-    "aplicar": "",
-    "isRemote": false,
-    "isLinkedin": false,
-    "isInternacional": false,
-    "slug": "a-identificar-senior-net-core-hibrido"
-  },
-  {
     "id": 3,
     "title": "Vaga teste",
     "body": "### Empresa\n\nDevVagas\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nSão Paulo\n\n### Salário\n\nR$ 10 K\n\n### Stack\n\nReact, Nodejs, Python, Golang\n\n### Descrição da Vaga\n\nSobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais\n\n### Como se candidatar\n\nhttps://dev-vagas.netlify.app/ajuda/\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
