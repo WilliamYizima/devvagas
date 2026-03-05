@@ -1,40 +1,5 @@
 [
   {
-    "id": 13,
-    "title": "Desenvolvedor Full Stack Sr",
-    "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nVila Olímpia, São Paulo\n\n### Salário\n\nA combinar\n\n### Stack\n\nNet.Core, React, Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento, Git, CI/CD, Bancos de dados relacionais, Azure\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa indefinida busca um profissional para atuar como Desenvolvedor Full Stack Sr.\n\n# Responsabilidades\n- Vivência com desenvolvimento backend em .Net Core\n- Experiência com desenvolvimento frontend em React\n- Conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Utilização de Git e CI/CD\n- Atuação com plataformas de nuvem, preferencialmente Azure\n- Experiência com bancos de dados relacionais\n\n# Requisitos\n- Experiência em desenvolvimento full stack\n- Boa vivência com .Net Core no backend e React no frontend\n- Conhecimentos avançados em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Experiência com Git e CI/CD\n- Familiaridade com plataformas de nuvem, preferencialmente Azure\n- Conhecimentos em bancos de dados relacionais\n\n# Diferenciais\n- Disponibilidade para atuar híbrida (3 vezes por semana presencial)\n- Localização na região da Vila Olímpia, São Paulo\n\n# Benefícios\n- CLT + Benefícios\n- Adiantamento dia 15 e Pagamento dia 30\n- VA: R$ 150,00\n- VR: R$ 990,00 (flexível)\n- Assistência Médica e Odontológica: Bradesco sem desconto, com co-participação de até 30% para exames e consultas eletivas\n- Inclusão de dependentes legais arcando com 70% da mensalidade\n- Wellhuby\n- PLR, pagamento passível de resultados e lucros atingidos\n- Seguro de Vida\n- Convênio Sesc e Lincard\n- Auxílio Creche\n- Programa de Vacinação\n\n### Como se candidatar\n\nanapaulagazetta@gmail.com\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
-    "url": "https://github.com/WilliamYizima/devvagas/issues/13",
-    "createdAt": "2026-03-05T15:53:38Z",
-    "updatedAt": "2026-03-05T15:53:38Z",
-    "author": {
-      "login": "phantonRenegate",
-      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
-      "url": "https://github.com/phantonRenegate"
-    },
-    "labels": [],
-    "empresa": "Empresa indefinida",
-    "nivel": "Sênior",
-    "tipo": "Híbrido",
-    "local": "Vila Olímpia, São Paulo",
-    "salario": "A combinar",
-    "stack": [
-      "Net.Core",
-      "React",
-      "Programação Orientada a Objetos (OOP)",
-      "princípios SOLID",
-      "coesão e acoplamento",
-      "Git",
-      "CI",
-      "CD"
-    ],
-    "descricao": "# Sobre a empresa\nEmpresa indefinida busca um profissional para atuar como Desenvolvedor Full Stack Sr.\n\n# Responsabilidades\n- Vivência com desenvolvimento backend em .Net Core\n- Experiência com desenvolvimento frontend em React\n- Conhecimentos em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Utilização de Git e CI/CD\n- Atuação com plataformas de nuvem, preferencialmente Azure\n- Experiência com bancos de dados relacionais\n\n# Requisitos\n- Experiência em desenvolvimento full stack\n- Boa vivência com .Net Core no backend e React no frontend\n- Conhecimentos avançados em Programação Orientada a Objetos (OOP), princípios SOLID, coesão e acoplamento\n- Desenvolvimento de sistemas testáveis e utilização de design patterns\n- Experiência com Git e CI/CD\n- Familiaridade com plataformas de nuvem, preferencialmente Azure\n- Conhecimentos em bancos de dados relacionais\n\n# Diferenciais\n- Disponibilidade para atuar híbrida (3 vezes por semana presencial)\n- Localização na região da Vila Olímpia, São Paulo\n\n# Benefícios\n- CLT + Benefícios\n- Adiantamento dia 15 e Pagamento dia 30\n- VA: R$ 150,00\n- VR: R$ 990,00 (flexível)\n- Assistência Médica e Odontológica: Bradesco sem desconto, com co-participação de até 30% para exames e consultas eletivas\n- Inclusão de dependentes legais arcando com 70% da mensalidade\n- Wellhuby\n- PLR, pagamento passível de resultados e lucros atingidos\n- Seguro de Vida\n- Convênio Sesc e Lincard\n- Auxílio Creche\n- Programa de Vacinação",
-    "aplicar": "anapaulagazetta@gmail.com",
-    "isRemote": false,
-    "isLinkedin": false,
-    "isInternacional": false,
-    "slug": "desenvolvedor-full-stack-sr"
-  },
-  {
     "id": 3,
     "title": "Vaga teste",
     "body": "### Empresa\n\nDevVagas\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nSão Paulo\n\n### Salário\n\nR$ 10 K\n\n### Stack\n\nReact, Nodejs, Python, Golang\n\n### Descrição da Vaga\n\nSobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais\n\n### Como se candidatar\n\nhttps://dev-vagas.netlify.app/ajuda/\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
