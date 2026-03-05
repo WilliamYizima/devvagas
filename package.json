@@ -1,5 +1,6 @@
 {
   "name": "vagas-astro",
+  "author": "William Yizima",
   "type": "module",
   "version": "2.0.0",
   "scripts": {

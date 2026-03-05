@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import pkg from '../../package.json';
 
 export interface Props {
   title?: string;
@@ -107,6 +108,7 @@ const {
     <div class="sb-item" id="sb-lang">TypeScript</div>
     <div class="sb-item">UTF-8</div>
     <div class="sb-item" id="sb-extra">{breadcrumb}</div>
+    <a href="https://blog.whatwill.tech/about/" target="_blank" rel="noopener" class="sb-item" style="text-decoration:none">⚡ <span style="color:#9d00ff">{pkg.author}</span></a>
   </div>
 </footer>
 
