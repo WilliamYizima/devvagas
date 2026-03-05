@@ -113,7 +113,7 @@ function timeAgo(d: string) {
     <div class="job-rows" id="job-rows">
       {jobs.map((job, i) => (
         <a
-          href={`/vaga/${job.id}`}
+          href={`${import.meta.env.BASE_URL}vaga/${job.id}`}
           class="job-row"
           data-id={job.id}
           data-search={`${job.title} ${job.empresa} ${job.stack.join(' ')} ${job.labels.join(' ')} ${job.nivel} ${job.tipo}`.toLowerCase()}
@@ -1005,7 +1005,7 @@ document.addEventListener('keydown', e => {
     prev?.click();
     prev?.scrollIntoView({ block: 'nearest' });
   } else if (e.key === 'Enter' && selectedId) {
-    window.location.href = `/vaga/${selectedId}`;
+    window.location.href = `${import.meta.env.BASE_URL}vaga/${selectedId}`;
   }
 });
 </script>

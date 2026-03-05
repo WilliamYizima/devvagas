@@ -93,7 +93,7 @@ const total = jobs.length;
     </button>
 
     <p class="sc-hint">
-      <a href="/vagas">{total} {total === 1 ? 'vaga aberta' : 'vagas abertas'} → ver todas</a>
+      <a href={`${import.meta.env.BASE_URL}vagas`}>{total} {total === 1 ? 'vaga aberta' : 'vagas abertas'} → ver todas</a>
     </p>
 
   </div>
@@ -496,7 +496,8 @@ function buildUrl() {
   if (sel.nivel.size)  p.set('nivel',  [...sel.nivel].join(','));
   if (sel.modo.size)   p.set('modo',   [...sel.modo].join(','));
   if (sel.extras.size) p.set('extras', [...sel.extras].join(','));
-  return '/vagas' + (p.toString() ? '?' + p : '');
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  return base + '/vagas' + (p.toString() ? '?' + p : '');
 }
 
 function spawnParticles(btn: HTMLElement) {

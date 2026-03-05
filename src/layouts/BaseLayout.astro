@@ -21,7 +21,7 @@ const {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={description} />
   <title>{title} // DevVagas</title>
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.svg`} type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 </head>
 <body>
@@ -29,7 +29,7 @@ const {
 <!-- TOP BAR -->
 <header class="topbar">
   <div style="display:flex;align-items:center;gap:1.5rem">
-    <a href="/" class="topbar-logo">DEVVAGAS</a>
+    <a href={import.meta.env.BASE_URL} class="topbar-logo">DEVVAGAS</a>
     <span class="topbar-path" id="topbar-path">
       <span class="seg">~/vagas</span>
       <span class="sep">/</span>
@@ -46,7 +46,7 @@ const {
 <!-- ACTIVITY BAR -->
 <nav class="activity-bar" id="activity-bar">
   <!-- Filtro / Busca -->
-  <a href="/" class={`ab-icon ${activeSection === 'filtro' ? 'active' : ''}`} data-section="filtro">
+  <a href={import.meta.env.BASE_URL} class={`ab-icon ${activeSection === 'filtro' ? 'active' : ''}`} data-section="filtro">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>
     </svg>
@@ -54,7 +54,7 @@ const {
   </a>
 
   <!-- Vagas -->
-  <a href="/vagas" class={`ab-icon ${activeSection === 'vagas' ? 'active' : ''}`} data-section="vagas">
+  <a href={`${import.meta.env.BASE_URL}vagas`} class={`ab-icon ${activeSection === 'vagas' ? 'active' : ''}`} data-section="vagas">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M3 7h18M3 12h18M3 17h18"/>
     </svg>
@@ -62,7 +62,7 @@ const {
   </a>
 
   <!-- Ajuda -->
-  <a href="/ajuda" class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
+  <a href={`${import.meta.env.BASE_URL}ajuda`} class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <circle cx="12" cy="12" r="10"/>
       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"/>
@@ -71,7 +71,7 @@ const {
   </a>
 
   <!-- Fale Comigo -->
-  <a href="/contato" class={`ab-icon ${activeSection === 'contato' ? 'active' : ''}`} data-section="contato">
+  <a href={`${import.meta.env.BASE_URL}contato`} class={`ab-icon ${activeSection === 'contato' ? 'active' : ''}`} data-section="contato">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
       <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
     </svg>
@@ -126,14 +126,15 @@ const {
   document.addEventListener('astro:page-load', () => {
     tick();
     // highlight current activity bar item
-    const path = window.location.pathname;
+    const base = import.meta.env.BASE_URL; // e.g. '/devvagas/' or '/'
+    const rel = '/' + window.location.pathname.slice(base.length); // strip base prefix
     document.querySelectorAll('.ab-icon').forEach(el => {
       const section = (el as HTMLElement).dataset.section;
       el.classList.toggle('active',
-        section === 'filtro'  ? path === '/' :
-        section === 'vagas'   ? (path === '/vagas' || path.startsWith('/vaga'))  :
-        section === 'ajuda'   ? path === '/ajuda' :
-        section === 'contato' ? path === '/contato' : false
+        section === 'filtro'  ? rel === '/' :
+        section === 'vagas'   ? (rel === '/vagas' || rel.startsWith('/vaga'))  :
+        section === 'ajuda'   ? rel === '/ajuda' :
+        section === 'contato' ? rel === '/contato' : false
       );
     });
   });
