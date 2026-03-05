@@ -288,6 +288,10 @@ function timeAgo(d: string) {
       <!-- description preview -->
       <div class="jp-section-label">// descrição</div>
       <div class="jp-desc" id="jp-desc"></div>
+
+      <!-- candidatar-se -->
+      <div class="jp-section-label jp-candidatura-label" id="jp-candidatura-label" style="display:none">// candidatar-se</div>
+      <div class="jp-candidatura" id="jp-candidatura"></div>
     </div>
 
   </section>
@@ -664,6 +668,30 @@ function timeAgo(d: string) {
 .jp-desc li  { margin-bottom: 0.2rem; }
 .jp-desc li::marker { color: var(--green); content: '▸ '; }
 
+.jp-candidatura { margin-bottom: 1.5rem; }
+.jp-candidatura-btn {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 0.65rem 0.9rem;
+  background: transparent; border: 1px solid var(--green);
+  color: var(--green); font-family: var(--font);
+  font-size: 0.63rem; font-weight: 400;
+  position: relative; overflow: hidden; transition: color 0.22s;
+  text-decoration: none;
+}
+.jp-candidatura-btn::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--green); transform: translateX(-101%);
+  transition: transform 0.22s ease; z-index: 0;
+}
+.jp-candidatura-btn:hover { color: var(--black); }
+.jp-candidatura-btn:hover::before { transform: translateX(0); }
+.jp-candidatura-btn > * { position: relative; z-index: 1; }
+.jp-candidatura-url {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.jp-candidatura-arrow { flex-shrink: 0; transition: transform 0.22s; }
+.jp-candidatura-btn:hover .jp-candidatura-arrow { transform: translateX(4px); }
+
 @media (max-width: 780px) {
   .ide-layout { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
   .preview-panel { display: none; }
@@ -911,6 +939,19 @@ function showPreview(job: any) {
 
   const desc = document.getElementById('jp-desc')!;
   desc.innerHTML = job.descricao ? renderDesc(job.descricao) : '<p style="color:var(--muted)">Sem descrição — veja a Issue no GitHub.</p>';
+
+  const candidaturaLabel = document.getElementById('jp-candidatura-label') as HTMLElement;
+  const candidaturaEl    = document.getElementById('jp-candidatura')!;
+  if (job.aplicar) {
+    candidaturaLabel.style.display = '';
+    candidaturaEl.innerHTML = `<a href="${applyHref}" target="_blank" rel="noopener" class="jp-candidatura-btn">
+      <span class="jp-candidatura-url">${job.aplicar}</span>
+      <span class="jp-candidatura-arrow">→</span>
+    </a>`;
+  } else {
+    candidaturaLabel.style.display = 'none';
+    candidaturaEl.innerHTML = '';
+  }
 }
 
 // ── Chart interaction ──────────────────────────────────────────
