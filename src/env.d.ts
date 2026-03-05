@@ -3,6 +3,8 @@
 interface ImportMetaEnv {
   readonly REPO_OWNER: string;
   readonly REPO_NAME: string;
+  PROD: boolean;
+  DEV: boolean;
 }
 
 interface ImportMeta {
