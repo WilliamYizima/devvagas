@@ -644,6 +644,8 @@ function timeAgo(d: string) {
   transition: filter 0.15s;
 }
 .jp-chip:hover { filter: brightness(1.3); }
+.jp-chip-clickable { cursor: pointer; }
+.jp-chip-active { outline: 1px solid currentColor; background: rgba(255,255,255,0.08) !important; }
 
 .jp-vaga { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
 .jp-vchip {
@@ -823,7 +825,34 @@ document.querySelectorAll<HTMLButtonElement>('.sf-tag').forEach(tag => {
     updateSfCount();
     syncArcVisuals();
     applyFilters();
+    syncJpStackChips();
   });
+});
+
+function syncJpStackChips() {
+  document.querySelectorAll<HTMLElement>('#jp-stack [data-stack]').forEach(chip => {
+    chip.classList.toggle('jp-chip-active', selectedStacks.has(chip.dataset.stack!));
+  });
+}
+
+document.getElementById('jp-stack')?.addEventListener('click', e => {
+  const chip = (e.target as HTMLElement).closest<HTMLElement>('[data-stack]');
+  if (!chip) return;
+  const v = chip.dataset.stack!;
+  const sfTag = document.querySelector<HTMLButtonElement>(`.sf-tag[data-stack="${v}"]`);
+  if (selectedStacks.has(v)) {
+    selectedStacks.delete(v);
+    chip.classList.remove('jp-chip-active');
+    if (sfTag) sfTag.classList.remove('on');
+  } else {
+    selectedStacks.add(v);
+    chip.classList.add('jp-chip-active');
+    if (sfTag) sfTag.classList.add('on');
+    if (!sfOpen) setSfOpen(true);
+  }
+  updateSfCount();
+  syncArcVisuals();
+  applyFilters();
 });
 
 // ── Filter logic ───────────────────────────────────────────────
@@ -965,7 +994,9 @@ function showPreview(job: any) {
   const stack = document.getElementById('jp-stack')!;
   stack.innerHTML = (job.stack || []).map((s: string) => {
     const c = stackColor(s);
-    return `<span class="jr-tag" style="border-color:${c.borderLeft};color:${c.color}">${s}</span>`;
+    const key = s.toLowerCase();
+    const active = selectedStacks.has(key) ? ' jp-chip-active' : '';
+    return `<span class="jr-tag jp-chip-clickable${active}" data-stack="${key}" style="border-color:${c.borderLeft};color:${c.color}" title="Filtrar por ${s}">${s}</span>`;
   }).join('');
 
   const desc = document.getElementById('jp-desc')!;
