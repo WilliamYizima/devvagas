@@ -2,5 +2,6 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   output: 'static',
-  base: process.env.REPO_NAME ? `/${process.env.REPO_NAME}` : '/',
+  site: 'https://williamyizima.github.io',
+  base: process.env.REPO_NAME ? `/${process.env.REPO_NAME}/` : '/',
 });
