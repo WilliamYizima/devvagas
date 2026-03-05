@@ -287,7 +287,7 @@ function timeAgo(d: string) {
       <!-- description preview -->
       <div class="jp-section-label">// descrição</div>
       <div class="jp-desc" id="jp-desc"></div>
-
+      <br>
       <!-- candidatar-se -->
       <div class="jp-section-label jp-candidatura-label" id="jp-candidatura-label" style="display:none">// candidatar-se</div>
       <div class="jp-candidatura" id="jp-candidatura"></div>
@@ -691,6 +691,39 @@ function timeAgo(d: string) {
 .jp-candidatura-arrow { flex-shrink: 0; transition: transform 0.22s; }
 .jp-candidatura-btn:hover .jp-candidatura-arrow { transform: translateX(4px); }
 
+:global(.jp-copy-row) {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 50%; padding: 0.38rem 0.55rem;
+  background: none; border: 1px solid var(--border2);
+  gap: 0.5rem;
+}
+:global(.jp-copy-val) {
+  flex: 0 1 50%; min-width: 0;
+  font-size: 0.70rem; color: #fff;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-family: var(--font);
+}
+:global(.jp-copy-btn) {
+  flex-shrink: 0;
+  padding: 0.18rem 0.58rem;
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.35); border-left: 2px solid var(--cyan);
+  color: var(--cyan); font-family: var(--font); font-size: 0.65rem;
+  cursor: pointer; transition: all 0.18s;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+:global(.jp-copy-btn:hover) {
+  background: rgba(0,212,255,0.15);
+  border-color: var(--cyan); border-left-color: var(--cyan);
+  box-shadow: 0 0 8px rgba(0,212,255,0.25), inset 0 0 6px rgba(0,212,255,0.08);
+}
+:global(.jp-copy-btn.copied) {
+  border-color: rgba(0,255,157,0.5); border-left-color: var(--green);
+  color: var(--green);
+  background: rgba(0,255,157,0.1);
+  box-shadow: 0 0 8px rgba(0,255,157,0.2);
+}
+
 @media (max-width: 780px) {
   .ide-layout { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
   .preview-panel { display: none; }
@@ -942,10 +975,10 @@ function showPreview(job: any) {
   const candidaturaEl    = document.getElementById('jp-candidatura')!;
   if (job.aplicar) {
     candidaturaLabel.style.display = '';
-    candidaturaEl.innerHTML = `<a href="${applyHref}" target="_blank" rel="noopener" class="jp-candidatura-btn">
-      <span class="jp-candidatura-url">${job.aplicar}</span>
-      <span class="jp-candidatura-arrow">→</span>
-    </a>`;
+    candidaturaEl.innerHTML = `<div class="jp-copy-row">
+      <span class="jp-copy-val">${job.aplicar}</span>
+      <button class="jp-copy-btn" onclick="navigator.clipboard.writeText('${job.aplicar.replace(/'/g, "\\'")}').then(()=>{this.textContent='✓';this.classList.add('copied');setTimeout(()=>{this.textContent='⎘ copiar';this.classList.remove('copied')},1500)})">⎘ copiar</button>
+    </div>`;
   } else {
     candidaturaLabel.style.display = 'none';
     candidaturaEl.innerHTML = '';

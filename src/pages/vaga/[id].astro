@@ -212,14 +212,16 @@ function parseDesc(raw: string): string {
 
       <div class="rp-section">
         <div class="rp-label">// candidatura</div>
-        <a
-          href={job.aplicar?.startsWith('http') ? job.aplicar : `https://${job.aplicar ?? '#'}`}
-          target="_blank" rel="noopener"
-          class="apply-btn"
-        >
-          <span class="apply-url">{job.aplicar ?? 'ver vaga'}</span>
-          <span class="apply-arrow">→</span>
-        </a>
+        {job.aplicar && (
+          <div class="apply-copy-row">
+            <span class="apply-copy-val">{job.aplicar}</span>
+            <button
+              class="copy-btn"
+              data-copy={job.aplicar}
+              onclick="(function(btn){navigator.clipboard.writeText(btn.dataset.copy).then(()=>{btn.textContent='✓';btn.classList.add('copied');setTimeout(()=>{btn.textContent='⎘ copiar';btn.classList.remove('copied')},1500)})})(this)"
+            >⎘ copiar</button>
+          </div>
+        )}
         <div class="apply-sub">
           ou <a href={issueUrl} target="_blank" rel="noopener">ver Issue →</a>
         </div>
@@ -495,31 +497,38 @@ function parseDesc(raw: string): string {
   margin-bottom: 0.75rem;
 }
 
-/* Apply button */
-.apply-btn {
+
+.apply-copy-row {
   display: flex; align-items: center; justify-content: space-between;
-  width: 100%; padding: 0.7rem 0.9rem;
-  background: transparent; border: 1px solid var(--green);
-  color: var(--green); font-family: var(--font);
-  font-size: 0.68rem; font-weight: 700;
-  letter-spacing: 0.08em;
-  position: relative; overflow: hidden;
-  transition: color 0.22s;
+  width: 100%; padding: 0.38rem 0.55rem;
+  background: none; border: 1px solid var(--border2);
+  gap: 0.5rem;
 }
-.apply-btn::before {
-  content: ''; position: absolute; inset: 0;
-  background: var(--green); transform: translateX(-101%);
-  transition: transform 0.22s ease; z-index: 0;
+.apply-copy-val {
+  flex: 0 1 35%; min-width: 0;
+  font-size: 0.63rem; color: #fff;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-family: var(--font);
 }
-.apply-btn:hover { color: var(--black); }
-.apply-btn:hover::before { transform: translateX(0); }
-.apply-btn > * { position: relative; z-index: 1; }
-.apply-arrow { transition: transform 0.22s; flex-shrink: 0; }
-.apply-btn:hover .apply-arrow { transform: translateX(4px); }
-.apply-url {
-  min-width: 0; overflow: hidden; text-overflow: ellipsis;
-  white-space: nowrap; font-weight: 400; letter-spacing: 0;
-  font-size: 0.63rem; text-transform: none;
+.copy-btn {
+  flex-shrink: 0;
+  padding: 0.18rem 0.58rem;
+  background: rgba(0,212,255,0.08);
+  border: 1px solid rgba(0,212,255,0.35); border-left: 2px solid var(--cyan);
+  color: var(--cyan); font-family: var(--font); font-size: 0.65rem;
+  cursor: pointer; transition: all 0.18s;
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+.copy-btn:hover {
+  background: rgba(0,212,255,0.15);
+  border-color: var(--cyan); border-left-color: var(--cyan);
+  box-shadow: 0 0 8px rgba(0,212,255,0.25), inset 0 0 6px rgba(0,212,255,0.08);
+}
+.copy-btn.copied {
+  border-color: rgba(0,255,157,0.5); border-left-color: var(--green);
+  color: var(--green);
+  background: rgba(0,255,157,0.1);
+  box-shadow: 0 0 8px rgba(0,255,157,0.2);
 }
 
 .apply-sub {
