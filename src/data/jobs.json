@@ -1,5 +1,40 @@
 [
   {
+    "id": 23,
+    "title": "Vaga: Arquiteto(a) Oracle EPM Planning Cloud (EPBCS)",
+    "body": "### Empresa\n\nRevna\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nOracle EPM Planning Cloud, Workflow, Task Manager, Forms 2.0, Dashboards 2.0, Sandbox, EPM Business Rules (Calc Script), Groovy, EPM Data Integration (Data Management), Conversão de Planning BSO para Hybrid BSO, Implementação com cubos ASO, Oracle EPM Integration Agent, Predictive Planning, Advanced Forecasting, IPM Insight\n\n### Descrição da Vaga\n\n# Sobre a empresa\nA Revna é uma empresa especializada em soluções tecnológicas e consultoria para implementação de sistemas Oracle.\n\n# Responsabilidades\n- Mínimo de 3 anos de experiência com Oracle EPM Planning Cloud\n- Experiência com Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Forte conhecimento em EPM Business Rules (Calc Script) e Groovy\n- Experiência com EPM Data Integration (Data Management)\n- Conversão de Planning BSO para Hybrid BSO\n- Implementação com cubos ASO\n- Experiência com Oracle EPM Integration Agent\n- Conhecimento em recursos de IA do EPM: Predictive Planning, Advanced Forecasting e IPM Insight\n\n# Requisitos\n- Experiência em projetos no setor bancário\n- Experiência em projetos com Oracle Consulting\n- Boa comunicação com áreas de negócio\n\n### Como se candidatar\n\ncarolina.uchoa@revna.com.br\n\n### Link para se candidatar\n\n(11) 96935-2880\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/23",
+    "createdAt": "2026-03-05T19:10:30Z",
+    "updatedAt": "2026-03-05T19:12:20Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Revna",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "A combinar",
+    "stack": [
+      "Oracle EPM Planning Cloud",
+      "Workflow",
+      "Task Manager",
+      "Forms 2.0",
+      "Dashboards 2.0",
+      "Sandbox",
+      "EPM Business Rules (Calc Script)",
+      "Groovy"
+    ],
+    "descricao": "# Sobre a empresa\nA Revna é uma empresa especializada em soluções tecnológicas e consultoria para implementação de sistemas Oracle.\n\n# Responsabilidades\n- Mínimo de 3 anos de experiência com Oracle EPM Planning Cloud\n- Experiência com Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Forte conhecimento em EPM Business Rules (Calc Script) e Groovy\n- Experiência com EPM Data Integration (Data Management)\n- Conversão de Planning BSO para Hybrid BSO\n- Implementação com cubos ASO\n- Experiência com Oracle EPM Integration Agent\n- Conhecimento em recursos de IA do EPM: Predictive Planning, Advanced Forecasting e IPM Insight\n\n# Requisitos\n- Experiência em projetos no setor bancário\n- Experiência em projetos com Oracle Consulting\n- Boa comunicação com áreas de negócio",
+    "aplicar": "carolina.uchoa@revna.com.br",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-arquiteto-a-oracle-epm-planning-cloud-epbcs"
+  },
+  {
     "id": 22,
     "title": "🚀 VAGA: CIENTISTA DE DADOS SÊNIOR - 100% remoto",
     "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nPython, R, SQL, Matemática, Estatística, Algoritmos\n\n### Descrição da Vaga\n\n# Sobre a empresa\nEmpresa de consultoria em análise de dados.\n\n# Responsabilidades\n- Desenvolver modelos preditivos e analíticos complexos.\n- Transformar teoria em decisões estratégicas.\n- Manter-se atualizado com as últimas tendências e pesquisas na área de ciência de dados.\n- Colaborar com equipes multidisciplinares para implementar soluções de análise de dados.\n\n# Requisitos\n- Base sólida em Matemática e Estatística.\n- Raciocínio lógico apurado e capacidade analítica diferenciada.\n- Força computacional e entendimento profundo de modelos e algoritmos.\n- Capacidade de pensar “on your feet” — rápido, adaptativo e estratégico.\n- Hábito de estudar, ler papers e se aprofundar nos fundamentos.\n- Clareza conceitual (mais importante que apenas saber codar).\n- Programar é importante. Entender profundamente o que está por trás do código é essencial.\n\n# Diferenciais\n- Formação em Matemática, Estatística, Física, Engenharia ou áreas correlatas.\n- Background matemático sólido (formal ou autodidata).\n- Histórico consistente de excelência acadêmica ou profissional.\n- Alto desempenho comprovado em diferentes contextos e organizações.\n\n# Benefícios\n- Projeto de 6 meses, com possibilidade de extensão.\n- INGLÊS AVANÇADO necessário.\n\n### Como se candidatar\n\nsara@4solutiongroup.com.br\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
