@@ -27,7 +27,34 @@ function field(body, ...keys) {
 function textareaField(body, key) {
   const re = new RegExp(`###\\s*${key}\\s*\\n([\\s\\S]*?)(?=\\n###|$)`, 'i');
   const m = body.match(re);
-  return m ? m[1].trim() : '';
+  return m ? normalizeDescricao(m[1].trim()) : '';
+}
+
+const SECTION_HEADER_RE = /^(sobre|responsabilidade|requisito|benefício|beneficio|qualificaç|qualificac|habilidade|diferencial|o que\b|por que\b|quem somos|cultura|missão|missao|perfil|atividade|experiência|experiencia|vantagem)/i;
+
+/** @param {string} raw */
+function normalizeDescricao(raw) {
+  if (!raw) return '';
+  // Já tem markdown → retorna como está
+  if (/^###\s/m.test(raw)) return raw;
+
+  const lines = raw.split(/\r?\n/);
+  const result = [];
+  let inSection = false;
+
+  for (const line of lines) {
+    const t = line.trim();
+    if (!t) { result.push(''); continue; }
+    if (SECTION_HEADER_RE.test(t)) {
+      result.push(`### ${t}`);
+      inSection = true;
+    } else if (inSection) {
+      result.push(`- ${t}`);
+    } else {
+      result.push(t);
+    }
+  }
+  return result.join('\n');
 }
 
 function toSlug(title) {

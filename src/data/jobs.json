@@ -23,7 +23,7 @@
       "Python",
       "Golang"
     ],
-    "descricao": "Sobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais",
+    "descricao": "### Sobre a empresa\n- A maior plataforma de delivery do Brasil.\n### Responsabilidades\n- Desenvolver APIs de alta disponibilidade\n- Integrar com sistemas de pagamento\n- Monitoramento e observabilidade\n### Requisitos\n- 3+ anos com Node.js\n- AWS (Lambda, SQS, RDS)\n- Bancos relacionais",
     "aplicar": "https://dev-vagas.netlify.app/ajuda/",
     "isRemote": true,
     "isLinkedin": false,

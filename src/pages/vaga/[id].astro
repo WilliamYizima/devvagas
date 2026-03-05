@@ -41,26 +41,47 @@ function fmt(s: string) {
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
     .replace(/(https?:\/\/[^\s<]+)/g, '<a href="$1" target="_blank" rel="noopener">$1</a>');
 }
+function isSectionHeader(t: string): boolean {
+  return /^(sobre|responsabilidade|requisito|benefício|beneficio|qualificaç|qualificac|habilidade|diferencial|o que\b|por que\b|quem somos|cultura|missão|missao|perfil|atividade|experiência|experiencia|vantagem|remuneraç|remunerac)/i.test(t);
+}
 function parseDesc(raw: string): string {
   const lines = raw.split('\n');
   let html = '';
   let inList = false;
+  let inSection = false;
   for (const line of lines) {
     const t = line.trim();
     if (!t) {
       if (inList) { html += '</ul>'; inList = false; }
       continue;
     }
+    // Markdown heading
     if (/^#{1,3}\s/.test(t)) {
       if (inList) { html += '</ul>'; inList = false; }
       html += `<h3>${fmt(t.replace(/^#{1,3}\s+/, ''))}</h3>`;
-    } else if (/^[-*]\s/.test(t)) {
+      inSection = true;
+      continue;
+    }
+    // Markdown list item
+    if (/^[-*]\s/.test(t)) {
       if (!inList) { html += '<ul>'; inList = true; }
       html += `<li>${fmt(t.replace(/^[-*]\s+/, ''))}</li>`;
-    } else {
-      if (inList) { html += '</ul>'; inList = false; }
-      html += `<p>${fmt(t)}</p>`;
+      continue;
     }
+    // Plain-text section header (sem markdown)
+    if (isSectionHeader(t)) {
+      if (inList) { html += '</ul>'; inList = false; }
+      html += `<h3>${fmt(t)}</h3>`;
+      inSection = true;
+      continue;
+    }
+    // Dentro de uma seção → item de lista
+    if (inSection) {
+      if (!inList) { html += '<ul>'; inList = true; }
+      html += `<li>${fmt(t)}</li>`;
+      continue;
+    }
+    html += `<p>${fmt(t)}</p>`;
   }
   if (inList) html += '</ul>';
   return html;
@@ -439,7 +460,7 @@ function parseDesc(raw: string): string {
 }
 :global(.desc-block h3:first-child) { margin-top: 0; }
 :global(.desc-block ul) {
-  padding-left: 0; margin: 0.4rem 0 1rem; list-style: none;
+  padding-left: 1.5rem; margin: 0.4rem 0 1rem; list-style: none;
 }
 :global(.desc-block li) {
   padding: 0.18rem 0 0.18rem 1.2rem;
