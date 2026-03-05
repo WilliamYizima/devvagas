@@ -217,7 +217,7 @@ function parseDesc(raw: string): string {
           target="_blank" rel="noopener"
           class="apply-btn"
         >
-          <span>CANDIDATAR-SE</span>
+          <span class="apply-url">{job.aplicar ?? 'ver vaga'}</span>
           <span class="apply-arrow">→</span>
         </a>
         <div class="apply-sub">
@@ -514,8 +514,13 @@ function parseDesc(raw: string): string {
 .apply-btn:hover { color: var(--black); }
 .apply-btn:hover::before { transform: translateX(0); }
 .apply-btn > * { position: relative; z-index: 1; }
-.apply-arrow { transition: transform 0.22s; }
+.apply-arrow { transition: transform 0.22s; flex-shrink: 0; }
 .apply-btn:hover .apply-arrow { transform: translateX(4px); }
+.apply-url {
+  min-width: 0; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; font-weight: 400; letter-spacing: 0;
+  font-size: 0.63rem; text-transform: none;
+}
 
 .apply-sub {
   font-size: 0.6rem; color: var(--muted);
