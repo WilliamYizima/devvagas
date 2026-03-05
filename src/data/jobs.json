@@ -1,1 +1,33 @@
-[]
+[
+  {
+    "id": 3,
+    "title": "Vaga teste",
+    "body": "### Empresa\n\nDevVagas\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nSão Paulo\n\n### Salário\n\nR$ 10 K\n\n### Stack\n\nReact, Nodejs, Python, Golang\n\n### Descrição da Vaga\n\nSobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais\n\n### Como se candidatar\n\nhttps://dev-vagas.netlify.app/ajuda/\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/3",
+    "createdAt": "2026-03-04T17:55:32Z",
+    "updatedAt": "2026-03-05T13:04:04Z",
+    "author": {
+      "login": "WilliamYizima",
+      "avatar": "https://avatars.githubusercontent.com/u/39131639?v=4",
+      "url": "https://github.com/WilliamYizima"
+    },
+    "labels": [],
+    "empresa": "DevVagas",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "São Paulo",
+    "salario": "R$ 10 K",
+    "stack": [
+      "React",
+      "Nodejs",
+      "Python",
+      "Golang"
+    ],
+    "descricao": "Sobre a empresa\nA maior plataforma de delivery do Brasil.\nResponsabilidades\nDesenvolver APIs de alta disponibilidade\nIntegrar com sistemas de pagamento\nMonitoramento e observabilidade\nRequisitos\n3+ anos com Node.js\nAWS (Lambda, SQS, RDS)\nBancos relacionais",
+    "aplicar": "https://dev-vagas.netlify.app/ajuda/",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-teste"
+  }
+]
