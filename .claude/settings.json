@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/williamyizima/workspace/personal/vagas-astro remote get-url origin)"
+    ]
+  }
+}
