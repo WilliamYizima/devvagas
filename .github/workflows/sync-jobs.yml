@@ -37,11 +37,3 @@ jobs:
             git commit -m "chore: sync jobs.json [skip ci]"
             git push
           fi
-
-  deploy:
-    needs: sync
-    uses: ./.github/workflows/deploy.yml
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
