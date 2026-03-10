@@ -1,5 +1,281 @@
 [
   {
+    "id": 83,
+    "title": "Desenvolvedor ABAP (@ K2 Partnering - Junior/Pleno/Sênior)",
+    "body": "### **[VAGA] Desenvolvedor ABAP @ K2 Partnering (Junior/Pleno/Sênior)**\n\n**Empresa:** _K2 Partnering_\n\n**Local:** Remoto (_Projeto de 11 meses, podendo ser prorrogado_)\n\n**Experiência Requerida: _**\n- Experiência com sistema SAP S/4HANA.\n\n**Interesse:** Interessados podem enviar o CV por mensagem ou e-mail para `kmelo@k2partnering.com`.",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/83",
+    "createdAt": "2026-03-10T16:08:22Z",
+    "updatedAt": "2026-03-10T16:08:22Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [
+      "dev abap"
+    ],
+    "empresa": "",
+    "nivel": "",
+    "tipo": "",
+    "local": "",
+    "salario": "",
+    "stack": [],
+    "descricao": "",
+    "aplicar": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-abap-k2-partnering-junior-pleno-senior"
+  },
+  {
+    "id": 82,
+    "title": "🚀 Estamos contratando | Arquiteto(a) Cloud Azure / DevOps",
+    "body": "### Empresa\n\nHyti\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\n100% Home Office\n\n### Salário\n\nR$ 13.000 (CLT) ou R$ 15.000 (PJ)\n\n### Stack\n\nAzure, AKS, Terraform, Bicep, Azure AD B2C / Entra ID, Conditional Access, RBAC, Application Insights\n\n### Descrição da Vaga\n\n# **🎯 Principais Atividades**\n\n- **Arquitetura Azure:** Desenhar e sustentar soluções utilizando o framework de boa arquitetura da Microsoft.\n- **Orquestração de Containers:** Administrar e otimizar clusters AKS, garantindo saúde, monitoramento e ciclo de vida das aplicações.\n- **Modernização de Ambientes:** Liderar a transição de workloads legados (On-premises/VMs) para arquiteturas modernas (PaaS, IaaS, SaaS e Containers).\n- **Automação & DevOps:** Evolver rotinas para uma cultura de Infraestrutura como Código (IaC), utilizando Terraform ou Bicep.\n- **Identidade & Segurança:** Atuação com Azure AD B2C / Entra ID, aplicando políticas de acesso seguro (Conditional Access, RBAC).\n- **Gestão de Performance:** Monitoramento proativo do ambiente com Azure Monitor, Log Analytics e Application Insights.\n\n**✅ Requisitos Técnicos**\n\n- Experiência sólida em Arquitetura Cloud Azure\n- Forte atuação com AKS\n- Experiência com IaC (Terraform ou Bicep)\n- Conhecimento em identidade, segurança e governança Azure\n- Experiência em modernização e migração para cloud\n\n### Como se candidatar\n\nangela.lento@hyti.com.br\n\n### Link para se candidatar\n\n(61) 98268-4258\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/82",
+    "createdAt": "2026-03-10T15:05:55Z",
+    "updatedAt": "2026-03-10T15:05:55Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Hyti",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "100% Home Office",
+    "salario": "R$ 13.000 (CLT) ou R$ 15.000 (PJ)",
+    "stack": [
+      "Azure",
+      "AKS",
+      "Terraform",
+      "Bicep",
+      "Azure AD B2C",
+      "Entra ID",
+      "Conditional Access",
+      "RBAC"
+    ],
+    "descricao": "# **🎯 Principais Atividades**\n\n- **Arquitetura Azure:** Desenhar e sustentar soluções utilizando o framework de boa arquitetura da Microsoft.\n- **Orquestração de Containers:** Administrar e otimizar clusters AKS, garantindo saúde, monitoramento e ciclo de vida das aplicações.\n- **Modernização de Ambientes:** Liderar a transição de workloads legados (On-premises/VMs) para arquiteturas modernas (PaaS, IaaS, SaaS e Containers).\n- **Automação & DevOps:** Evolver rotinas para uma cultura de Infraestrutura como Código (IaC), utilizando Terraform ou Bicep.\n- **Identidade & Segurança:** Atuação com Azure AD B2C / Entra ID, aplicando políticas de acesso seguro (Conditional Access, RBAC).\n- **Gestão de Performance:** Monitoramento proativo do ambiente com Azure Monitor, Log Analytics e Application Insights.\n\n**✅ Requisitos Técnicos**\n\n- Experiência sólida em Arquitetura Cloud Azure\n- Forte atuação com AKS\n- Experiência com IaC (Terraform ou Bicep)\n- Conhecimento em identidade, segurança e governança Azure\n- Experiência em modernização e migração para cloud",
+    "aplicar": "angela.lento@hyti.com.br",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "estamos-contratando-arquiteto-a-cloud-azure-devops"
+  },
+  {
+    "id": 81,
+    "title": "🚀 Vaga: Profile Commerce Architect",
+    "body": "### Empresa\n\nPasquali Solution\n\n### Nível\n\nIndefinido\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nValor/hora a combinar\n\n### Stack\n\nJava, Python, Node.js, GCP, AWS, OAuth2, OpenID, JWT, SAML, CI/CD (Jenkins, GitLab), AuthN & AuthZ, Identity Providers (Okta, Auth0, Azure AD, Google Identity), Microservices, API Gateways\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Desenvolvimento de software e arquitetura.\n- Implementação de autenticação e autorização (AuthN & AuthZ).\n- Segurança de APIs e gestão de identidade.\n- Experiência com GCP ou AWS.\n- Conhecimento em CI/CD.\n\n# Requisitos\n- Inglês avançado/fluente.\n- Experiência em Engenharia de Software ou Arquitetura.\n- Forte domínio de AuthN & AuthZ (OAuth2, OpenID, JWT, SAML).\n- Experiência sólida em segurança de APIs e gestão de identidade.\n- Experiência prática com GCP (preferencial) ou AWS.\n- Background em desenvolvimento (Java, Python, Node.js ou similar).\n- Conhecimento em CI/CD (Jenkins, GitLab, etc.).\n\n# Diferenciais\n- Experiência com Identity Providers como Okta, Auth0, Azure AD ou Google Identity.\n- Conhecimento em Microservices e API Gateways (Apigee, Kong).\n- Certificação GCP ou AWS Solution Architect.\n- Experiência nos setores BFSI, Varejo ou ambientes regulados.\n\n### Como se candidatar\n\njessica.marques@pasqualisolution.com.br\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nSim\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/81",
+    "createdAt": "2026-03-10T15:04:42Z",
+    "updatedAt": "2026-03-10T15:04:42Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Pasquali Solution",
+    "nivel": "Indefinido",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "Valor/hora a combinar",
+    "stack": [
+      "Java",
+      "Python",
+      "Node.js",
+      "GCP",
+      "AWS",
+      "OAuth2",
+      "OpenID",
+      "JWT"
+    ],
+    "descricao": "# Responsabilidades\n- Desenvolvimento de software e arquitetura.\n- Implementação de autenticação e autorização (AuthN & AuthZ).\n- Segurança de APIs e gestão de identidade.\n- Experiência com GCP ou AWS.\n- Conhecimento em CI/CD.\n\n# Requisitos\n- Inglês avançado/fluente.\n- Experiência em Engenharia de Software ou Arquitetura.\n- Forte domínio de AuthN & AuthZ (OAuth2, OpenID, JWT, SAML).\n- Experiência sólida em segurança de APIs e gestão de identidade.\n- Experiência prática com GCP (preferencial) ou AWS.\n- Background em desenvolvimento (Java, Python, Node.js ou similar).\n- Conhecimento em CI/CD (Jenkins, GitLab, etc.).\n\n# Diferenciais\n- Experiência com Identity Providers como Okta, Auth0, Azure AD ou Google Identity.\n- Conhecimento em Microservices e API Gateways (Apigee, Kong).\n- Certificação GCP ou AWS Solution Architect.\n- Experiência nos setores BFSI, Varejo ou ambientes regulados.",
+    "aplicar": "jessica.marques@pasqualisolution.com.br",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-profile-commerce-architect"
+  },
+  {
+    "id": 80,
+    "title": "DECISION contrata – Analista de Governança de Dados Senior – Home-Office*",
+    "body": "### Empresa\n\nDecision\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nCloudPak, Collibra\n\n### Descrição da Vaga\n\n# Decision contrata – Analista de Governança de Dados Senior – Home-Office\n\n## Principais Responsabilidades\n- Atuar na evolução da maturidade do catálogo de dados (identificação de colunas, tabelas, termos de negócio e definição de características).\n- Identificar e documentar conjuntos de tabelas e valores dentro do Collibra.\n- Realizar mapeamento de processos de negócio para garantir a cobertura adequada dos termos de negócio.\n- Mapear processos para identificar bases de dados upstream que precisam ser catalogadas.\n\n## Experiência e Habilidades Desejadas\n- Experiência no setor de Utilities (desejável).\n- Conhecimento acima do nível básico em:\n  - Estruturas de Banco de Dados\n  - Modelagem de Dados\n  - Data Stewardship\n- Capacidade de escrita e execução de consultas SQL.\n- Experiência prática com ferramentas de Governança de Dados como CloudPak e Collibra (preferencialmente Collibra).\n- Fortes habilidades de Business Analyst.\n- Excelente comunicação oral e escrita.\n- Capacidade de colaborar com times multifuncionais.\n- Perfil analítico, solucionador de problemas, com autonomia para entregar resultados com pouca supervisão.\n\nInglês avançado a fluente (conversação, reuniões e documentação).\n\nInicio: Fevereiro\nDuração prevista: previsto até Outubro com chances de continuidade.\n\n### Como se candidatar\n\nmilena.mariano@decisionbr.com.br\n\n### Link para se candidatar\n\n(11) 99452-0512, https://t.me/vagasdeticltpj, https://chat.whatsapp.com/J2VV3WaACnD89Nwc7xwrxN, https://chat.whatsapp.com/LAXQnjOQUWL6loP9urrTFx\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/80",
+    "createdAt": "2026-03-10T15:03:34Z",
+    "updatedAt": "2026-03-10T15:03:34Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Decision",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "A combinar",
+    "stack": [
+      "CloudPak",
+      "Collibra"
+    ],
+    "descricao": "# Decision contrata – Analista de Governança de Dados Senior – Home-Office\n\n## Principais Responsabilidades\n- Atuar na evolução da maturidade do catálogo de dados (identificação de colunas, tabelas, termos de negócio e definição de características).\n- Identificar e documentar conjuntos de tabelas e valores dentro do Collibra.\n- Realizar mapeamento de processos de negócio para garantir a cobertura adequada dos termos de negócio.\n- Mapear processos para identificar bases de dados upstream que precisam ser catalogadas.\n\n## Experiência e Habilidades Desejadas\n- Experiência no setor de Utilities (desejável).\n- Conhecimento acima do nível básico em:\n- Estruturas de Banco de Dados\n- Modelagem de Dados\n- Data Stewardship\n- Capacidade de escrita e execução de consultas SQL.\n- Experiência prática com ferramentas de Governança de Dados como CloudPak e Collibra (preferencialmente Collibra).\n- Fortes habilidades de Business Analyst.\n- Excelente comunicação oral e escrita.\n- Capacidade de colaborar com times multifuncionais.\n- Perfil analítico, solucionador de problemas, com autonomia para entregar resultados com pouca supervisão.\n\nInglês avançado a fluente (conversação, reuniões e documentação).\n\nInicio: Fevereiro\nDuração prevista: previsto até Outubro com chances de continuidade.",
+    "aplicar": "milena.mariano@decisionbr.com.br",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "decision-contrata-analista-de-governanca-de-dados-senior-home-office"
+  },
+  {
+    "id": 79,
+    "title": "Vaga: Quality Engineer",
+    "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nCidade/Estado\n\n### Salário\n\nA combinar\n\n### Stack\n\nCypress, JavaScript, TypeScript, SQL\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Planejar e executar estratégias de testes completas para features e releases (funcional, regressão, integrações, smoke e testes exploratórios), com abordagem risk-based.\n- Participar ativamente de planejamento e refinamento, apoiando na definição de critérios de aceite, escopo de testes, cenários e riscos de qualidade desde o início (shift-left).\n- Projetar, implementar e manter automação de testes para fluxos UI e API, garantindo cobertura progressiva e redução de esforço manual (Cypress com JavaScript/TypeScript).\n- Propor e evoluir quality gates e melhorias de testabilidade, atuando em conjunto com desenvolvimento para reduzir fragilidade, flakiness e retrabalho.\n- Integrar e sustentar testes em pipelines CI/CD, colaborando com DevOps/Plataforma para execução automatizada, relatórios e políticas de aprovação de entrega.\n- Acompanhar e dar visibilidade a riscos, dependências e impedimentos relacionados à qualidade, propondo ações práticas e priorizando correções com o time.\n- Contribuir para governança de testes e readiness de entrega, apoiando decisões sobre “go/no-go”, evidências, critérios mínimos de qualidade e alinhamentos de release.\n- Monitorar e comunicar indicadores de qualidade (ex.: tendências de defeitos, cobertura automatizada, tempo de feedback no pipeline, estabilidade dos testes), apoiando a gestão do fluxo de entrega.\n- Apoiar validações de dados quando necessário, utilizando SQL para checagens e conferências em ambientes de teste.\n\n(Diferencial) Atuar com Kafka/ArgoCD/Python quando aplicável ao contexto, contribuindo com utilitários, troubleshooting e integrações.\n\n### Como se candidatar\n\nThiago.almeida@hcxpert.com\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/79",
+    "createdAt": "2026-03-10T14:58:47Z",
+    "updatedAt": "2026-03-10T14:58:47Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "Cidade/Estado",
+    "salario": "A combinar",
+    "stack": [
+      "Cypress",
+      "JavaScript",
+      "TypeScript",
+      "SQL"
+    ],
+    "descricao": "# Responsabilidades\n- Planejar e executar estratégias de testes completas para features e releases (funcional, regressão, integrações, smoke e testes exploratórios), com abordagem risk-based.\n- Participar ativamente de planejamento e refinamento, apoiando na definição de critérios de aceite, escopo de testes, cenários e riscos de qualidade desde o início (shift-left).\n- Projetar, implementar e manter automação de testes para fluxos UI e API, garantindo cobertura progressiva e redução de esforço manual (Cypress com JavaScript/TypeScript).\n- Propor e evoluir quality gates e melhorias de testabilidade, atuando em conjunto com desenvolvimento para reduzir fragilidade, flakiness e retrabalho.\n- Integrar e sustentar testes em pipelines CI/CD, colaborando com DevOps/Plataforma para execução automatizada, relatórios e políticas de aprovação de entrega.\n- Acompanhar e dar visibilidade a riscos, dependências e impedimentos relacionados à qualidade, propondo ações práticas e priorizando correções com o time.\n- Contribuir para governança de testes e readiness de entrega, apoiando decisões sobre “go/no-go”, evidências, critérios mínimos de qualidade e alinhamentos de release.\n- Monitorar e comunicar indicadores de qualidade (ex.: tendências de defeitos, cobertura automatizada, tempo de feedback no pipeline, estabilidade dos testes), apoiando a gestão do fluxo de entrega.\n- Apoiar validações de dados quando necessário, utilizando SQL para checagens e conferências em ambientes de teste.\n\n(Diferencial) Atuar com Kafka/ArgoCD/Python quando aplicável ao contexto, contribuindo com utilitários, troubleshooting e integrações.",
+    "aplicar": "Thiago.almeida@hcxpert.com",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-quality-engineer"
+  },
+  {
+    "id": 78,
+    "title": "🚀💙 Vem ser Decision! | Oportunidades em São Carlos/SP",
+    "body": "### Empresa\n\nDecision\n\n### Nível\n\nIndefinido\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nSão Carlos/SP\n\n### Salário\n\nA combinar\n\n### Stack\n\nPython, Machine Learning, React, Node.js, Agile Methodologies\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Desenvolver e implementar soluções de Inteligência Artificial.\n- Manter a qualidade do código e a eficiência dos sistemas.\n- Gerenciar equipes de desenvolvimento.\n\n# Requisitos\n- Experiência com Python, Machine Learning.\n- Conhecimento em React e Node.js.\n- Familiaridade com Agile Methodologies.\n- Inglês avançado para comunicação.\n\n### Como se candidatar\n\n(11) 99195-0357\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/78",
+    "createdAt": "2026-03-10T13:51:23Z",
+    "updatedAt": "2026-03-10T13:51:23Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Decision",
+    "nivel": "Indefinido",
+    "tipo": "Híbrido",
+    "local": "São Carlos/SP",
+    "salario": "A combinar",
+    "stack": [
+      "Python",
+      "Machine Learning",
+      "React",
+      "Node.js",
+      "Agile Methodologies"
+    ],
+    "descricao": "# Responsabilidades\n- Desenvolver e implementar soluções de Inteligência Artificial.\n- Manter a qualidade do código e a eficiência dos sistemas.\n- Gerenciar equipes de desenvolvimento.\n\n# Requisitos\n- Experiência com Python, Machine Learning.\n- Conhecimento em React e Node.js.\n- Familiaridade com Agile Methodologies.\n- Inglês avançado para comunicação.",
+    "aplicar": "(11) 99195-0357",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vem-ser-decision-oportunidades-em-sao-carlos-sp"
+  },
+  {
+    "id": 77,
+    "title": "Vaga: Desenvolvedor(a) Full Stack Júnior",
+    "body": "### Empresa\n\nEmpresa indefinida\n\n### Nível\n\nJúnior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nJava, React\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Desenvolver e manter sistemas back-end em Java.\n- Desenvolver e manter sistemas front-end em React.\n\n# Requisitos\n- Ter perfil proativo.\n- Ter uma boa base técnica.\n- Disponibilidade para trabalhar 100% remoto.\n\n### Como se candidatar\n\nhttps://wa.me/34984194220\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/77",
+    "createdAt": "2026-03-10T13:49:55Z",
+    "updatedAt": "2026-03-10T13:49:55Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Júnior",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "React"
+    ],
+    "descricao": "# Responsabilidades\n- Desenvolver e manter sistemas back-end em Java.\n- Desenvolver e manter sistemas front-end em React.\n\n# Requisitos\n- Ter perfil proativo.\n- Ter uma boa base técnica.\n- Disponibilidade para trabalhar 100% remoto.",
+    "aplicar": "https://wa.me/34984194220",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-desenvolvedor-a-full-stack-junior"
+  },
+  {
+    "id": 76,
+    "title": "🚨 Vaga: Gerente Técnico TOTVS Datasul®, Progress® e Arquitetura Web.",
+    "body": "### Empresa\n\nINSTI Soluções em TI\n\n### Nível\n\nSênior\n\n### Área\n\nDev\n\n### Tipo\n\nRemoto\n\n### Localização\n\nRemoto BR\n\n### Salário\n\nA combinar\n\n### Stack\n\nTOTVS Datasul®, Progress®\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Liderança de times e projetos de tecnologia.\n- Levantamento e definição de requisitos em projetos de negócio e desenvolvimento Progress/Web.\n- Experiência com metodologias ágeis e gestão de projetos.\n- Acompanhamento de KPIs e indicadores de desempenho.\n- Condução de projetos curtos, com múltiplos stakeholders e demandas simultâneas.\n- Execução de projetos de média e alta complexidade.\n- Criação, gestão e negociação de cronogramas.\n\n# Requisitos\n- Experiência sólida com TOTVS Datasul®, com conhecimento funcional avançado nos principais módulos.\n- Conhecimento prático em desenvolvimento Progress® no Datasul®, incluindo APIs REST e integrações.\n- Conhecimento em banco de dados Progress®.\n- Conhecimento em arquitetura TOTVS Datasul®, especialmente PASOE, Tomcat e PO-UI.\n- Experiência na condução de projetos curtos, com múltiplos stakeholders e demandas simultâneas.\n- Vivência na execução de projetos de média e alta complexidade.\n\n### Como se candidatar\n\nselecao@insti.com.br\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/76",
+    "createdAt": "2026-03-10T13:41:52Z",
+    "updatedAt": "2026-03-10T13:41:52Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "INSTI Soluções em TI",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto BR",
+    "salario": "A combinar",
+    "stack": [
+      "TOTVS Datasul®",
+      "Progress®"
+    ],
+    "descricao": "# Responsabilidades\n- Liderança de times e projetos de tecnologia.\n- Levantamento e definição de requisitos em projetos de negócio e desenvolvimento Progress/Web.\n- Experiência com metodologias ágeis e gestão de projetos.\n- Acompanhamento de KPIs e indicadores de desempenho.\n- Condução de projetos curtos, com múltiplos stakeholders e demandas simultâneas.\n- Execução de projetos de média e alta complexidade.\n- Criação, gestão e negociação de cronogramas.\n\n# Requisitos\n- Experiência sólida com TOTVS Datasul®, com conhecimento funcional avançado nos principais módulos.\n- Conhecimento prático em desenvolvimento Progress® no Datasul®, incluindo APIs REST e integrações.\n- Conhecimento em banco de dados Progress®.\n- Conhecimento em arquitetura TOTVS Datasul®, especialmente PASOE, Tomcat e PO-UI.\n- Experiência na condução de projetos curtos, com múltiplos stakeholders e demandas simultâneas.\n- Vivência na execução de projetos de média e alta complexidade.",
+    "aplicar": "selecao@insti.com.br",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "vaga-gerente-tecnico-totvs-datasul-progress-e-arquitetura-web"
+  },
+  {
+    "id": 75,
+    "title": "Desenvolvedor(a) C#/.Net - Pleno",
+    "body": "### Empresa\n\nIconit\n\n### Nível\n\nPleno\n\n### Área\n\nDev\n\n### Tipo\n\nPresencial\n\n### Localização\n\nPinheiros\n\n### Salário\n\nA combinar\n\n### Stack\n\nC#, .NET Core, PostgreSQL, SQL Server, Git, Pull Requests, Kotlin, Java, Android, Clean Architecture, SOLID, DDD, CQRS, Docker, Azure, AWS, GCP\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Desenvolver e manter APIs REST em C#/.NET\n- Atuar no desenvolvimento de aplicações Android\n- Aplicar SOLID e Clean Architecture no backend e no mobile\n- Projetar soluções com separação clara de responsabilidades e baixo acoplamento\n- Consumir APIs, tratar autenticação, erros e estados no Android\n- Participar de code reviews, refinamentos técnicos e decisões de arquitetura\n- Implementar e manter testes automatizados\n- Identificar gargalos técnicos e propor melhorias contínuas\n- Código testável, legível e evolutivo\n- Decisões técnicas documentadas e discutidas em time\n\n# Requisitos\n- Experiência como Desenvolvedor(a) Full Stack em nível Pleno\n- Sólidos conhecimentos em C# e .NET Core (.NET 6+)\n- Experiência com APIs REST (consumo e desenvolvimento)\n- Domínio prático de SOLID\n- Vivência real com Clean Architecture\n- Conhecimento em banco de dados relacional (PostgreSQL, SQL Server ou similar)\n- Git e fluxo de trabalho com Pull Requests\n\n### Como se candidatar\n\ngiovana.santos@iconit.com.br\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/75",
+    "createdAt": "2026-03-10T13:33:29Z",
+    "updatedAt": "2026-03-10T13:33:29Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [],
+    "empresa": "Iconit",
+    "nivel": "Pleno",
+    "tipo": "Presencial",
+    "local": "Pinheiros",
+    "salario": "A combinar",
+    "stack": [
+      "C"
+    ],
+    "descricao": "# Responsabilidades\n- Desenvolver e manter APIs REST em C#/.NET\n- Atuar no desenvolvimento de aplicações Android\n- Aplicar SOLID e Clean Architecture no backend e no mobile\n- Projetar soluções com separação clara de responsabilidades e baixo acoplamento\n- Consumir APIs, tratar autenticação, erros e estados no Android\n- Participar de code reviews, refinamentos técnicos e decisões de arquitetura\n- Implementar e manter testes automatizados\n- Identificar gargalos técnicos e propor melhorias contínuas\n- Código testável, legível e evolutivo\n- Decisões técnicas documentadas e discutidas em time\n\n# Requisitos\n- Experiência como Desenvolvedor(a) Full Stack em nível Pleno\n- Sólidos conhecimentos em C# e .NET Core (.NET 6+)\n- Experiência com APIs REST (consumo e desenvolvimento)\n- Domínio prático de SOLID\n- Vivência real com Clean Architecture\n- Conhecimento em banco de dados relacional (PostgreSQL, SQL Server ou similar)\n- Git e fluxo de trabalho com Pull Requests",
+    "aplicar": "giovana.santos@iconit.com.br",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-c-net-pleno"
+  },
+  {
     "id": 74,
     "title": "Oportunidade - Conquest One",
     "body": "### Empresa\n\nConquest One\n\n### Nível\n\nIndefinido\n\n### Área\n\nDev\n\n### Tipo\n\nHíbrido\n\n### Localização\n\nSão Paulo/SP\n\n### Salário\n\nA combinar\n\n### Stack\n\nFortinet, AWS, Cloud Azure, Cisco, Direct Connect, VPC, Transit Gateway, Private Link, NAT Gateway, Route 53, DNS, Firewall, Switching, Routing, OSPF, BGP, RIP, IGRP, SIP, E1, 0800\n\n### Descrição da Vaga\n\n# Responsabilidades\n- Vivência em projetos e sustentação de ambiente de redes em Cloud AWS\n- Experiência com equipamentos Fortinet\n- Gestão de links Voz e Dados\n- Interação junto as operadoras e serviços\n- Monitoração de todos os ativos de Rede\n- Atuação nas frentes de sustentação e projetos\n- Atuação em incidentes e problemas, troubleshooting.\n- RFP e avaliação de fornecedores\n- Interface com demais áreas da empresa\n- Conhecimentos em Redes para administração e troubleshooting Cloud e On Premisses: Routing, Switching, Firewall - (VPC, Direct Connect, VPC Peering, VPN, Private Link, Nat Gateway, Transit Gateway, Landing Zone)\n- Conhecimentos em protocolos: TCP/IP, OSPF, BGP, RIP, IGRP, VPN\n- Administração de links: L2L, Internet, Direct Connect, Cloud Link, RSFN, Financial Net\n- Infraestrutura de Telecomunicações LAN e WAN, Firewall e Switch Cisco, Fortinet\n- Gestão e administração de Telecom: Links E1, 0800, SIP\n- Conhecimento em Cloud Azure será um diferencial.\n\n# Requisitos\n- AWS\n- Troubleshooting, alteração de regras e configuração para Firewall AWS\n- Troubleshooting e configuração para VPN Site-to-Site AWS\n- Troubleshooting, alteração e configuração para Secure Groups AWS\n- Troubleshooting, alteração e configuração para Route table AWS\n- Troubleshooting, alteração, bloqueios e configuração para ACL AWS\n- Troubleshooting, alteração e configuração para Direct Connect AWS\n- Troubleshooting, alteração e configuração para DNS no Route 53\n\n### Como se candidatar\n\nhttps://wa.me/5511971450724\n\n### Link para se candidatar\n\n\n\n### Publicada no LinkedIn?\n\nNão\n\n### Vaga Internacional?\n\nNão\n\n### Confirmação\n\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
