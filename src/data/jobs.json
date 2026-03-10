@@ -1,5 +1,34 @@
 [
   {
+    "id": 87,
+    "title": "Desenvolvedor ABAP (Junior, Pleno e Sênior)",
+    "body": "# **🎯 Principais Atividades**\n- Desenvolvimento em SAP ABAP\n- Participação em projetos S4hana\n- Manutenção e melhoria de sistemas existentes\n\n**✅ Requisitos Técnicos**\n- Experiência com projeto S4hana\n\n## Sobre a empresa \nK2 Partnering Solutions é uma empresa líder no mercado de transformação digital e consultoria, oferecendo soluções abrangentes para as demandas das organizações mais audaciosas. Nossa missão é levar inovação à vida dos nossos clientes usando tecnologia.\n\n## Diferenciais \n- Flexibilidade nos níveis de senioridade da vaga\n- Projeto remoto com duração prevista de 11 meses, podendo ser prorrogado\n- Oportunidades de crescimento e desenvolvimento contínuo",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/87",
+    "createdAt": "2026-03-10T16:22:35Z",
+    "updatedAt": "2026-03-10T16:22:35Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [
+      "remoto",
+      "dev"
+    ],
+    "empresa": "",
+    "nivel": "",
+    "tipo": "",
+    "local": "",
+    "salario": "",
+    "stack": [],
+    "descricao": "",
+    "aplicar": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-abap-junior-pleno-e-senior"
+  },
+  {
     "id": 86,
     "title": "Desenvolvedor ABAP @ K2 Partnering",
     "body": "# [VAGA] Desenvolvedor ABAP\n\n**Nível:** Junior, Pleno e Senior\n**Modelo de atuação:** Remoto\n\n**Duração prevista:** Projeto de 11 meses podendo ser prorrogado\n\n## Requisitos:\n- Experiência em projeto S4hana\n",
