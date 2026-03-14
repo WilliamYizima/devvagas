@@ -1,0 +1,10 @@
+services:
+  worker:
+    build:
+      context: ./worker
+    env_file:
+      - ./worker/.env
+    volumes:
+      - ./src/data/jobs.json:/app/data/jobs.json
+      - ./worker/data:/app/data
+    restart: unless-stopped

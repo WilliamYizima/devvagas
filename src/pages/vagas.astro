@@ -927,7 +927,7 @@ function initials(name: string) {
 
 function renderDesc(raw: string): string {
   return raw
-    .replace(/###\s*(.+)/g, '<h3>$1</h3>')
+    .replace(/^#{1,6}\s+(.+)$/gm, '<h3>$1</h3>')
     .replace(/^- (.+)$/gm, '<li>$1</li>')
     .replace(/(<li>[\s\S]+?<\/li>)+/g, m => `<ul>${m}</ul>`)
     .replace(/\n\n+/g, '</p><p>')

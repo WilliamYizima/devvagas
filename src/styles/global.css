@@ -151,9 +151,18 @@ button { cursor: pointer; font-family: var(--font); }
   background: #ff5e5b; color: #fff !important;
   padding: 0 0.6rem; border-radius: 3px; height: 18px;
   font-weight: 700; letter-spacing: 0.03em;
-  transition: background 0.15s, opacity 0.15s;
+  transition: background 0.15s, transform 0.15s;
+  animation: kofi-pulse 2.8s ease-in-out infinite;
 }
-.sb-kofi:hover { background: #e04e4b; opacity: 0.92; }
+.sb-kofi:hover {
+  background: #e04e4b;
+  animation: none;
+  transform: scale(1.08);
+}
+@keyframes kofi-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,94,91,0.7); transform: scale(1); }
+  50%       { box-shadow: 0 0 0 5px rgba(255,94,91,0); transform: scale(1.05); }
+}
 .sb-right { margin-left: auto; display: flex; gap: 1.5rem; }
 
 /* ── PAGE SHELL ──────────────────────────────────────────────── */

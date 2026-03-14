@@ -56,9 +56,9 @@ function parseDesc(raw: string): string {
       continue;
     }
     // Markdown heading
-    if (/^#{1,3}\s/.test(t)) {
+    if (/^#{1,6}\s/.test(t)) {
       if (inList) { html += '</ul>'; inList = false; }
-      html += `<h3>${fmt(t.replace(/^#{1,3}\s+/, ''))}</h3>`;
+      html += `<h3>${fmt(t.replace(/^#{1,6}\s+/, ''))}</h3>`;
       inSection = true;
       continue;
     }
