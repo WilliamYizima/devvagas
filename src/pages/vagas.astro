@@ -423,7 +423,7 @@ function timeAgo(d: string) {
 }
 .sf-chevron.open { transform: rotate(180deg); }
 
-.sf-body { display: none; padding: 0 0.75rem 0.6rem; }
+.sf-body { display: none; padding: 0 0.75rem 0.6rem; max-height: 180px; overflow-y: auto; }
 
 .sf-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 
@@ -989,7 +989,7 @@ function showPreview(job: any) {
           ? `<span class="jr-tag">${job.tipo}</span>`
           : '';
 
-  (document.getElementById('jp-detail') as HTMLAnchorElement).href  = `/vaga/${job.id}`;
+  (document.getElementById('jp-detail') as HTMLAnchorElement).href  = `${import.meta.env.BASE_URL}vaga/${job.id}`;
 
   const stack = document.getElementById('jp-stack')!;
   stack.innerHTML = (job.stack || []).map((s: string) => {

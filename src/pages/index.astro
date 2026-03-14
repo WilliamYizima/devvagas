@@ -414,7 +414,7 @@ function showDropdown(q: string) {
   const esc = (t: string) => t.replace(/[<>&]/g, c => ({'<':'&lt;','>':'&gt;','&':'&amp;'}[c]!));
   drop.innerHTML = acFiltered.map((s, i) => {
     const hl = esc(s.text).replace(new RegExp(`(${esc(q)})`, 'gi'), '<b>$1</b>');
-    return `<div class="sc-ac-item" data-idx="${i}"><span class="sc-ac-type t-${s.type}">${s.type}</span><span class="sc-ac-text">${hl}</span></div>`;
+    return `<div class="sc-ac-item" data-idx="${i}"><span class="sc-ac-text">${hl}</span></div>`;
   }).join('');
   drop.querySelectorAll<HTMLElement>('.sc-ac-item').forEach(item => {
     item.addEventListener('mousedown', e => {
