@@ -1,5 +1,44 @@
 [
   {
+    "id": 122,
+    "title": "Analista de QA Automatizados Pleno",
+    "body": "### Empresa\nITLEAN\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\n100% Home Office\n\n### Salário\nA combinar\n\n### Stack\nJava, JavaScript/TypeScript, Cypress, Playwright, Padrões Page Object Model (POM), Screenplay, Testes de API (REST/SOAP)\n\n### Descrição da Vaga\n#### 🎯 Principais Atividades\n- Garantir a estabilidade de um e-commerce atuando com automação de testes e validação de regras de negócio.\n\n#### ✅ Requisitos Técnicos\n- Experiência com automação de testes (BDD / Gherkin);\n- Java ou JavaScript/TypeScript com Cypress ou Playwright;\n- Padrões Page Object Model (POM) ou Screenplay;\n- Testes de API (REST/SOAP);\n- Gestão de bugs em Azure Test Plans ou Jira.\n\n#### 🌟 Diferenciais\n- Uso de IA generativa aplicada a QA para geração de testes e dados.\n\n### Como se candidatar\nhttps://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY\n\n### Link para se candidatar\nleticia.rodrigues@ITLEAN.com.br\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/122",
+    "createdAt": "2026-03-14T02:25:01Z",
+    "updatedAt": "2026-03-14T02:25:01Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [
+      "remoto",
+      "dev",
+      "pleno"
+    ],
+    "empresa": "ITLEAN",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "100% Home Office",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Cypress",
+      "Playwright",
+      "Padrões Page Object Model (POM)",
+      "Screenplay",
+      "Testes de API (REST"
+    ],
+    "descricao": "#### 🎯 Principais Atividades\n- Garantir a estabilidade de um e-commerce atuando com automação de testes e validação de regras de negócio.",
+    "aplicar": "https://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "analista-de-qa-automatizados-pleno"
+  },
+  {
     "id": 121,
     "title": "Analista de QA Automatizados Pleno",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\n100% Home Office\n\n### Salário\nA combinar\n\n### Stack\nJava, JavaScript/TypeScript, Cypress, Playwright, Padrões Page Object Model (POM), Screenplay, Testes de API (REST/SOAP)\n\n### Descrição da Vaga\n#### 🎯 Principais Atividades\n- Garantir a estabilidade de um e-commerce, atuando com automação de testes e validação de regras de negócios.\n\n#### ✅ Requisitos Técnicos\n- Experiência com automação de testes (BDD / Gherkin);\n- Java ou JavaScript/TypeScript com Cypress ou Playwright;\n- Padrões Page Object Model (POM) ou Screenplay;\n- Testes de API (REST/SOAP);\n- Gestão de bugs em Azure Test Plans ou Jira.\n\n#### 🌟 Diferenciais\n- Uso de IA generativa aplicada a QA para geração de testes e dados.\n\n### Como se candidatar\nhttps://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
