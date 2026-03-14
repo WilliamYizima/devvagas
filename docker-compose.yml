@@ -4,6 +4,8 @@ services:
       context: ./worker
     env_file:
       - ./worker/.env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - ./src/data/jobs.json:/app/data/jobs.json
       - ./worker/data:/app/data
