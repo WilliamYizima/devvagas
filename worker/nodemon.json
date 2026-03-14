@@ -1,0 +1,6 @@
+{
+  "watch": ["src", ".agents"],
+  "ext": "ts,json,md",
+  "ignore": ["src/**/*.test.ts", "dist"],
+  "exec": "ts-node --project tsconfig.json src/index.ts"
+}

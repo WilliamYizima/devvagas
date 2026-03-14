@@ -13,7 +13,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="ct-gutter" id="ct-gutter"></div>
     <div class="ct-content" id="ct-content">
 
-      <span class="cl cm">// aviso legal e isenção de responsabilidade</span>
+      <span class="cl ch">// sobre este projeto</span>
+      <span class="cl"></span>
+
+      <span class="cl">Este site foi desenvolvido e é operado com o auxílio de Inteligência Artificial, incluindo a coleta automatizada de vagas e o processamento das informações publicadas.</span>
+      <span class="cl"></span>
+
+      <span class="cl">Em razão do caráter automatizado do processo, inconsistências pontuais podem ocorrer. Caso identifique alguma informação incorreta, desatualizada ou inadequada, agradecemos o contato para que possamos proceder com a correção.</span>
+      <span class="cl"></span>
+
+      <span class="cl ch">// aviso legal e isenção de responsabilidade</span>
       <span class="cl"></span>
 
       <span class="cl">Este site atua exclusivamente como um agregador e divulgador de oportunidades de emprego.</span>
@@ -73,12 +82,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 .ct-content {
   flex: 1; overflow-y: auto;
-  padding: 1.5rem 2.5rem; max-width: 680px;
+  padding: 1.5rem 2.5rem;
   display: flex; flex-direction: column;
 }
 
 .cl { font-size: 0.72rem; line-height: 1.9; display: block; white-space: pre-wrap; }
 .cl.cm { color: var(--muted); font-style: italic; }
+.cl.ch { color: var(--purple); font-style: italic; font-size: 0.8rem; margin-top: 0.5rem; }
 .ck { color: #9cdcfe; }
 .cs { color: #ce9178; text-decoration: none; transition: opacity 0.15s; }
 .cs:hover { opacity: 0.7; }

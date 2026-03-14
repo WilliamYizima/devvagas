@@ -1,0 +1,21 @@
+# Build
+dist/
+*.js.map
+
+# Dependências
+node_modules/
+
+# Dados locais (nunca commitar)
+data/
+tmp/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Variáveis de ambiente (nunca commitar)
+.env
+
+# Sistema
+.DS_Store
+*.log
