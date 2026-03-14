@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "id": 123,
+    "title": "Crie uma issue",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nHome Office\n\n### Salário\nA combinar\n\n### Stack\nJava, JavaScript/TypeScript, Cypress, Playwright, Padrões Page Object Model (POM) ou Screenplay, Testes de API (REST/SOAP)\n\n### Descrição da Vaga\n#### 🎯 Principais Atividades\n- Garantir a estabilidade de um e-commerce\n- Automação de testes com ferramentas BDD / Gherkin\n- Usar ferramentas Java ou JavaScript/TypeScript com Cypress ou Playwright\n- Implementar Padrões Page Object Model (POM) ou Screenplay\n- Executar Testes de API (REST/SOAP)\n- Gerenciar bugs em Azure Test Plans ou Jira\n\n#### ✅ Requisitos Técnicos\n- Experiência com automação de testes (BDD / Gherkin)\n- Java ou JavaScript/TypeScript com Cypress ou Playwright\n- Padrões Page Object Model (POM) ou Screenplay\n- Testes de API (REST/SOAP)\n- Gestão de bugs em Azure Test Plans ou Jira\n\n### Como se candidatar\nhttps://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY\n\n### Link para se candidatar\nleticia.rodrigues@itlean.com.br\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "https://github.com/WilliamYizima/devvagas/issues/123",
+    "createdAt": "2026-03-14T02:41:31Z",
+    "updatedAt": "2026-03-14T02:58:46Z",
+    "author": {
+      "login": "phantonRenegate",
+      "avatar": "https://avatars.githubusercontent.com/u/263217107?v=4",
+      "url": "https://github.com/phantonRenegate"
+    },
+    "labels": [
+      "remoto",
+      "dev",
+      "pleno"
+    ],
+    "empresa": "Empresa indefinida",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Home Office",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Cypress",
+      "Playwright",
+      "Padrões Page Object Model (POM) ou Screenplay",
+      "Testes de API (REST",
+      "SOAP)"
+    ],
+    "descricao": "#### 🎯 Principais Atividades\n- Garantir a estabilidade de um e-commerce\n- Automação de testes com ferramentas BDD / Gherkin\n- Usar ferramentas Java ou JavaScript/TypeScript com Cypress ou Playwright\n- Implementar Padrões Page Object Model (POM) ou Screenplay\n- Executar Testes de API (REST/SOAP)\n- Gerenciar bugs em Azure Test Plans ou Jira",
+    "aplicar": "https://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "crie-uma-issue"
+  }
+]
