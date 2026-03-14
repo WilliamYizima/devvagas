@@ -14,6 +14,9 @@ FROM node:20-alpine
 
 WORKDIR /app
 
+RUN apk add --no-cache ffmpeg python3 py3-pip && \
+    pip3 install --no-cache-dir openai-whisper --break-system-packages
+
 COPY package*.json ./
 RUN npm ci --omit=dev
 
