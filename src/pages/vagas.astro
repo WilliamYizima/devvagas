@@ -644,8 +644,9 @@ function timeAgo(d: string) {
   transition: filter 0.15s;
 }
 .jp-chip:hover { filter: brightness(1.3); }
-.jp-chip-clickable { cursor: pointer; }
-.jp-chip-active { outline: 1px solid currentColor; background: rgba(255,255,255,0.08) !important; }
+:global(.jp-chip-clickable) { cursor: pointer; }
+:global(.jp-chip-clickable:hover) { filter: brightness(1.3); }
+:global(.jp-chip-active) { outline: 1px solid currentColor; background: rgba(255,255,255,0.08) !important; }
 
 .jp-vaga { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
 .jp-vchip {
@@ -868,7 +869,7 @@ function applyFilters() {
     // Outer ring (stack dimension): OR between all selected stack categories
     const outerAnySelected = selectedStacks.size > 0 || selectedStackOthers;
     const matchOuterStack = !outerAnySelected || (
-      (selectedStacks.size > 0 && [...selectedStacks].some(s => hay.includes(s))) ||
+      (selectedStacks.size > 0 && [...selectedStacks].every(s => hay.includes(s))) ||
       (selectedStackOthers && !top4Labels.some(s => hay.includes(s)))
     );
     const matchStack  = matchUrlStack && matchOuterStack;
