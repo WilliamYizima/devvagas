@@ -1,5 +1,39 @@
 [
   {
+    "id": 29,
+    "title": "Software Engineer Frontend",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nCuritiba/PR - PR, Brasil\n\n### Salário\nA combinar\n\n### Stack\nJavaScript, TypeScript, React, HTML, CSS, Git\n\n### Descrição da Vaga\n#### Principais Atividades\n- Construir interfaces modernas e de alta performance\n\n#### Requisitos Técnicos\n- JavaScript / TypeScript\n- React (ou frameworks similares)\n- HTML, CSS e layout responsivo\n- Consumo de APIs (REST ou GraphQL)\n- Git e metodologias ágeis\n\n### Como se candidatar\nrecruteitalentos@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:21:07.275Z",
+    "updatedAt": "2026-03-15T02:21:07.275Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Sênior",
+    "tipo": "Presencial",
+    "local": "Curitiba/PR - PR, Brasil",
+    "salario": "A combinar",
+    "stack": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "HTML",
+      "CSS",
+      "Git"
+    ],
+    "descricao": "#### Principais Atividades\n- Construir interfaces modernas e de alta performance\n\n#### Requisitos Técnicos\n- JavaScript / TypeScript\n- React (ou frameworks similares)\n- HTML, CSS e layout responsivo\n- Consumo de APIs (REST ou GraphQL)\n- Git e metodologias ágeis",
+    "aplicar": "recruteitalentos@gmail.com",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": true,
+    "isInternacional": false,
+    "slug": "software-engineer-frontend"
+  },
+  {
     "id": 28,
     "title": "QA Pleno",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nVila Leopoldina, São Paulo/SP\n\n### Salário\nA combinar\n\n### Stack\nC#, .NET (xUnit, NUnit ou MSTest), Git, CI/CD\n\n### Descrição da Vaga\n#### Principais Atividades\nGarantir a qualidade de entregas no setor financeiro.\n\n#### Requisitos Técnicos\nExperiência de pelo menos 3 anos com testes funcionais e regressivos\nConhecimento prático inicial em automação de testes em .NET (xUnit, NUnit ou MSTest)\nNoções de C# (orientação a objetos) para leitura e apoio ao código\nConhecimento em CI/CD\nExperiência com Git\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/analista-qa-270?invite=agatta\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",

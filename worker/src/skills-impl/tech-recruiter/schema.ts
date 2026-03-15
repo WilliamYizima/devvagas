@@ -60,7 +60,8 @@ export const VacancyFormSchema = z.object({
 
   salario: z
     .string()
-    .optional()
+    .nullish()
+    .transform((v) => v ?? undefined)
     .describe(
       "Faixa salarial ou valor. Copie exatamente como está no texto. " +
       "Se não mencionado, omitir o campo (não usar 'A combinar' — o publisher adiciona)."
@@ -98,14 +99,17 @@ export const VacancyFormSchema = z.object({
 
   linkVaga: z
     .string()
-    .optional()
+    .nullish()
+    .transform((v) => v ?? undefined)
     .describe(
-      "Contatos SECUNDÁRIOS ou link adicional da vaga. Apenas se existir um segundo contato além do 'aplicar'. " +
-      "Se não houver, omitir."
+      "Contato SECUNDÁRIO ou link adicional da vaga: URL, email ou telefone. " +
+      "Apenas se existir um segundo contato além do 'aplicar'. Se não houver, omitir."
     ),
 
   linkedin: z
     .enum(["Sim", "Não"])
+    .catch("Não")
+    .default("Não")
     .describe(
       "Indica se a vaga foi divulgada no LinkedIn ou menciona o LinkedIn. " +
       "'Sim' se o texto contiver 'linkedin.com' ou a palavra 'LinkedIn'. " +
@@ -114,6 +118,8 @@ export const VacancyFormSchema = z.object({
 
   internacional: z
     .enum(["Sim", "Não"])
+    .catch("Não")
+    .default("Não")
     .describe(
       "'Sim' se o texto da vaga estiver predominantemente em inglês. " +
       "'Não' se estiver em português, mesmo que mencione empresa estrangeira."
