@@ -36,7 +36,14 @@ export const VacancyFormSchema = z.object({
     ),
 
   tipo: z
-    .enum(["Remoto", "Híbrido", "Presencial", "Indefinido"])
+    .preprocess((val) => {
+      if (typeof val !== "string") return val;
+      const norm = val.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+      if (norm.includes("hibrido")) return "Híbrido";
+      if (norm.includes("remoto") || norm.includes("remote")) return "Remoto";
+      if (norm.includes("presencial") || norm.includes("on-site") || norm.includes("onsite")) return "Presencial";
+      return val;
+    }, z.enum(["Remoto", "Híbrido", "Presencial", "Indefinido"]).catch("Indefinido"))
     .describe(
       "Modelo de trabalho. Se múltiplos modelos mencionados, use 'Híbrido'. " +
       "Use 'Indefinido' se não mencionado."
