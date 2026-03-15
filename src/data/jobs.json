@@ -1698,31 +1698,35 @@
   },
   {
     "id": 1,
-    "title": "Gerente de Projetos de TI",
-    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nIndefinido\n\n### Área\nBusiness\n\n### Tipo\nHíbrido\n\n### Localização\nZona Sul ou Alphaville - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n🎯 **Principais Atividades**\nSerá o ponto focal pela gestão completa do projeto de escopo fechado. Planejamento, execução, monitoramento e entrega, garantindo a qualidade e o cumprimento rigoroso de prazos.\nGestão de orçamentos e indicadores financeiros (P&L do projeto).\nAtuação consultiva junto a stakeholders e negociação direta com clientes.\nCondução de equipes técnicas multidisciplinares, garantindo o alinhamento entre a entrega técnica e as necessidades de negócio.\nAplicação de boas práticas baseadas no PMI e metodologias ágeis.\n\n🛠️ **Requisitos Técnicos**\nExperiência consolidada em Gestão de Projetos de TI.\nVivência prévia em Consultorias de Tecnologia.\nDomínio de controle financeiro de projetos (budget, custos e margem).\nProficiência em ferramentas de gestão: MS Project, Jira e Power BI.\nConhecimento sólido em Metodologias Ágeis e Pacote Office avançado.\nPerfil resiliente, com foco em mitigação de riscos e resolução de problemas.\nCapacidade de atuar em ambientes dinâmicos e de alta pressão.\n\n✨ **Diferenciais**\nCertificações (PMP, Scrum Master, etc.).\n\n### Como se candidatar\nhttps://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY\n\n### Link para se candidatar\nmarisa.cardilli@200dev.com\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "title": "Arquiteto(a) Salesforce",
+    "body": "### Empresa\nSIGLA\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nCidade - Estado\n\n### Salário\nA combinar\n\n### Stack\nApex, Lightning, Data Modeling, Security Model, DevOps\n\n### Descrição da Vaga\n#### Principais Atividades\n- Liderar o desenho de soluções escaláveis, seguras e integradas na plataforma Salesforce\n- Interagir com times internacionais (EUA, Canadá, Brasil)\n\n#### Requisitos Técnicos\n- Forte experiência em arquitetura da plataforma Salesforce\n- Domínio de Apex, Lightning, Data Modeling e Security Model\n- Experiência com integrações, APIs e arquitetura orientada a serviços\n- Conhecimento em DevOps e otimização de performance\n- Vivência em governança técnica e revisão de arquitetura\n\n### Como se candidatar\n(11) 99195-0357\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
     "url": "",
-    "createdAt": "2026-03-14T03:44:54.046Z",
-    "updatedAt": "2026-03-14T03:44:54.046Z",
+    "createdAt": "2026-03-15T02:48:42.203Z",
+    "updatedAt": "2026-03-15T02:48:42.203Z",
     "author": {
       "login": "system",
       "avatar": "",
       "url": ""
     },
     "labels": [],
-    "empresa": "Empresa indefinida",
-    "nivel": "Indefinido",
+    "empresa": "SIGLA",
+    "nivel": "Sênior",
     "tipo": "Híbrido",
-    "local": "Zona Sul ou Alphaville - SP",
+    "local": "Cidade - Estado",
     "salario": "A combinar",
     "stack": [
-      "Indefinido"
+      "Apex",
+      "Lightning",
+      "Data Modeling",
+      "Security Model",
+      "DevOps"
     ],
-    "descricao": "🎯 **Principais Atividades**\nSerá o ponto focal pela gestão completa do projeto de escopo fechado. Planejamento, execução, monitoramento e entrega, garantindo a qualidade e o cumprimento rigoroso de prazos.\nGestão de orçamentos e indicadores financeiros (P&L do projeto).\nAtuação consultiva junto a stakeholders e negociação direta com clientes.\nCondução de equipes técnicas multidisciplinares, garantindo o alinhamento entre a entrega técnica e as necessidades de negócio.\nAplicação de boas práticas baseadas no PMI e metodologias ágeis.\n\n🛠️ **Requisitos Técnicos**\nExperiência consolidada em Gestão de Projetos de TI.\nVivência prévia em Consultorias de Tecnologia.\nDomínio de controle financeiro de projetos (budget, custos e margem).\nProficiência em ferramentas de gestão: MS Project, Jira e Power BI.\nConhecimento sólido em Metodologias Ágeis e Pacote Office avançado.\nPerfil resiliente, com foco em mitigação de riscos e resolução de problemas.\nCapacidade de atuar em ambientes dinâmicos e de alta pressão.\n\n✨ **Diferenciais**\nCertificações (PMP, Scrum Master, etc.).",
-    "aplicar": "https://chat.whatsapp.com/ISylMBOxPleJ0vToeEc1nY",
-    "linkVaga": "marisa.cardilli@200dev.com",
+    "descricao": "#### Principais Atividades\n- Liderar o desenho de soluções escaláveis, seguras e integradas na plataforma Salesforce\n- Interagir com times internacionais (EUA, Canadá, Brasil)\n\n#### Requisitos Técnicos\n- Forte experiência em arquitetura da plataforma Salesforce\n- Domínio de Apex, Lightning, Data Modeling e Security Model\n- Experiência com integrações, APIs e arquitetura orientada a serviços\n- Conhecimento em DevOps e otimização de performance\n- Vivência em governança técnica e revisão de arquitetura",
+    "aplicar": "(11) 99195-0357",
+    "linkVaga": "",
     "isRemote": false,
     "isLinkedin": false,
     "isInternacional": false,
-    "slug": "gerente-de-projetos-de-ti"
+    "slug": "arquiteto-a-salesforce"
   }
 ]
