@@ -1,5 +1,39 @@
 [
   {
+    "id": 49,
+    "title": "Desenvolvedor(a) Full Stack Pleno",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nNext.js, React, NestJS, PostgreSQL, SCSS, TypeScript\n\n### Descrição da Vaga\n###### Principais Atividades\nDesenvolvimento de componentes reutilizáveis, construção de APIs e integração front + back.\n###### Requisitos Técnicos\n• Next.js\n• React\n• NestJS\n• PostgreSQL\n• SCSS\n###### Diferenciais\nTypeScript, testes com Jest e boas práticas de UI/UX.\n\n### Como se candidatar\ntanila.techrecruiter@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:46:22.667Z",
+    "updatedAt": "2026-03-15T02:46:22.667Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Next.js",
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "SCSS",
+      "TypeScript"
+    ],
+    "descricao": "###### Principais Atividades\nDesenvolvimento de componentes reutilizáveis, construção de APIs e integração front + back.\n###### Requisitos Técnicos\n• Next.js\n• React\n• NestJS\n• PostgreSQL\n• SCSS\n###### Diferenciais\nTypeScript, testes com Jest e boas práticas de UI/UX.",
+    "aplicar": "tanila.techrecruiter@gmail.com",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": true,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-full-stack-pleno"
+  },
+  {
     "id": 48,
     "title": "Desenvolvedor Fullstack Sênior (Java/Angular)",
     "body": "### Empresa\nStefanini Group\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote\n\n### Salário\nA combinar\n\n### Stack\nJava, Angular\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver e implementar soluções full stack usando Java e Angular\n\n#### Requisitos Técnicos\n- Experiência com Java\n- Experiência com Angular\n\n### Como se candidatar\nhttps://lnkd.in/dqFqsNen\n\n### Link para se candidatar\nhttps://lnkd.in/ddHRR6Dh\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
