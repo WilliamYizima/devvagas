@@ -1,5 +1,317 @@
 [
   {
+    "id": 39,
+    "title": "API Designer",
+    "body": "### Empresa\nDecision\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nPython, FastAPI, Flask, Django REST Framework, AsyncAPI, OAuth2, OpenID Connect, Azure API Management (APIM), Postman\n\n### Descrição da Vaga\n#### Principais Atividades\n- Aplicar a metodologia API Design First utilizando OpenAPI (Swagger), RAML ou AsyncAPI\n- Projetar e documentar APIs (endpoints, modelos de dados, paginação, versionamento e estruturas de erro)\n- Desenvolver APIs utilizando Python (FastAPI, Flask ou Django REST Framework)\n- Configurar e gerenciar políticas no Azure API Management (APIM)\n- Implementar integrações de backend e garantir boas práticas de segurança\n- Apoitar testes funcionais, integração e performance de APIs\n- Produzir documentação técnica clara para consumidores de API\n#### Requisitos Técnicos\n- Experiência sólida com Python para desenvolvimento de APIs\n- Forte conhecimento em OpenAPI / Swagger e API Design First\n- Experiência com Azure API Management (APIM)\n- Conhecimento em OAuth2, OpenID Connect e segurança de APIs\n- Experiência com Postman ou ferramentas similares de teste de APIs\n- Vivência com DevOps e pipelines de deploy de APIs\n\n### Como se candidatar\n(11) 99195-0357\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:31:44.433Z",
+    "updatedAt": "2026-03-15T02:31:44.433Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Decision",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "Flask",
+      "Django REST Framework",
+      "AsyncAPI",
+      "OAuth2",
+      "OpenID Connect",
+      "Azure API Management (APIM)"
+    ],
+    "descricao": "#### Principais Atividades\n- Aplicar a metodologia API Design First utilizando OpenAPI (Swagger), RAML ou AsyncAPI\n- Projetar e documentar APIs (endpoints, modelos de dados, paginação, versionamento e estruturas de erro)\n- Desenvolver APIs utilizando Python (FastAPI, Flask ou Django REST Framework)\n- Configurar e gerenciar políticas no Azure API Management (APIM)\n- Implementar integrações de backend e garantir boas práticas de segurança\n- Apoitar testes funcionais, integração e performance de APIs\n- Produzir documentação técnica clara para consumidores de API\n#### Requisitos Técnicos\n- Experiência sólida com Python para desenvolvimento de APIs\n- Forte conhecimento em OpenAPI / Swagger e API Design First\n- Experiência com Azure API Management (APIM)\n- Conhecimento em OAuth2, OpenID Connect e segurança de APIs\n- Experiência com Postman ou ferramentas similares de teste de APIs\n- Vivência com DevOps e pipelines de deploy de APIs",
+    "aplicar": "(11) 99195-0357",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "api-designer"
+  },
+  {
+    "id": 38,
+    "title": "Analista de Projetos Infraestrutura Pleno",
+    "body": "### Empresa\nConquest One\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar em gerenciamento de projetos de infraestrutura de TI.\n\n#### Requisitos Técnicos\nExperiência em ambientes corporativos.\nInglês avançado (nível C1) – comunicação com times e stakeholders globais.\nExperiência em gestão de projetos de infraestrutura de TI.\nExperiência em segurança da informação (diferencial).\n\nPara se candidatar: https://wa.me/5511971450724\n\n### Como se candidatar\nhttps://wa.me/5511971450724\n\n### Link para se candidatar\n5511971450\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:30:44.142Z",
+    "updatedAt": "2026-03-15T02:30:44.142Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Conquest One",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "#### Principais Atividades\nAtuar em gerenciamento de projetos de infraestrutura de TI.\n\n#### Requisitos Técnicos\nExperiência em ambientes corporativos.\nInglês avançado (nível C1) – comunicação com times e stakeholders globais.\nExperiência em gestão de projetos de infraestrutura de TI.\nExperiência em segurança da informação (diferencial).\n\nPara se candidatar: https://wa.me/5511971450724",
+    "aplicar": "https://wa.me/5511971450724",
+    "linkVaga": "5511971450",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "analista-de-projetos-infraestrutura-pleno"
+  },
+  {
+    "id": 37,
+    "title": "Backend Java com forte atuação de Banco de dados",
+    "body": "### Empresa\nCWI Software\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nJava, Banco de dados\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuar em projeto com forte enfoque em banco de dados\n\n#### Requisitos Técnicos\n- Experiência com Java\n- Conhecimento em Banco de Dados\n\n### Como se candidatar\ngiulia.silva@cwi.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:29:55.149Z",
+    "updatedAt": "2026-03-15T02:29:55.149Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "CWI Software",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "Banco de dados"
+    ],
+    "descricao": "#### Principais Atividades\n- Atuar em projeto com forte enfoque em banco de dados\n\n#### Requisitos Técnicos\n- Experiência com Java\n- Conhecimento em Banco de Dados",
+    "aplicar": "giulia.silva@cwi.com.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "backend-java-com-forte-atuacao-de-banco-de-dados"
+  },
+  {
+    "id": 36,
+    "title": "Gerente de Projetos Pleno",
+    "body": "### Empresa\nFullservice (inferred from email)\n\n### Nível\nPleno\n\n### Área\nBusiness\n\n### Tipo\nHíbrido\n\n### Localização\nZona Sul de SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Planejar, executar e acompanhar projetos de tecnologia, infraestrutura e CFTV\n- Gerenciar cronogramas, recursos, riscos e entregas\n- Atuar com equipes multidisciplinares e stakeholders\n- Aplicar metodologias ágeis e boas práticas de gestão de projetos\n\n#### Requisitos Técnicos\n- Experiência com gestão de projetos de tecnologia e infraestrutura\n- Vivência em projetos de CFTV será um diferencial\n- Experiência com metodologias ágeis\n- Habilidade de liderança e coordenação de equipes multidisciplinares\n- Inglês avançado para conversação\n\n### Como se candidatar\ntalentos@fullservice.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:29:21.863Z",
+    "updatedAt": "2026-03-15T02:29:21.863Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Fullservice (inferred from email)",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "Zona Sul de SP",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "#### Principais Atividades\n- Planejar, executar e acompanhar projetos de tecnologia, infraestrutura e CFTV\n- Gerenciar cronogramas, recursos, riscos e entregas\n- Atuar com equipes multidisciplinares e stakeholders\n- Aplicar metodologias ágeis e boas práticas de gestão de projetos\n\n#### Requisitos Técnicos\n- Experiência com gestão de projetos de tecnologia e infraestrutura\n- Vivência em projetos de CFTV será um diferencial\n- Experiência com metodologias ágeis\n- Habilidade de liderança e coordenação de equipes multidisciplinares\n- Inglês avançado para conversação",
+    "aplicar": "talentos@fullservice.com.br",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "gerente-de-projetos-pleno"
+  },
+  {
+    "id": 35,
+    "title": "PMO Sênior",
+    "body": "### Empresa\nEVT\n\n### Nível\nSênior\n\n### Área\nBusiness\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar na gestão e governança de projetos estratégicos, garantindo planejamento, acompanhamento e entrega dentro de prazos, custos e padrões de qualidade. Também será responsável pelo monitoramento de indicadores, gestão de riscos, organização de demandas e apoio às equipes e stakeholders, contribuindo para a melhoria contínua dos processos.\n\n#### Requisitos Técnicos\n• Inglês avançado ou fluente\n• Experiência sólida como PMO ou na gestão de projetos\n• Conhecimento em metodologias ágeis e/ou tradicionais (Scrum, Kanban, PMBOK)\n• Experiência com gestão de indicadores, riscos e cronogramas\n• Habilidade de comunicação e relacionamento com stakeholders\n\n### Como se candidatar\nhttps://lnkd.in/ev2me_RF\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:28:29.745Z",
+    "updatedAt": "2026-03-15T02:28:29.745Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "EVT",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "#### Principais Atividades\nAtuar na gestão e governança de projetos estratégicos, garantindo planejamento, acompanhamento e entrega dentro de prazos, custos e padrões de qualidade. Também será responsável pelo monitoramento de indicadores, gestão de riscos, organização de demandas e apoio às equipes e stakeholders, contribuindo para a melhoria contínua dos processos.\n\n#### Requisitos Técnicos\n• Inglês avançado ou fluente\n• Experiência sólida como PMO ou na gestão de projetos\n• Conhecimento em metodologias ágeis e/ou tradicionais (Scrum, Kanban, PMBOK)\n• Experiência com gestão de indicadores, riscos e cronogramas\n• Habilidade de comunicação e relacionamento com stakeholders",
+    "aplicar": "https://lnkd.in/ev2me_RF",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "pmo-senior"
+  },
+  {
+    "id": 34,
+    "title": "Analista De Requisitos Sênior",
+    "body": "### Empresa\nStefanini\n\n### Nível\nSênior\n\n### Área\nBusiness\n\n### Tipo\nPresencial\n\n### Localização\nCuritiba - PR\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Co-criar soluções inovadoras em parceria com clientes\n- Utilizar tecnologia de ponta, inteligência artificial e criatividade humana para resolver problemas de negócios\n- Impacto real em larga escala\n\n#### Requisitos Técnicos\n- Disponibilidade para início imediato\n\n### Como se candidatar\nhttps://lnkd.in/d4b8EikR\n\n### Link para se candidatar\nhttps://lnkd.in/dgeHtRGW\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:27:38.477Z",
+    "updatedAt": "2026-03-15T02:27:38.477Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Stefanini",
+    "nivel": "Sênior",
+    "tipo": "Presencial",
+    "local": "Curitiba - PR",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "#### Principais Atividades\n- Co-criar soluções inovadoras em parceria com clientes\n- Utilizar tecnologia de ponta, inteligência artificial e criatividade humana para resolver problemas de negócios\n- Impacto real em larga escala\n\n#### Requisitos Técnicos\n- Disponibilidade para início imediato",
+    "aplicar": "https://lnkd.in/d4b8EikR",
+    "linkVaga": "https://lnkd.in/dgeHtRGW",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "analista-de-requisitos-senior"
+  },
+  {
+    "id": 33,
+    "title": "Scrum Master",
+    "body": "### Empresa\nTHS Tecnologia\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n# Principais Atividades\n- Facilitar as cerimônias do Scrum (Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective).\n- Atuar como líder servidor, apoiando o time no cumprimento dos objetivos da sprint.\n- Remover impedimentos que impactem a produtividade da equipe.\n- Apoiar o Product Owner na organização e priorização do backlog.\n- Promover melhoria contínua nos processos de desenvolvimento.\n- Garantir a correta aplicação das práticas e valores do Scrum e metodologias ágeis.\n- Acompanhar métricas ágeis como velocity, lead time, cycle time e burndown.\n- Facilitar a comunicação entre times técnicos, áreas de negócio e stakeholders.\n- Apoiar a maturidade ágil das equipes e disseminar a cultura ágil na organização.\n- Contribuir na organização de PI Planning, roadmap e gestão de entregas quando aplicável.\n\n# Requisitos Técnicos\n- Experiência mínima de 3 anos atuando como Scrum Master ou Agile Coach.\n- Experiência prática com Scrum, Kanban e outras metodologias ágeis.\n- Experiência em projetos de tecnologia e desenvolvimento de software.\n- Conhecimento em ferramentas de gestão ágil como Azure DevOps.\n- Experiência trabalhando com times multidisciplinares (desenvolvimento, dados, QA, DevOps).\n- Capacidade de facilitação, negociação e resolução de conflitos.\n- Experiência com métricas ágeis e melhoria de processos.\n\n### Como se candidatar\ncontatorh@ths.inf.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:26:51.949Z",
+    "updatedAt": "2026-03-15T02:26:51.949Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "THS Tecnologia",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "São Paulo - SP",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "# Principais Atividades\n- Facilitar as cerimônias do Scrum (Sprint Planning, Daily Scrum, Sprint Review e Sprint Retrospective).\n- Atuar como líder servidor, apoiando o time no cumprimento dos objetivos da sprint.\n- Remover impedimentos que impactem a produtividade da equipe.\n- Apoiar o Product Owner na organização e priorização do backlog.\n- Promover melhoria contínua nos processos de desenvolvimento.\n- Garantir a correta aplicação das práticas e valores do Scrum e metodologias ágeis.\n- Acompanhar métricas ágeis como velocity, lead time, cycle time e burndown.\n- Facilitar a comunicação entre times técnicos, áreas de negócio e stakeholders.\n- Apoiar a maturidade ágil das equipes e disseminar a cultura ágil na organização.\n- Contribuir na organização de PI Planning, roadmap e gestão de entregas quando aplicável.\n\n# Requisitos Técnicos\n- Experiência mínima de 3 anos atuando como Scrum Master ou Agile Coach.\n- Experiência prática com Scrum, Kanban e outras metodologias ágeis.\n- Experiência em projetos de tecnologia e desenvolvimento de software.\n- Conhecimento em ferramentas de gestão ágil como Azure DevOps.\n- Experiência trabalhando com times multidisciplinares (desenvolvimento, dados, QA, DevOps).\n- Capacidade de facilitação, negociação e resolução de conflitos.\n- Experiência com métricas ágeis e melhoria de processos.",
+    "aplicar": "contatorh@ths.inf.br",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "scrum-master"
+  },
+  {
+    "id": 32,
+    "title": "Analista Desenvolvedor Fullstack Sênior",
+    "body": "### Empresa\nFoursys\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nC#, .NET / .NET Core, Angular, SQL, Oracle, REST API, SOAP, Azure DevOps, TDD/BDD, VB6\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de soluções escaláveis\n- Modernização de sistemas\n- Integração com sistemas legados\n\n#### Requisitos Técnicos\n- C# | .NET / .NET Core\n- Angular\n- SQL\n- Oracle\n- REST API\n- SOAP\n- Azure DevOps\n- TDD/BDD\n- VB6\n\n### Como se candidatar\nraquel.niemi@foursys.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:25:52.974Z",
+    "updatedAt": "2026-03-15T02:25:52.974Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Foursys",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "C#",
+      ".NET",
+      ".NET Core",
+      "Angular",
+      "SQL",
+      "Oracle",
+      "REST API",
+      "SOAP"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento de soluções escaláveis\n- Modernização de sistemas\n- Integração com sistemas legados\n\n#### Requisitos Técnicos\n- C# | .NET / .NET Core\n- Angular\n- SQL\n- Oracle\n- REST API\n- SOAP\n- Azure DevOps\n- TDD/BDD\n- VB6",
+    "aplicar": "raquel.niemi@foursys.com.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "analista-desenvolvedor-fullstack-senior"
+  },
+  {
+    "id": 31,
+    "title": "Desenvolvedor Fullstack JR",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nJúnior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nNode.js, PostgreSQL, Oracle\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento e manutenção de integrações entre sistemas e APIs.\n- Criação e sustentação de aplicativos e automações no Google AppSheet.\n- Desenvolvimento backend utilizando Node.js.\n- Integrações via APIs REST e manipulação de dados.\n- Apoio às atividades da área de Arquitetura Corporativa\n#### Requisitos Técnicos\n- Desenvolvimento e manutenção de integrações entre sistemas e APIs.\n- Criação e sustentação de aplicativos e automações no Google AppSheet.\n- Desenvolvimento backend utilizando Node.js.\n- Integrações via APIs REST e manipulação de dados.\n- Apoio às atividades da área de Arquitetura Corporativa\n#### Diferenciais\n- Conhecimento em Python, DevOps e Cloud\nPara se candidatar: bruna.santos@nexmuv.com.br\n\n### Como se candidatar\nbruna.santos@nexmuv.com.br\n\n### Link para se candidatar\n11 93317-8602\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:25:04.692Z",
+    "updatedAt": "2026-03-15T02:25:04.692Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Júnior",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Node.js",
+      "PostgreSQL",
+      "Oracle"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento e manutenção de integrações entre sistemas e APIs.\n- Criação e sustentação de aplicativos e automações no Google AppSheet.\n- Desenvolvimento backend utilizando Node.js.\n- Integrações via APIs REST e manipulação de dados.\n- Apoio às atividades da área de Arquitetura Corporativa\n#### Requisitos Técnicos\n- Desenvolvimento e manutenção de integrações entre sistemas e APIs.\n- Criação e sustentação de aplicativos e automações no Google AppSheet.\n- Desenvolvimento backend utilizando Node.js.\n- Integrações via APIs REST e manipulação de dados.\n- Apoio às atividades da área de Arquitetura Corporativa\n#### Diferenciais\n- Conhecimento em Python, DevOps e Cloud\nPara se candidatar: bruna.santos@nexmuv.com.br",
+    "aplicar": "bruna.santos@nexmuv.com.br",
+    "linkVaga": "11 93317-8602",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-fullstack-jr"
+  },
+  {
+    "id": 30,
+    "title": "Software Engineer Frontend",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nCuritiba/PR ou Brasil (Remoto)\n\n### Salário\nA combinar\n\n### Stack\nJavaScript, TypeScript, React, HTML, CSS, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nLidar com construção de interfaces modernas e de alta performance.\n#### Requisitos Técnicos\n• JavaScript / TypeScript\n• React (ou frameworks similares)\n• HTML, CSS e layout responsivo\n• Consumo de APIs (REST ou GraphQL)\n• Git e metodologias ágeis\n\n### Como se candidatar\nrecruteitalentos@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-15T02:24:07.883Z",
+    "updatedAt": "2026-03-15T02:24:07.883Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Sênior",
+    "tipo": "Híbrido",
+    "local": "Curitiba/PR ou Brasil (Remoto)",
+    "salario": "A combinar",
+    "stack": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "HTML",
+      "CSS",
+      "Git"
+    ],
+    "descricao": "#### Principais Atividades\nLidar com construção de interfaces modernas e de alta performance.\n#### Requisitos Técnicos\n• JavaScript / TypeScript\n• React (ou frameworks similares)\n• HTML, CSS e layout responsivo\n• Consumo de APIs (REST ou GraphQL)\n• Git e metodologias ágeis",
+    "aplicar": "recruteitalentos@gmail.com",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": true,
+    "isInternacional": false,
+    "slug": "software-engineer-frontend"
+  },
+  {
     "id": 29,
     "title": "Software Engineer Frontend",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nCuritiba/PR - PR, Brasil\n\n### Salário\nA combinar\n\n### Stack\nJavaScript, TypeScript, React, HTML, CSS, Git\n\n### Descrição da Vaga\n#### Principais Atividades\n- Construir interfaces modernas e de alta performance\n\n#### Requisitos Técnicos\n- JavaScript / TypeScript\n- React (ou frameworks similares)\n- HTML, CSS e layout responsivo\n- Consumo de APIs (REST ou GraphQL)\n- Git e metodologias ágeis\n\n### Como se candidatar\nrecruteitalentos@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
