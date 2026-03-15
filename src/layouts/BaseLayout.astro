@@ -63,7 +63,7 @@ const {
   </a>
 
   <!-- Ajuda -->
-  {import.meta.env.ENABLE_AJUDA === 'true' && (
+  {import.meta.env.PUBLIC_ENABLE_AJUDA === 'true' && (
     <a href={`${import.meta.env.BASE_URL}ajuda`} class={`ab-icon ${activeSection === 'ajuda' ? 'active' : ''}`} data-section="ajuda">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
         <circle cx="12" cy="12" r="10"/>

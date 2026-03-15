@@ -3,7 +3,7 @@
 interface ImportMetaEnv {
   readonly REPO_OWNER: string;
   readonly REPO_NAME: string;
-  readonly ENABLE_AJUDA?: string;
+  readonly PUBLIC_ENABLE_AJUDA?: string;
   PROD: boolean;
   DEV: boolean;
 }

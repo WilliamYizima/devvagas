@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-if (import.meta.env.ENABLE_AJUDA !== 'true') {
+if (import.meta.env.PUBLIC_ENABLE_AJUDA !== 'true') {
   return Astro.redirect(import.meta.env.BASE_URL);
 }
 ---
