@@ -1,102 +1,32 @@
 [
   {
-    "id": 55,
-    "title": "Arquiteuto de Soluções Sênior",
-    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nABAP, Fiori, SAP BTP (CAP/RAP)\n\n### Descrição da Vaga\n#### Principais Atividades\nProjetar e implementar soluções técnicas em ambientes SAP, atuando de forma hands-on com tecnologias como ABAP, Fiori e SAP BTP (CAP/RAP). Participar da definição da arquitetura e do desenvolvimento das soluções, colaborando com equipes técnicas e de negócio para garantir boas práticas, qualidade e escalabilidade das aplicações.\n\n#### Requisitos Técnicos\nInglês profissional, Experiência sênior (7–10 anos) como Arquiteto de Soluções ou Tech Lead, Experiência hands-on com SAP (ABAP, Fiori, BTP – CAP/RAP), Experiência em arquitetura e desenvolvimento de soluções SAP\n\n### Como se candidatar\nhttps://lnkd.in/dzuhcehe\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "id": 53,
+    "title": "Consultor SAP MM Sênior",
+    "body": "### Empresa\nEVT\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nGuarulhos - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuação presencial em Guarulhos/SP\n\n#### Requisitos Técnicos\n- Inglês fluente;\n- Experiência prévia com liderança;\n- Localização Brasil;\n- Necessário Inglês Avançado/Fluente;\n\n### Como se candidatar\nhttps://bit.ly/4rt3A5q\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
     "url": "",
-    "createdAt": "2026-03-15T02:55:49.785Z",
-    "updatedAt": "2026-03-15T02:55:49.785Z",
+    "createdAt": "2026-03-15T02:56:34.813Z",
+    "updatedAt": "2026-03-15T02:56:34.813Z",
     "author": {
       "login": "system",
       "avatar": "",
       "url": ""
     },
     "labels": [],
-    "empresa": "Empresa indefinida",
+    "empresa": "EVT",
     "nivel": "Sênior",
-    "tipo": "Remoto",
-    "local": "Remoto",
-    "salario": "A combinar",
-    "stack": [
-      "ABAP",
-      "Fiori",
-      "SAP BTP (CAP",
-      "RAP)"
-    ],
-    "descricao": "#### Principais Atividades\nProjetar e implementar soluções técnicas em ambientes SAP, atuando de forma hands-on com tecnologias como ABAP, Fiori e SAP BTP (CAP/RAP). Participar da definição da arquitetura e do desenvolvimento das soluções, colaborando com equipes técnicas e de negócio para garantir boas práticas, qualidade e escalabilidade das aplicações.\n\n#### Requisitos Técnicos\nInglês profissional, Experiência sênior (7–10 anos) como Arquiteto de Soluções ou Tech Lead, Experiência hands-on com SAP (ABAP, Fiori, BTP – CAP/RAP), Experiência em arquitetura e desenvolvimento de soluções SAP",
-    "aplicar": "https://lnkd.in/dzuhcehe",
-    "linkVaga": "",
-    "isRemote": true,
-    "isLinkedin": false,
-    "isInternacional": false,
-    "slug": "arquiteuto-de-solucoes-senior"
-  },
-  {
-    "id": 54,
-    "title": "PMO Pleno",
-    "body": "### Empresa\nUltracon\n\n### Nível\nPleno\n\n### Área\nBusiness\n\n### Tipo\nPresencial\n\n### Localização\nBela Vista – São Paulo/SP\n\n### Salário\nA combinar\n\n### Stack\nMS Project, Excel avançado, PowerPoint\n\n### Descrição da Vaga\n#### Principais Atividades\n- Apoiar o gerente de projeto no planejamento, controle e acompanhamento das atividades, mantendo e atualizando o cronograma integrado (MS Project ou equivalente).\n- Consolidar e analisar status, indicadores e desvios de prazo, custo e escopo, elaborando relatórios executivos periódicos para comitês e stakeholders.\n- Atuar no controle de riscos, issues e planos de ação, apoiar a gestão de mudanças (change requests) e controle de baseline, garantindo aderência à metodologia do projeto (SAP Activate).\n- Organizar e suportar comitês de governança (Steering, Quality Gate e status), padronizar e manter templates, documentação e evidências do projeto, além de apoiar o controle de entregáveis, marcos e quality gates.\n- Atuar como interface entre áreas de negócio, TI, consultoria SAP e gestão, apoiando auditorias, lições aprendidas e encerramento do projeto.\n\n#### Requisitos Técnicos\n- Experiência como PMO em projetos SAP\n- Conhecimento em metodologia SAP Activate\n- Experiência em planejamento, controle e reporte de projetos\n- Vivência em gestão de escopo, prazo, custo, qualidade, riscos e comunicações\n- Experiência em cronograma integrado\n- Conhecimento em projetos Greenfield\n\n### Como se candidatar\namanda.nunes@ultracon.com.br\n\n### Link para se candidatar\n(11) 98961-8801\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
-    "url": "",
-    "createdAt": "2026-03-15T02:54:23.877Z",
-    "updatedAt": "2026-03-15T02:54:23.877Z",
-    "author": {
-      "login": "system",
-      "avatar": "",
-      "url": ""
-    },
-    "labels": [],
-    "empresa": "Ultracon",
-    "nivel": "Pleno",
     "tipo": "Presencial",
-    "local": "Bela Vista – São Paulo/SP",
+    "local": "Guarulhos - SP",
     "salario": "A combinar",
     "stack": [
-      "MS Project",
-      "Excel avançado",
-      "PowerPoint"
+      "Indefinido"
     ],
-    "descricao": "#### Principais Atividades\n- Apoiar o gerente de projeto no planejamento, controle e acompanhamento das atividades, mantendo e atualizando o cronograma integrado (MS Project ou equivalente).\n- Consolidar e analisar status, indicadores e desvios de prazo, custo e escopo, elaborando relatórios executivos periódicos para comitês e stakeholders.\n- Atuar no controle de riscos, issues e planos de ação, apoiar a gestão de mudanças (change requests) e controle de baseline, garantindo aderência à metodologia do projeto (SAP Activate).\n- Organizar e suportar comitês de governança (Steering, Quality Gate e status), padronizar e manter templates, documentação e evidências do projeto, além de apoiar o controle de entregáveis, marcos e quality gates.\n- Atuar como interface entre áreas de negócio, TI, consultoria SAP e gestão, apoiando auditorias, lições aprendidas e encerramento do projeto.\n\n#### Requisitos Técnicos\n- Experiência como PMO em projetos SAP\n- Conhecimento em metodologia SAP Activate\n- Experiência em planejamento, controle e reporte de projetos\n- Vivência em gestão de escopo, prazo, custo, qualidade, riscos e comunicações\n- Experiência em cronograma integrado\n- Conhecimento em projetos Greenfield",
-    "aplicar": "amanda.nunes@ultracon.com.br",
-    "linkVaga": "(11) 98961-8801",
+    "descricao": "#### Principais Atividades\n- Atuação presencial em Guarulhos/SP\n\n#### Requisitos Técnicos\n- Inglês fluente;\n- Experiência prévia com liderança;\n- Localização Brasil;\n- Necessário Inglês Avançado/Fluente;",
+    "aplicar": "https://bit.ly/4rt3A5q",
+    "linkVaga": "",
     "isRemote": false,
     "isLinkedin": false,
     "isInternacional": false,
-    "slug": "pmo-pleno"
-  },
-  {
-    "id": 53,
-    "title": "Arquiteto de EPM",
-    "body": "### Empresa\nUltracon\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nOracle EPM Planning Cloud, Calc Script, Groovy, EPM Data Integration, Oracle EPM Integration Agent, Cubos ASO, Workflow, Task Manager, Forms 2.0, Dashboards 2.0, Sandbox, Intelligence AI (Plano Preditivo, Previsões Avançadas, Projeto Recurso)\n\n### Descrição da Vaga\n#### Principais Atividades\n- Definir e evoluir a arquitetura de soluções de planejamento financeiro utilizando Oracle EPM Planning Cloud (EPBCS)\n- Projetar e implementar modelos de planejamento corporativo escaláveis, robustos e alinhados às melhores práticas da plataforma\n- Desenvolver e otimizar regras de cálculo utilizando EPM Business Rules (Calc Script) e Groovy\n- Implementar e otimizar processos de carga de dados e integração utilizando EPM Data Integration (Data Management) e Oracle EPM Integration Agent\n- Conduzir conversões e otimizações de aplicações Planning BSO para Hybrid BSO, garantindo ganho de performance e eficiência operacional\n- Projetar e implementar cubos ASO (Aggregate Storage Option) para cenários analíticos e de reporting\n- Estruturar e configurar funcionalidades avançadas da plataforma, incluindo Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Integrar soluções EPM com sistemas corporativos, assegurando consistência e governança dos dados financeiros\n- Apoiar áreas de negócio na definição de processos de planejamento, forecast e análise financeira suportados pela plataforma\n- Atuar como referência técnica na definição de padrões, boas práticas e governança do ambiente EPM\n- Explorar e aplicar recursos de Inteligência Artificial disponíveis no Oracle EPM Planning Cloud para aprimorar processos de planejamento e previsão financeira\n\n#### Requisitos Técnicos\n- Experiência sólida em Oracle EPM Planning Cloud (EPBCS), com no mínimo 3 anos de atuação prática em projetos de implementação ou evolução da plataforma\n- Profundo conhecimento nas funcionalidades da plataforma, incluindo Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Domínio na construção e otimização de regras de cálculo utilizando EPM Business Rules (Calc Script)\n- Experiência no desenvolvimento de regras avançadas utilizing Groovy para automação e customização de processos\n- Forte conhecimento em EPM Data Integration (Data Management) para construção de regras de carga de dados e gerenciamento de dimensões\n- Experiência na implementação e otimização de aplicações Planning BSO e conversão para Hybrid BSO\n- Experiência na implementação e utilização de cubos ASO (Aggregate Storage Option) em aplicações de planejamento\n- Experiência na construção de processos de integração de dados utilizando Oracle EPM Integration Agent\n\n### Como se candidatar\njussara.nobre@ultracon.com.br\n\n### Link para se candidatar\n+55 (11) 91369-2004\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
-    "url": "",
-    "createdAt": "2026-03-15T02:53:14.456Z",
-    "updatedAt": "2026-03-15T02:53:14.456Z",
-    "author": {
-      "login": "system",
-      "avatar": "",
-      "url": ""
-    },
-    "labels": [],
-    "empresa": "Ultracon",
-    "nivel": "Pleno",
-    "tipo": "Remoto",
-    "local": "Remoto",
-    "salario": "A combinar",
-    "stack": [
-      "Oracle EPM Planning Cloud",
-      "Calc Script",
-      "Groovy",
-      "EPM Data Integration",
-      "Oracle EPM Integration Agent",
-      "Cubos ASO",
-      "Workflow",
-      "Task Manager"
-    ],
-    "descricao": "#### Principais Atividades\n- Definir e evoluir a arquitetura de soluções de planejamento financeiro utilizando Oracle EPM Planning Cloud (EPBCS)\n- Projetar e implementar modelos de planejamento corporativo escaláveis, robustos e alinhados às melhores práticas da plataforma\n- Desenvolver e otimizar regras de cálculo utilizando EPM Business Rules (Calc Script) e Groovy\n- Implementar e otimizar processos de carga de dados e integração utilizando EPM Data Integration (Data Management) e Oracle EPM Integration Agent\n- Conduzir conversões e otimizações de aplicações Planning BSO para Hybrid BSO, garantindo ganho de performance e eficiência operacional\n- Projetar e implementar cubos ASO (Aggregate Storage Option) para cenários analíticos e de reporting\n- Estruturar e configurar funcionalidades avançadas da plataforma, incluindo Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Integrar soluções EPM com sistemas corporativos, assegurando consistência e governança dos dados financeiros\n- Apoiar áreas de negócio na definição de processos de planejamento, forecast e análise financeira suportados pela plataforma\n- Atuar como referência técnica na definição de padrões, boas práticas e governança do ambiente EPM\n- Explorar e aplicar recursos de Inteligência Artificial disponíveis no Oracle EPM Planning Cloud para aprimorar processos de planejamento e previsão financeira\n\n#### Requisitos Técnicos\n- Experiência sólida em Oracle EPM Planning Cloud (EPBCS), com no mínimo 3 anos de atuação prática em projetos de implementação ou evolução da plataforma\n- Profundo conhecimento nas funcionalidades da plataforma, incluindo Workflow, Task Manager, Forms 2.0, Dashboards 2.0 e Sandbox\n- Domínio na construção e otimização de regras de cálculo utilizando EPM Business Rules (Calc Script)\n- Experiência no desenvolvimento de regras avançadas utilizing Groovy para automação e customização de processos\n- Forte conhecimento em EPM Data Integration (Data Management) para construção de regras de carga de dados e gerenciamento de dimensões\n- Experiência na implementação e otimização de aplicações Planning BSO e conversão para Hybrid BSO\n- Experiência na implementação e utilização de cubos ASO (Aggregate Storage Option) em aplicações de planejamento\n- Experiência na construção de processos de integração de dados utilizando Oracle EPM Integration Agent",
-    "aplicar": "jussara.nobre@ultracon.com.br",
-    "linkVaga": "+55 (11) 91369-2004",
-    "isRemote": true,
-    "isLinkedin": false,
-    "isInternacional": false,
-    "slug": "arquiteto-de-epm"
+    "slug": "consultor-sap-mm-senior"
   },
   {
     "id": 52,
