@@ -1,5 +1,41 @@
 [
   {
+    "id": 58,
+    "title": "Engenheiro(a) de Dados",
+    "body": "### Empresa\nServiços indefinidos\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nRio de Janeiro - RJ\n\n### Salário\nA combinar\n\n### Stack\nGCP, BigQuery, Dataflow, Dataproc (Spark), Pub/Sub, Python, SQL avançados, CI/CD, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar com projetos de alta complexidade, arquitetura moderna na Google Cloud e iniciativas de IA.\n\n#### Requisitos Técnicos\n5+ anos em Engenharia de Dados, 3+ anos com GCP, experiência com BigQuery, Dataflow, Dataproc (Spark), Pub/Sub, Python e SQL avançados, experiência com pipelines ELT/ETL e modelagem analítica, CI/CD, Git.\n\n#### Diferenciais\nVertex AI, Looker, Data Mesh e certificação Google Professional Data Engineer.\n\n### Como se candidatar\ncurriculo@venhapranuvem.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T18:22:50.306Z",
+    "updatedAt": "2026-03-16T18:22:50.306Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Serviços indefinidos",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "Rio de Janeiro - RJ",
+    "salario": "A combinar",
+    "stack": [
+      "GCP",
+      "BigQuery",
+      "Dataflow",
+      "Dataproc (Spark)",
+      "Pub",
+      "Sub",
+      "Python",
+      "SQL avançados"
+    ],
+    "descricao": "#### Principais Atividades\nAtuar com projetos de alta complexidade, arquitetura moderna na Google Cloud e iniciativas de IA.\n\n#### Requisitos Técnicos\n5+ anos em Engenharia de Dados, 3+ anos com GCP, experiência com BigQuery, Dataflow, Dataproc (Spark), Pub/Sub, Python e SQL avançados, experiência com pipelines ELT/ETL e modelagem analítica, CI/CD, Git.\n\n#### Diferenciais\nVertex AI, Looker, Data Mesh e certificação Google Professional Data Engineer.",
+    "aplicar": "curriculo@venhapranuvem.com.br",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "engenheiro-a-de-dados"
+  },
+  {
     "id": 57,
     "title": "Cientista de Dados – IA Generativa",
     "body": "### Empresa\nFoursys\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nBrasília - DF\n\n### Salário\nA combinar\n\n### Stack\nPython, SQL\n\n### Descrição da Vaga\n#### Principais Atividades\nDesenvolver e testar prompts avançados\nCriar e evoluir agentes inteligentes\nIntegrar IA em sistemas e monitorar resultados\n\n#### Requisitos Técnicos\nExperiência prática com LLMs e IA generativa\nPython e SQL\nMachine learning e modelagem preditiva\nConhecimento em mercado financeiro\n\n### Como se candidatar\nhttps://www.linkedin.com/jobs/view/4386391102/?trk=mcm\n\n### Link para se candidatar\nraquel.niemi@foursys.com.br\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
