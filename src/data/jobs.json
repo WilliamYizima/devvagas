@@ -1,5 +1,41 @@
 [
   {
+    "id": 59,
+    "title": "Arquiteto de Soluções",
+    "body": "### Empresa\nPasquali Solution\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nCloud, AWS, Azure ou Google Cloud, Arquitetura de Microserviços, Kafka, RabbitMQ, APIs REST e GraphQL, DevOps / CI-CD, Terraform, Ansible, Kubernetes, Docker, OAuth2, criptografia, LGPD, SQL, NoSQL, cache, alta disponibilidade\n\n### Descrição da Vaga\n#### Principais Atividades\nDesenho de arquiteturas escaláveis e seguras\nAvaliação de trade-offs técnicos (build vs buy)\nModernização de sistemas legados\nDefinição de padrões técnicos e mentoria do time\n\n#### Requisitos Técnicos\nInglês: Fluente, Experiência com Cloud, Arquitetura de Microserviços, Kafka, RabbitMQ, APIs REST e GraphQL, DevOps / CI-CD, Terraform, Ansible, Kubernetes, Docker, Práticas de segurança (OAuth2, criptografia, LGPD), Experiência com SQL e NoSQL, cache e alta disponibilidade\n\n### Como se candidatar\njessica.marques@pasqualisolution.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T18:23:58.362Z",
+    "updatedAt": "2026-03-16T18:23:58.362Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Pasquali Solution",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Cloud",
+      "AWS",
+      "Azure ou Google Cloud",
+      "Arquitetura de Microserviços",
+      "Kafka",
+      "RabbitMQ",
+      "APIs REST e GraphQL",
+      "DevOps"
+    ],
+    "descricao": "#### Principais Atividades\nDesenho de arquiteturas escaláveis e seguras\nAvaliação de trade-offs técnicos (build vs buy)\nModernização de sistemas legados\nDefinição de padrões técnicos e mentoria do time\n\n#### Requisitos Técnicos\nInglês: Fluente, Experiência com Cloud, Arquitetura de Microserviços, Kafka, RabbitMQ, APIs REST e GraphQL, DevOps / CI-CD, Terraform, Ansible, Kubernetes, Docker, Práticas de segurança (OAuth2, criptografia, LGPD), Experiência com SQL e NoSQL, cache e alta disponibilidade",
+    "aplicar": "jessica.marques@pasqualisolution.com.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "arquiteto-de-solucoes"
+  },
+  {
     "id": 58,
     "title": "Engenheiro(a) de Dados",
     "body": "### Empresa\nServiços indefinidos\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nRio de Janeiro - RJ\n\n### Salário\nA combinar\n\n### Stack\nGCP, BigQuery, Dataflow, Dataproc (Spark), Pub/Sub, Python, SQL avançados, CI/CD, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar com projetos de alta complexidade, arquitetura moderna na Google Cloud e iniciativas de IA.\n\n#### Requisitos Técnicos\n5+ anos em Engenharia de Dados, 3+ anos com GCP, experiência com BigQuery, Dataflow, Dataproc (Spark), Pub/Sub, Python e SQL avançados, experiência com pipelines ELT/ETL e modelagem analítica, CI/CD, Git.\n\n#### Diferenciais\nVertex AI, Looker, Data Mesh e certificação Google Professional Data Engineer.\n\n### Como se candidatar\ncurriculo@venhapranuvem.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
