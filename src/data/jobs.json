@@ -1,5 +1,37 @@
 [
   {
+    "id": 62,
+    "title": "Arquiteto de Dados",
+    "body": "### Empresa\nK2 PartneringSolutions\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nDatabricks, AWS, Spark / PySpark\n\n### Descrição da Vaga\n#### Principais Atividades\n- Definir arquitetura e governança de dados em cloud.\n- Implementar pipelines de dados.\n\n#### Requisitos Técnicos\n- Conhecimento necessário:\n- Databricks (arquitetura, administração e otimização).\n- AWS (S3, IAM, Glue, Lambda, EC2, etc.).\n- Arquitetura de Data Lake / Lakehouse.\n- Engenharia de dados e pipelines de dados.\n- Spark / PySpark.\n\n### Como se candidatar\nmparize@k2partnering.com\n\n### Link para se candidatar\n41 99993-4441\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T19:50:51.215Z",
+    "updatedAt": "2026-03-16T19:50:51.215Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "K2 PartneringSolutions",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Databricks",
+      "AWS",
+      "Spark",
+      "PySpark"
+    ],
+    "descricao": "#### Principais Atividades\n- Definir arquitetura e governança de dados em cloud.\n- Implementar pipelines de dados.\n\n#### Requisitos Técnicos\n- Conhecimento necessário:\n- Databricks (arquitetura, administração e otimização).\n- AWS (S3, IAM, Glue, Lambda, EC2, etc.).\n- Arquitetura de Data Lake / Lakehouse.\n- Engenharia de dados e pipelines de dados.\n- Spark / PySpark.",
+    "aplicar": "mparize@k2partnering.com",
+    "linkVaga": "41 99993-4441",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "arquiteto-de-dados"
+  },
+  {
     "id": 61,
     "title": "Desenvolvedor Full Stack",
     "body": "### Empresa\nPasquali Solution\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão José dos Campos - SP\n\n### Salário\nA combinar\n\n### Stack\nJava Spring Boot, PostgreSQL, Vue, RESTful APIs, Microserviços, AWS, Docker, Kubernetes\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de software\n- Trabalho com serviços RESTful e/ou microserviços\n- Implementação da stack Java Spring Boot, PostgreSQL\n- Implementação do Vue, Vuex, Nuxt\n- Projetar APIs utilizando padrões de design RESTful\n- Aplicar métodos ágeis no desenvolvimento\n- Levantar e documentar requisitos técnicos\n- Realizar testes unitários e de integração\n\n#### Requisitos Técnicos\n- Conhecimento em desenvolvimento de software seguindo boas práticas de desenvolvimento\n- Experiência com serviços RESTful e/ou microserviços\n- Experiência com stack Java Spring Boot, PostgreSQL\n- Experiência com Vue, Vuex, Nuxt\n- Conhecimento de design RESTful para APIs\n- Experiência em metodologias ágeis\n- Capacidade para levantar e documentar requisitos técnicos juntos aos usuários\n- Realização de testes unitários e integração\n\n### Como se candidatar\nhttps://lnkd.in/dzqh_2zW📲.\n\n### Link para se candidatar\nhttps://lnkd.in/dyA-x6ww\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
