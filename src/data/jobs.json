@@ -1,5 +1,41 @@
 [
   {
+    "id": 55,
+    "title": "DevOps Pleno",
+    "body": "### Empresa\nK2 PartneringSolutions\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nKubernetes, containers e pipelines CI/CD, Cloud pública (Azure e/ou AWS), Observabilidade e monitoramento de aplicações, Infrastructure as Code (Terraform), Microserviços\n\n### Descrição da Vaga\n#### Principais Atividades\nLidar com operações e implantações em cloud e microserviços.\n\n#### Requisitos Técnicos\nConhecimento necessário: Kubernetes, containers e pipelines CI/CD, Cloud pública (Azure e/ou AWS), Observabilidade e monitoramento de aplicações, Infrastructure as Code (Terraform), Microserviços\n\n### Como se candidatar\nmparize@k2partnering.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T14:36:26.476Z",
+    "updatedAt": "2026-03-16T14:36:26.476Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "K2 PartneringSolutions",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "São Paulo - SP",
+    "salario": "A combinar",
+    "stack": [
+      "Kubernetes",
+      "containers e pipelines CI",
+      "CD",
+      "Cloud pública (Azure e",
+      "ou AWS)",
+      "Observabilidade e monitoramento de aplicações",
+      "Infrastructure as Code (Terraform)",
+      "Microserviços"
+    ],
+    "descricao": "#### Principais Atividades\nLidar com operações e implantações em cloud e microserviços.\n\n#### Requisitos Técnicos\nConhecimento necessário: Kubernetes, containers e pipelines CI/CD, Cloud pública (Azure e/ou AWS), Observabilidade e monitoramento de aplicações, Infrastructure as Code (Terraform), Microserviços",
+    "aplicar": "mparize@k2partnering.com",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "devops-pleno"
+  },
+  {
     "id": 54,
     "title": "Desenvolvedor Full Stack Sênior",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nHortolandia - SP\n\n### Salário\nA combinar\n\n### Stack\nReact/Next.js, HTML5, CSS3 (Flex/Grid), Redux Toolkit, APIs RESTful, GraphQL, Docker, Kubernetes\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver usando React/Next.js\n- Implementar soluções com HTML5 e CSS3 (Flex/Grid)\n- Assegurar conformidade com Acessibilidade (WCAG 2.1)\n- Usar Redux Toolkit em aplicações\n- Trabalhar com APIs RESTful\n- Integrar sistemas via GraphQL\n- Participar na arquitetura de microsserviços\n- Utilizar Docker e Kubernetes para containerização\n#### Requisitos Técnicos\n- Experiência com React/Next.js\n- Familiaridade com HTML5, CSS3 (Flex/Grid)\n- Conhecimento em Acessibilidade (WCAG 2.1)\n- Mais de 3 anos de experiência com Redux Toolkit\n- Proficiência em APIs RESTful\n- Experiência com GraphQL\n- Compreensão do conceito e implantação de arquitetura de microsserviços\n- Conhecimento em Docker\n- Experiência com Kubernetes\n\n### Como se candidatar\nAna.gazetta@luzagroup.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
