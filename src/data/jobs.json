@@ -1,5 +1,36 @@
 [
   {
+    "id": 56,
+    "title": "Consultor SAP HCM",
+    "body": "### Empresa\nTecmaster Consultor\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nSAP HCM, Inglês, Espanhol\n\n### Descrição da Vaga\n#### Principais Atividades\n- Suporte/manutenção do sistema SAP Folha de Pagamento para os países (Canadá, México, Argentina e Venezuela).\n- Lidar com as mudanças/implementações de notas legais como parte do ciclo de desenvolvimento.\n- Responsabilizar-se e garantir a conclusão de todos os processos de folha de pagamento para cada ciclo.\n\n#### Requisitos Técnicos\n- Habilidades em SAP HCM, gestão de tempo.\n- Experiência em desenvolvimentos personalizados.\n- Familiaridade com todos os tópicos de Folha de Pagamento, resolução de problemas e incidentes.\n- Forte experiência em implementações ou suporte de HCM.\n- Habilidades em configuração de Folha de Pagamento e Gestão de Tempo.\n- Configuração de Schema/PCR, familiaridade com processamento de folha de pagamento em múltiplos países.\n\n### Como se candidatar\nkarina.bejgler@tecmaster.inf.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T14:37:25.155Z",
+    "updatedAt": "2026-03-16T14:37:25.155Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Tecmaster Consultor",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "SAP HCM",
+      "Inglês",
+      "Espanhol"
+    ],
+    "descricao": "#### Principais Atividades\n- Suporte/manutenção do sistema SAP Folha de Pagamento para os países (Canadá, México, Argentina e Venezuela).\n- Lidar com as mudanças/implementações de notas legais como parte do ciclo de desenvolvimento.\n- Responsabilizar-se e garantir a conclusão de todos os processos de folha de pagamento para cada ciclo.\n\n#### Requisitos Técnicos\n- Habilidades em SAP HCM, gestão de tempo.\n- Experiência em desenvolvimentos personalizados.\n- Familiaridade com todos os tópicos de Folha de Pagamento, resolução de problemas e incidentes.\n- Forte experiência em implementações ou suporte de HCM.\n- Habilidades em configuração de Folha de Pagamento e Gestão de Tempo.\n- Configuração de Schema/PCR, familiaridade com processamento de folha de pagamento em múltiplos países.",
+    "aplicar": "karina.bejgler@tecmaster.inf.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "consultor-sap-hcm"
+  },
+  {
     "id": 55,
     "title": "DevOps Pleno",
     "body": "### Empresa\nK2 PartneringSolutions\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nKubernetes, containers e pipelines CI/CD, Cloud pública (Azure e/ou AWS), Observabilidade e monitoramento de aplicações, Infrastructure as Code (Terraform), Microserviços\n\n### Descrição da Vaga\n#### Principais Atividades\nLidar com operações e implantações em cloud e microserviços.\n\n#### Requisitos Técnicos\nConhecimento necessário: Kubernetes, containers e pipelines CI/CD, Cloud pública (Azure e/ou AWS), Observabilidade e monitoramento de aplicações, Infrastructure as Code (Terraform), Microserviços\n\n### Como se candidatar\nmparize@k2partnering.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
