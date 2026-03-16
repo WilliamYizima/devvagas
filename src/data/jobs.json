@@ -1,5 +1,41 @@
 [
   {
+    "id": 61,
+    "title": "Desenvolvedor Full Stack",
+    "body": "### Empresa\nPasquali Solution\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão José dos Campos - SP\n\n### Salário\nA combinar\n\n### Stack\nJava Spring Boot, PostgreSQL, Vue, RESTful APIs, Microserviços, AWS, Docker, Kubernetes\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de software\n- Trabalho com serviços RESTful e/ou microserviços\n- Implementação da stack Java Spring Boot, PostgreSQL\n- Implementação do Vue, Vuex, Nuxt\n- Projetar APIs utilizando padrões de design RESTful\n- Aplicar métodos ágeis no desenvolvimento\n- Levantar e documentar requisitos técnicos\n- Realizar testes unitários e de integração\n\n#### Requisitos Técnicos\n- Conhecimento em desenvolvimento de software seguindo boas práticas de desenvolvimento\n- Experiência com serviços RESTful e/ou microserviços\n- Experiência com stack Java Spring Boot, PostgreSQL\n- Experiência com Vue, Vuex, Nuxt\n- Conhecimento de design RESTful para APIs\n- Experiência em metodologias ágeis\n- Capacidade para levantar e documentar requisitos técnicos juntos aos usuários\n- Realização de testes unitários e integração\n\n### Como se candidatar\nhttps://lnkd.in/dzqh_2zW📲.\n\n### Link para se candidatar\nhttps://lnkd.in/dyA-x6ww\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-16T19:49:54.618Z",
+    "updatedAt": "2026-03-16T19:49:54.618Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Pasquali Solution",
+    "nivel": "Pleno",
+    "tipo": "Híbrido",
+    "local": "São José dos Campos - SP",
+    "salario": "A combinar",
+    "stack": [
+      "Java Spring Boot",
+      "PostgreSQL",
+      "Vue",
+      "RESTful APIs",
+      "Microserviços",
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento de software\n- Trabalho com serviços RESTful e/ou microserviços\n- Implementação da stack Java Spring Boot, PostgreSQL\n- Implementação do Vue, Vuex, Nuxt\n- Projetar APIs utilizando padrões de design RESTful\n- Aplicar métodos ágeis no desenvolvimento\n- Levantar e documentar requisitos técnicos\n- Realizar testes unitários e de integração\n\n#### Requisitos Técnicos\n- Conhecimento em desenvolvimento de software seguindo boas práticas de desenvolvimento\n- Experiência com serviços RESTful e/ou microserviços\n- Experiência com stack Java Spring Boot, PostgreSQL\n- Experiência com Vue, Vuex, Nuxt\n- Conhecimento de design RESTful para APIs\n- Experiência em metodologias ágeis\n- Capacidade para levantar e documentar requisitos técnicos juntos aos usuários\n- Realização de testes unitários e integração",
+    "aplicar": "https://lnkd.in/dzqh_2zW📲.",
+    "linkVaga": "https://lnkd.in/dyA-x6ww",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-full-stack"
+  },
+  {
     "id": 60,
     "title": "Analista de Infraestrutura",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nJoinville - SC\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\nMonitoramento de servidores e serviços\n\n#### Requisitos Técnicos\nExperiência com administração de servidores.\nConhecimento em sistemas operacionais Linux e Microsoft Windows Server.\nExperiência com administração e manutenção de banco de dados PostgreSQL.\nConhecimento em instalação, configuração e manutenção de servidores físicos e virtuais.\nExperiência com backup, restore e rotinas de segurança de dados.\nConhecimento em redes (TCP/IP, DNS, VPN, firewall).\nCapacidade de diagnosticar e resolver problemas de infraestrutura.\n\n#### Benefícios\nPlano de Saúde Unimed – 100% custeado pela empresa para o colaborador, sem desconto de mensalidade (apenas coparticipação). Possibilidade de incluir cônjuge e filhos, com valores diferenciados na mensalidade e coparticipação.\nVale-Alimentação no valor de R$ 350,00 mensais.\n\nPara se candidatar: evabasilio23@gmail.com\n\n### Como se candidatar\nevabasilio23@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
