@@ -1,5 +1,41 @@
 [
   {
+    "id": 77,
+    "title": "Arquiteto Cloud",
+    "body": "### Empresa\nTecmaster\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\n100% Remoto\n\n### Salário\nA combinar\n\n### Stack\nAzure, Terraform, AKS, Helm, YAML, RBAC, Endpoints Privados, Key Vault, GitHub Actions, Service Bus, Event Grid, Event Hub, Synapse, PowerShell, Bash, Python, TOGAF, Diagrams.net\n\n### Descrição da Vaga\n#### Principais Atividades\n- Implementar arquitetura cloud segura\n- Gerenciar infraestrutura como código usando Terraform\n- Configurar e gerenciar serviços do Azure (Computação, Rede, Armazenamento, Segurança, Identidade, Serverless, Contêineres)\n- Desenvolver processos de CI/CD utilizando Azure DevOps e/ou GitHub Actions\n- Liderar arquiteturas orientadas a eventos e integração de dados\n\n#### Requisitos Técnicos\n- Inglês avançado\n- Experiência com Azure Kubernetes Service (AKS)\n- Familiaridade com princípios de arquitetura empresarial (TOGAF)\n\n### Como se candidatar\nkarina.bejgler@tecmaster.inf.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:28:13.762Z",
+    "updatedAt": "2026-03-18T16:28:13.762Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Tecmaster",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "100% Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Azure",
+      "Terraform",
+      "AKS",
+      "Helm",
+      "YAML",
+      "RBAC",
+      "Endpoints Privados",
+      "Key Vault"
+    ],
+    "descricao": "#### Principais Atividades\n- Implementar arquitetura cloud segura\n- Gerenciar infraestrutura como código usando Terraform\n- Configurar e gerenciar serviços do Azure (Computação, Rede, Armazenamento, Segurança, Identidade, Serverless, Contêineres)\n- Desenvolver processos de CI/CD utilizando Azure DevOps e/ou GitHub Actions\n- Liderar arquiteturas orientadas a eventos e integração de dados\n\n#### Requisitos Técnicos\n- Inglês avançado\n- Experiência com Azure Kubernetes Service (AKS)\n- Familiaridade com princípios de arquitetura empresarial (TOGAF)",
+    "aplicar": "karina.bejgler@tecmaster.inf.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "arquiteto-cloud"
+  },
+  {
     "id": 76,
     "title": "Tech Lead",
     "body": "### Empresa\nIndefinida\n\n### Nível\nLead\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\n.NET, .NET Core, C#, Azure App Services, Azure Functions, Azure Service Bus, Clean Architecture, DDD, CI/CD, Infraestrutura como código, xUnit, Moq\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar na linha de frente de um projeto de alta complexidade no setor financeiro.\n\n#### Requisitos Técnicos\n- Experiência técnico com C#, .NET Framework e .NET Core / 6+\n- Domínio de arquiteturas modernas (Clean Architecture, DDD)\n- Forte experiência com Azure (App Services, Functions, Service Bus e correlatos)\n- Vivência sólida em pipelines CI/CD\n- Experiência com infraestrutura como código\n- Prática com testes automatizados (xUnit, Moq)\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/tech-lead-269?invite=agatta\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
