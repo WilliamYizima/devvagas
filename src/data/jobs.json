@@ -1,5 +1,41 @@
 [
   {
+    "id": 73,
+    "title": "Desenvolvedor(a) ChatBot WeChat",
+    "body": "### Empresa\nMouts Information Systems\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nNode.js, Java (Spring Boot), Python, MySQL, MongoDB, Redis, RabbitMQ, Kafka, AWS, Tencent Cloud, Alibaba Cloud, Docker, Kubernetes, WeChat Pay\n\n### Descrição da Vaga\n#### Principais Atividades\n- Arquitetar e evoluir soluções de chatbot e integrações conversacionais\n- Projetar integrações utilizando REST APIs, Webhooks e OAuth\n- Definir e implementar estratégias de NLP com frameworks como Rasa, Dialogflow ou Microsoft Bot Framework\n- Desenhar arquitetura de dados utilizando MySQL, MongoDB e Redis\n- Implementar soluções com mensageria, como RabbitMQ ou Kafka\n- Atuar com infraestrutura em cloud, preferencialmente AWS, Tencent Cloud ou Alibaba Cloud\n- Containerizar e orquestrar serviços com Docker e Kubernetes\n- Apoiar integrações com meios de pagamento no ecossistema WeChat\n- Mentorar profissionais júnior e pleno do time\n#### Requisitos Técnicos\n- Experiência sólida com desenvolvimento backend e integrações\n- Histórico com plataformas de mensageria, chatbot ou automação conversacional\n- Conhecimento em REST APIs, Webhooks, JSON e OAuth\n- Experiência com Node.js, Java (Spring Boot) ou Python\n- Experiência com MySQL ou MongoDB\n- Vivência com arquitetura de sistemas distribuídos e mensageria\n- Experiência com ambientes cloud\n- Capacidade de atuar com autonomia técnica e apoiar decisões de arquitetura\n#### Benefícios\n- OMITIDO\n\n### Como se candidatar\nbeatriz.reisch@mouts.info\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:24:49.505Z",
+    "updatedAt": "2026-03-18T16:24:49.505Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Mouts Information Systems",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Node.js",
+      "Java (Spring Boot)",
+      "Python",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "RabbitMQ",
+      "Kafka"
+    ],
+    "descricao": "#### Principais Atividades\n- Arquitetar e evoluir soluções de chatbot e integrações conversacionais\n- Projetar integrações utilizando REST APIs, Webhooks e OAuth\n- Definir e implementar estratégias de NLP com frameworks como Rasa, Dialogflow ou Microsoft Bot Framework\n- Desenhar arquitetura de dados utilizando MySQL, MongoDB e Redis\n- Implementar soluções com mensageria, como RabbitMQ ou Kafka\n- Atuar com infraestrutura em cloud, preferencialmente AWS, Tencent Cloud ou Alibaba Cloud\n- Containerizar e orquestrar serviços com Docker e Kubernetes\n- Apoiar integrações com meios de pagamento no ecossistema WeChat\n- Mentorar profissionais júnior e pleno do time\n#### Requisitos Técnicos\n- Experiência sólida com desenvolvimento backend e integrações\n- Histórico com plataformas de mensageria, chatbot ou automação conversacional\n- Conhecimento em REST APIs, Webhooks, JSON e OAuth\n- Experiência com Node.js, Java (Spring Boot) ou Python\n- Experiência com MySQL ou MongoDB\n- Vivência com arquitetura de sistemas distribuídos e mensageria\n- Experiência com ambientes cloud\n- Capacidade de atuar com autonomia técnica e apoiar decisões de arquitetura\n#### Benefícios\n- OMITIDO",
+    "aplicar": "beatriz.reisch@mouts.info",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-chatbot-wechat"
+  },
+  {
     "id": 72,
     "title": "Desenvolvedor(a) Web Fullstack",
     "body": "### Empresa\nLovel Dev\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nJava, Groovy, Grails, Spring Boot, Hibernate, Angular 9+, HTML, CSS, JavaScript, TypeScript, Design System\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar em projetos inovadores e de alto impacto.\n\n#### Requisitos Técnicos\nDomínio de linguagem orientada a objetos (Java ou Groovy)\nExperiência com frameworks backend (Grails, Spring, Spring Boot, Micronaut, Hibernate)\nForte conhecimento em Banco de Dados Relacional\nConhecimento prático em Angular 9+\nDomínio de HTML, CSS, JavaScript e TypeScript\nForte lógica de programação, estrutura de dados e algoritmos\nConhecimento em Design System e componentes reutilizáveis\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/desenvolvedor-web-fullstack-plenosenior-javagroovy-e-angular-274?invite=agatta\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
