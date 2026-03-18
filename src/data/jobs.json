@@ -1,5 +1,37 @@
 [
   {
+    "id": 79,
+    "title": "Desenvolvedor de sistemas",
+    "body": "### Empresa\nNexMUV\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nPython, Oracle ERP, SAP, AWS\n\n### Descrição da Vaga\n#### Principais Atividades\n- Integração entre plataformas corporativas\n- Integrações com Slack, Gmail, WhatsApp, sistemas de RH, contábeis e financeiros\n- Uso de ferramentas de workflow (low-code / no-code)\n- Suporte técnico pontual com Python\n- Integração com Oracle ERP e SAP\n- Consulta e suporte a bases de dados na AWS\n\n#### Requisitos Técnicos\n- Perfil generalista, executor, comunicativo e dinâmico\n- Interação com áreas técnicas e administrativas\n\n### Como se candidatar\nbruna.santos@nexmuv.com.br\n\n### Link para se candidatar\n11 93317-8602\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:29:52.338Z",
+    "updatedAt": "2026-03-18T16:29:52.338Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "NexMUV",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Python",
+      "Oracle ERP",
+      "SAP",
+      "AWS"
+    ],
+    "descricao": "#### Principais Atividades\n- Integração entre plataformas corporativas\n- Integrações com Slack, Gmail, WhatsApp, sistemas de RH, contábeis e financeiros\n- Uso de ferramentas de workflow (low-code / no-code)\n- Suporte técnico pontual com Python\n- Integração com Oracle ERP e SAP\n- Consulta e suporte a bases de dados na AWS\n\n#### Requisitos Técnicos\n- Perfil generalista, executor, comunicativo e dinâmico\n- Interação com áreas técnicas e administrativas",
+    "aplicar": "bruna.santos@nexmuv.com.br",
+    "linkVaga": "11 93317-8602",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-de-sistemas"
+  },
+  {
     "id": 78,
     "title": "Analista Administrativo",
     "body": "### Empresa\nFactorial HR\n\n### Nível\nPleno\n\n### Área\nBusiness\n\n### Tipo\nPresencial\n\n### Localização\nPresencial – próximo ao Shopping Aricanduva\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n🔹 Emissão de NFs (Consinco/Triângulos) e atendimento de chamados.\n🔹 Monitoramento de processos Inbound.\n🔹 Gestão e conferência de ativos no sistema。\n\n#### Requisitos Técnicos\n✅ Conhecimento em Notas Fiscais (Venda/Serviço).\n✅ Experiência com SAP (MM/FI) ou outros ERPs.\n✅ Excel Intermediário (Procv, Tabela Dinâmica).\n✅ Boa organização e comunicação。\n\n### Como se candidatar\nhttps://pdg-it.factorialhr.com.br/job_posting/262670\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
