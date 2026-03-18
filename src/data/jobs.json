@@ -1,5 +1,40 @@
 [
   {
+    "id": 67,
+    "title": "Dev Fullstack",
+    "body": "### Empresa\nLuzagroup\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nChácara Santo Antônio - São Paulo/SP\n\n### Salário\nA combinar (PJ)\n\n### Stack\n.Net (C#) a partir da versão 6, com evolução para versão 9, Angular, Programação assíncrona, Abordagem e foco em testes, Docker, Testes unitários\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuar em projetos do zero\n- Garantir integração entre sistemas\n- Implementar soluções com arquitetura moderna (ex: Clean Architecture)\n\n#### Requisitos Técnicos\n- Experiência com .Net (C#) a partir da versão 6, com evolução para versão 9\n- Angular\n- Programação assíncrona\n- Abordagem e foco em testes\n- Docker\n- Testes unitários\n- Ja ter atuado em projetos do zero\n- Boa vivência com microserviços\n- Conhecimento em arquitetura (ex: Clean Architecture)\n- Experiência com APIs REST e SOAP\n- Vivência com TDD\n\n### Como se candidatar\nana.gazetta@luzagroup.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:19:21.208Z",
+    "updatedAt": "2026-03-18T16:19:21.208Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Luzagroup",
+    "nivel": "Sênior",
+    "tipo": "Presencial",
+    "local": "Chácara Santo Antônio - São Paulo/SP",
+    "salario": "A combinar (PJ)",
+    "stack": [
+      ".Net (C#) a partir da versão 6",
+      "com evolução para versão 9",
+      "Angular",
+      "Programação assíncrona",
+      "Abordagem e foco em testes",
+      "Docker",
+      "Testes unitários"
+    ],
+    "descricao": "#### Principais Atividades\n- Atuar em projetos do zero\n- Garantir integração entre sistemas\n- Implementar soluções com arquitetura moderna (ex: Clean Architecture)\n\n#### Requisitos Técnicos\n- Experiência com .Net (C#) a partir da versão 6, com evolução para versão 9\n- Angular\n- Programação assíncrona\n- Abordagem e foco em testes\n- Docker\n- Testes unitários\n- Ja ter atuado em projetos do zero\n- Boa vivência com microserviços\n- Conhecimento em arquitetura (ex: Clean Architecture)\n- Experiência com APIs REST e SOAP\n- Vivência com TDD",
+    "aplicar": "ana.gazetta@luzagroup.com",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "dev-fullstack"
+  },
+  {
     "id": 66,
     "title": "Tester Automático",
     "body": "### Empresa\nInteger Consulting Portugal\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto (PT)\n\n### Salário\nA combinar\n\n### Stack\nJava, Selenium, SQL, Cucumber, Gherkin\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver testes automatizados;\n- Garantir a qualidade dos produtos através de testes funcionais.\n\n#### Requisitos Técnicos\n- +3 anos de experiência em Java/Selenium (obrigatório);\n- Experiência em SQL, Cucumber e Gherkin;\n- Experiência com aplicações Web.\n\n### Como se candidatar\nbruno.carvalho@integer.pt\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
