@@ -1,5 +1,40 @@
 [
   {
+    "id": 71,
+    "title": "Desenvolvedor Fullstack Sênior (.NET)",
+    "body": "### Empresa\nAddvisor\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nGuarulhos/SP\n\n### Salário\nA combinar\n\n### Stack\n.NET, ASP.NET Core, C#, SQL Server, Razor Pages, Stored Procedures, APIs REST\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver e manter aplicações web utilizando ASP.NET Core com Razor Pages\n- Atuar no desenvolvimento backend com C# (.NET)\n- Implementar e manter operações CRUD\n- Desenvolver e integrar APIs REST\n- Garantir boas práticas de arquitetura em camadas (Interface, Negócio e Dados)\n- Atuar na integração com SharePoint e SQL Server\n- Participar da análise de requisitos junto às áreas de negócio\n- Mapear processos e propor melhorias tecnológicas\n- Atuar na sustentação e evolução de aplicações em produção\n\n#### Requisitos Técnicos\n- Experiência sólida como Desenvolvedor Fullstack .NET\n- Domínio de ASP.NET Core, C# e APIs REST\n- Forte experiência com SQL Server\n- Vivência em arquitetura de aplicações web\n- Experiência com sistemas em produção (manutenção e troubleshooting)\n\n#### Diferenciais\n- Experiência com SharePoint\n- Vivência em ambientes corporativos com alto volume de dados\n- Conhecimento em segurança de aplicações web\n\n### Como se candidatar\nFernanda.santiago@addvisor.com.br\n\n### Link para se candidatar\n1196468-7939\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:23:10.125Z",
+    "updatedAt": "2026-03-18T16:23:10.125Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Addvisor",
+    "nivel": "Sênior",
+    "tipo": "Híbrido",
+    "local": "Guarulhos/SP",
+    "salario": "A combinar",
+    "stack": [
+      ".NET",
+      "ASP.NET Core",
+      "C#",
+      "SQL Server",
+      "Razor Pages",
+      "Stored Procedures",
+      "APIs REST"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolver e manter aplicações web utilizando ASP.NET Core com Razor Pages\n- Atuar no desenvolvimento backend com C# (.NET)\n- Implementar e manter operações CRUD\n- Desenvolver e integrar APIs REST\n- Garantir boas práticas de arquitetura em camadas (Interface, Negócio e Dados)\n- Atuar na integração com SharePoint e SQL Server\n- Participar da análise de requisitos junto às áreas de negócio\n- Mapear processos e propor melhorias tecnológicas\n- Atuar na sustentação e evolução de aplicações em produção\n\n#### Requisitos Técnicos\n- Experiência sólida como Desenvolvedor Fullstack .NET\n- Domínio de ASP.NET Core, C# e APIs REST\n- Forte experiência com SQL Server\n- Vivência em arquitetura de aplicações web\n- Experiência com sistemas em produção (manutenção e troubleshooting)\n\n#### Diferenciais\n- Experiência com SharePoint\n- Vivência em ambientes corporativos com alto volume de dados\n- Conhecimento em segurança de aplicações web",
+    "aplicar": "Fernanda.santiago@addvisor.com.br",
+    "linkVaga": "1196468-7939",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-fullstack-senior-net"
+  },
+  {
     "id": 70,
     "title": "Especialista",
     "body": "### Empresa\nConquest One\n\n### Nível\nEspecialista\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nAzure, SQL, Python, Apache, Power BI (Dax e Power Query)\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de BI com indicadores de negócio\n- Realização desde a coleta de dados, extração, ETL, tratamento, análise das informações e indicadores até sua disponibilização\n- Interação com a área de negócios\n- Desenvolvimento de Dashboards\n#### Requisitos Técnicos\n- Expertise em Data Lake, Databricks, Lakehouse, Blobstorage\n- Conhecimento avançado em PowerPoint\n- Entendimento das áreas de negócios e seus indicadores\n\nPara se candidatar: https://wa.me/5511971450724\n\n### Como se candidatar\nhttps://wa.me/5511971450724\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
