@@ -1,5 +1,37 @@
 [
   {
+    "id": 68,
+    "title": "Desenvolvedor(a) Full Stack Pleno",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote (Brasil)\n\n### Salário\nA combinar\n\n### Stack\nJava, React, Angular, React Native\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de novas features\n- Integração entre frontend e backend\n- Otimização de código\n- Suporte em deploys\n\n#### Requisitos Técnicos\n- Mínimo de 3 anos de experiência em mobile\n- Experiência com Angular e React Native\n- Conhecimento em bancos de dados\n- Experiência com APIs em Java e .NET\n\n### Como se candidatar\n34 98419 4220\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:20:05.977Z",
+    "updatedAt": "2026-03-18T16:20:05.977Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remote (Brasil)",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "React",
+      "Angular",
+      "React Native"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento de novas features\n- Integração entre frontend e backend\n- Otimização de código\n- Suporte em deploys\n\n#### Requisitos Técnicos\n- Mínimo de 3 anos de experiência em mobile\n- Experiência com Angular e React Native\n- Conhecimento em bancos de dados\n- Experiência com APIs em Java e .NET",
+    "aplicar": "34 98419 4220",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-full-stack-pleno"
+  },
+  {
     "id": 67,
     "title": "Dev Fullstack",
     "body": "### Empresa\nLuzagroup\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nChácara Santo Antônio - São Paulo/SP\n\n### Salário\nA combinar (PJ)\n\n### Stack\n.Net (C#) a partir da versão 6, com evolução para versão 9, Angular, Programação assíncrona, Abordagem e foco em testes, Docker, Testes unitários\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuar em projetos do zero\n- Garantir integração entre sistemas\n- Implementar soluções com arquitetura moderna (ex: Clean Architecture)\n\n#### Requisitos Técnicos\n- Experiência com .Net (C#) a partir da versão 6, com evolução para versão 9\n- Angular\n- Programação assíncrona\n- Abordagem e foco em testes\n- Docker\n- Testes unitários\n- Ja ter atuado em projetos do zero\n- Boa vivência com microserviços\n- Conhecimento em arquitetura (ex: Clean Architecture)\n- Experiência com APIs REST e SOAP\n- Vivência com TDD\n\n### Como se candidatar\nana.gazetta@luzagroup.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
