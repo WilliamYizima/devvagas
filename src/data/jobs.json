@@ -1,5 +1,38 @@
 [
   {
+    "id": 66,
+    "title": "Tester Automático",
+    "body": "### Empresa\nInteger Consulting Portugal\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto (PT)\n\n### Salário\nA combinar\n\n### Stack\nJava, Selenium, SQL, Cucumber, Gherkin\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver testes automatizados;\n- Garantir a qualidade dos produtos através de testes funcionais.\n\n#### Requisitos Técnicos\n- +3 anos de experiência em Java/Selenium (obrigatório);\n- Experiência em SQL, Cucumber e Gherkin;\n- Experiência com aplicações Web.\n\n### Como se candidatar\nbruno.carvalho@integer.pt\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:18:16.694Z",
+    "updatedAt": "2026-03-18T16:18:16.694Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Integer Consulting Portugal",
+    "nivel": "Pleno",
+    "tipo": "Indefinido",
+    "local": "Remoto (PT)",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "Selenium",
+      "SQL",
+      "Cucumber",
+      "Gherkin"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolver testes automatizados;\n- Garantir a qualidade dos produtos através de testes funcionais.\n\n#### Requisitos Técnicos\n- +3 anos de experiência em Java/Selenium (obrigatório);\n- Experiência em SQL, Cucumber e Gherkin;\n- Experiência com aplicações Web.",
+    "aplicar": "bruno.carvalho@integer.pt",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "tester-automatico"
+  },
+  {
     "id": 65,
     "title": "Evolução e sustentação de sistemas estratégicos em .NET",
     "body": "### Empresa\nIndefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto - Brasil\n\n### Salário\nA combinar\n\n### Stack\n.NET C#, Vue.js, JavaScript, Oracle PL/SQL, REST APIs, Azure DevOps, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nEvolução e sustentação de sistemas estratégicos em .NET.\n\n#### Requisitos Técnicos\n- Conhecimento em .NET C#\n- Conhecimento em Vue.js\n- Conhecimento em JavaScript\n- Conhecimento em Oracle PL/SQL\n- Conhecimento em REST APIs\n- Conhecimento em Azure DevOps\n- Conhecimento em Git\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/desenvolvedor-net-fullstack-271?invite=caroline.lima798\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
