@@ -1,5 +1,41 @@
 [
   {
+    "id": 76,
+    "title": "Tech Lead",
+    "body": "### Empresa\nIndefinida\n\n### Nível\nLead\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\n.NET, .NET Core, C#, Azure App Services, Azure Functions, Azure Service Bus, Clean Architecture, DDD, CI/CD, Infraestrutura como código, xUnit, Moq\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar na linha de frente de um projeto de alta complexidade no setor financeiro.\n\n#### Requisitos Técnicos\n- Experiência técnico com C#, .NET Framework e .NET Core / 6+\n- Domínio de arquiteturas modernas (Clean Architecture, DDD)\n- Forte experiência com Azure (App Services, Functions, Service Bus e correlatos)\n- Vivência sólida em pipelines CI/CD\n- Experiência com infraestrutura como código\n- Prática com testes automatizados (xUnit, Moq)\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/tech-lead-269?invite=agatta\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:27:26.189Z",
+    "updatedAt": "2026-03-18T16:27:26.189Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Indefinida",
+    "nivel": "Lead",
+    "tipo": "Presencial",
+    "local": "São Paulo - SP",
+    "salario": "A combinar",
+    "stack": [
+      ".NET",
+      ".NET Core",
+      "C#",
+      "Azure App Services",
+      "Azure Functions",
+      "Azure Service Bus",
+      "Clean Architecture",
+      "DDD"
+    ],
+    "descricao": "#### Principais Atividades\nAtuar na linha de frente de um projeto de alta complexidade no setor financeiro.\n\n#### Requisitos Técnicos\n- Experiência técnico com C#, .NET Framework e .NET Core / 6+\n- Domínio de arquiteturas modernas (Clean Architecture, DDD)\n- Forte experiência com Azure (App Services, Functions, Service Bus e correlatos)\n- Vivência sólida em pipelines CI/CD\n- Experiência com infraestrutura como código\n- Prática com testes automatizados (xUnit, Moq)",
+    "aplicar": "https://app.lovel.dev/jobs/tech-lead-269?invite=agatta",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "tech-lead"
+  },
+  {
     "id": 75,
     "title": "Estágio em Desenvolvimento de Software",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nIndefinido\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nGoiânia - Goiás\n\n### Salário\nA combinar\n\n### Stack\nReact Native, Java, SQL, Git e GitHub, Noção de Linux, APIs, JSON\n\n### Descrição da Vaga\n#### Principais Atividades\n- Dar manutenção e suporte em aplicativo desenvolvido em React Native\n- Identificar, reproduzir e ajudar na análise de erros e comportamentos inesperados\n- Apoiar atividades de debug e correção de problemas no ERP principal\n- Auxiliar na criação de pequenas funcionalidades, ajustes e ferramentas internas\n- Realizar consultas em banco de dados para análise e validação de informações\n- Apoiar testes, validações e investigações técnicas em demandas do dia a dia\n- Utilizar ferramentas de apoio ao desenvolvimento, incluindo recursos de IA, de forma responsável e crítica\n\n#### Requisitos Técnicos\n- Conhecimento em SQL\n- Conhecimento em pelo menos uma linguagem de programação\n- Noções de Git e GitHub\n- Conhecimento básico de Linux\n- Contato prévio com React Native ou desenvolvimento mobile\n- Noções de lógica de programação e debugging\n- Familiaridade com uso de ferramentas de IA aplicadas ao desenvolvimento, como Claude, Codex, Copilot ou similares\n\n### Como se candidatar\nrh@metaprime.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
