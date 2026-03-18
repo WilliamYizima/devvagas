@@ -1,5 +1,38 @@
 [
   {
+    "id": 70,
+    "title": "Especialista",
+    "body": "### Empresa\nConquest One\n\n### Nível\nEspecialista\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nAzure, SQL, Python, Apache, Power BI (Dax e Power Query)\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de BI com indicadores de negócio\n- Realização desde a coleta de dados, extração, ETL, tratamento, análise das informações e indicadores até sua disponibilização\n- Interação com a área de negócios\n- Desenvolvimento de Dashboards\n#### Requisitos Técnicos\n- Expertise em Data Lake, Databricks, Lakehouse, Blobstorage\n- Conhecimento avançado em PowerPoint\n- Entendimento das áreas de negócios e seus indicadores\n\nPara se candidatar: https://wa.me/5511971450724\n\n### Como se candidatar\nhttps://wa.me/5511971450724\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:22:20.055Z",
+    "updatedAt": "2026-03-18T16:22:20.055Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Conquest One",
+    "nivel": "Especialista",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Azure",
+      "SQL",
+      "Python",
+      "Apache",
+      "Power BI (Dax e Power Query)"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento de BI com indicadores de negócio\n- Realização desde a coleta de dados, extração, ETL, tratamento, análise das informações e indicadores até sua disponibilização\n- Interação com a área de negócios\n- Desenvolvimento de Dashboards\n#### Requisitos Técnicos\n- Expertise em Data Lake, Databricks, Lakehouse, Blobstorage\n- Conhecimento avançado em PowerPoint\n- Entendimento das áreas de negócios e seus indicadores\n\nPara se candidatar: https://wa.me/5511971450724",
+    "aplicar": "https://wa.me/5511971450724",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "especialista"
+  },
+  {
     "id": 69,
     "title": "Desenvolvedor Backend Java",
     "body": "### Empresa\nInhire.app\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote\n\n### Salário\nA combinar\n\n### Stack\nJava, Quarkus, Oracle 11, Docker, OpenShift\n\n### Descrição da Vaga\n#### Principais Atividades\n- Levantar e entender demandas junto aos times de negócio\n- Propor e implementar soluções técnicas que agreguem valor\n- Compartilhar conhecimento e boas práticas com o time\n- Reportar o progresso dos projetos conforme metodologia da Governança de TI\n- Garantir a qualidade das entregas e atuar com senso de ownership\n\n#### Requisitos Técnicos\n- Sólida experiência com Java 8 ou superior, aplicando boas práticas de desenvolvimento orientado a objetos\n- Domínio avançado do framework Quarkus, com foco em aplicações modernas e performáticas\n- Expertise em desenvolvimento de serviços RESTful, com atenção à escalabilidade e segurança\n- Forte conhecimento em arquiteturas de integração, incluindo mensageria, orquestração e transformação de dados\n- Visão sistêmica do ciclo completo de desenvolvimento de software, desde a análise até a entrega\n- Experiência com containers de aplicação, especialmente Docker rodando em OpenShift\n- Amplos conhecimentos em banco de dados Oracle 11 ou superior, incluindo SQL e PL/SQL\n- Experiência prática na criação, consumo e testes de Web Services (SOAP e REST)\n- Comprometimento com a qualidade do código, aderência às regras de negócio e padrões de arquitetura\n\n### Como se candidatar\nhttps://jump.inhire.app/vagas/88162943-8dfc-41a8-a12b-b75a187b7cae/desenvolvedor-backend-java-senior\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
