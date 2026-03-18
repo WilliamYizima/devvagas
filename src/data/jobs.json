@@ -1,5 +1,41 @@
 [
   {
+    "id": 72,
+    "title": "Desenvolvedor(a) Web Fullstack",
+    "body": "### Empresa\nLovel Dev\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nJava, Groovy, Grails, Spring Boot, Hibernate, Angular 9+, HTML, CSS, JavaScript, TypeScript, Design System\n\n### Descrição da Vaga\n#### Principais Atividades\nAtuar em projetos inovadores e de alto impacto.\n\n#### Requisitos Técnicos\nDomínio de linguagem orientada a objetos (Java ou Groovy)\nExperiência com frameworks backend (Grails, Spring, Spring Boot, Micronaut, Hibernate)\nForte conhecimento em Banco de Dados Relacional\nConhecimento prático em Angular 9+\nDomínio de HTML, CSS, JavaScript e TypeScript\nForte lógica de programação, estrutura de dados e algoritmos\nConhecimento em Design System e componentes reutilizáveis\n\n### Como se candidatar\nhttps://app.lovel.dev/jobs/desenvolvedor-web-fullstack-plenosenior-javagroovy-e-angular-274?invite=agatta\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-18T16:23:55.048Z",
+    "updatedAt": "2026-03-18T16:23:55.048Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Lovel Dev",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "Groovy",
+      "Grails",
+      "Spring Boot",
+      "Hibernate",
+      "Angular 9+",
+      "HTML",
+      "CSS"
+    ],
+    "descricao": "#### Principais Atividades\nAtuar em projetos inovadores e de alto impacto.\n\n#### Requisitos Técnicos\nDomínio de linguagem orientada a objetos (Java ou Groovy)\nExperiência com frameworks backend (Grails, Spring, Spring Boot, Micronaut, Hibernate)\nForte conhecimento em Banco de Dados Relacional\nConhecimento prático em Angular 9+\nDomínio de HTML, CSS, JavaScript e TypeScript\nForte lógica de programação, estrutura de dados e algoritmos\nConhecimento em Design System e componentes reutilizáveis",
+    "aplicar": "https://app.lovel.dev/jobs/desenvolvedor-web-fullstack-plenosenior-javagroovy-e-angular-274?invite=agatta",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-web-fullstack"
+  },
+  {
     "id": 71,
     "title": "Desenvolvedor Fullstack Sênior (.NET)",
     "body": "### Empresa\nAddvisor\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nGuarulhos/SP\n\n### Salário\nA combinar\n\n### Stack\n.NET, ASP.NET Core, C#, SQL Server, Razor Pages, Stored Procedures, APIs REST\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver e manter aplicações web utilizando ASP.NET Core com Razor Pages\n- Atuar no desenvolvimento backend com C# (.NET)\n- Implementar e manter operações CRUD\n- Desenvolver e integrar APIs REST\n- Garantir boas práticas de arquitetura em camadas (Interface, Negócio e Dados)\n- Atuar na integração com SharePoint e SQL Server\n- Participar da análise de requisitos junto às áreas de negócio\n- Mapear processos e propor melhorias tecnológicas\n- Atuar na sustentação e evolução de aplicações em produção\n\n#### Requisitos Técnicos\n- Experiência sólida como Desenvolvedor Fullstack .NET\n- Domínio de ASP.NET Core, C# e APIs REST\n- Forte experiência com SQL Server\n- Vivência em arquitetura de aplicações web\n- Experiência com sistemas em produção (manutenção e troubleshooting)\n\n#### Diferenciais\n- Experiência com SharePoint\n- Vivência em ambientes corporativos com alto volume de dados\n- Conhecimento em segurança de aplicações web\n\n### Como se candidatar\nFernanda.santiago@addvisor.com.br\n\n### Link para se candidatar\n1196468-7939\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
