@@ -1,5 +1,39 @@
 [
   {
+    "id": 95,
+    "title": "Estágio Engenharia de Software",
+    "body": "### Empresa\nMetaprime Sistemas\n\n### Nível\nIndefinido\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nGoiânia - GO\n\n### Salário\nA combinar\n\n### Stack\nSQL, React Native, Java, Git/GitHub, Linux\n\n### Descrição da Vaga\n#### Principais Atividades Até suporte e manutenção em app React Native. Análise de erros e debugging. Apoio em correções no ERP Java. Apoio em Pequenas funcionalidades e ferramentas internas. Consultas em banco de dados.\n\n#### Requisitos Técnicos Conhecimento em SQL. Conhecimento em pelo menos uma linguagem de programação. Noções de Git/GitHub. Conhecimento básico Linux. Contato prévio com React Native ou desenvolvimento mobile. Uso de IA no desenvolvimento (Claude, Codex, Copilot etc.).\n\n#### Diferenciais Projetos acadêmicos, pessoais ou freelas simples com React Native. Contato com Java (POO). Noções de APIs, JSON e integração entre sistemas. Familiaridade com leitura de logs e análise de mensagens de erro. Noções de aplicações web corporativas ou ERP.\n\n### Como se candidatar\nhttps://forms.gle/7SzuvHQ5zxakTaM57\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-21T16:28:11.276Z",
+    "updatedAt": "2026-03-21T16:28:11.276Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Metaprime Sistemas",
+    "nivel": "Indefinido",
+    "tipo": "Presencial",
+    "local": "Goiânia - GO",
+    "salario": "A combinar",
+    "stack": [
+      "SQL",
+      "React Native",
+      "Java",
+      "Git",
+      "GitHub",
+      "Linux"
+    ],
+    "descricao": "#### Principais Atividades Até suporte e manutenção em app React Native. Análise de erros e debugging. Apoio em correções no ERP Java. Apoio em Pequenas funcionalidades e ferramentas internas. Consultas em banco de dados.\n\n#### Requisitos Técnicos Conhecimento em SQL. Conhecimento em pelo menos uma linguagem de programação. Noções de Git/GitHub. Conhecimento básico Linux. Contato prévio com React Native ou desenvolvimento mobile. Uso de IA no desenvolvimento (Claude, Codex, Copilot etc.).\n\n#### Diferenciais Projetos acadêmicos, pessoais ou freelas simples com React Native. Contato com Java (POO). Noções de APIs, JSON e integração entre sistemas. Familiaridade com leitura de logs e análise de mensagens de erro. Noções de aplicações web corporativas ou ERP.",
+    "aplicar": "https://forms.gle/7SzuvHQ5zxakTaM57",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "estagio-engenharia-de-software"
+  },
+  {
     "id": 94,
     "title": "Arquiteto(a) / Especialista",
     "body": "### Empresa\nTechforti\n\n### Nível\nEspecialista\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote\n\n### Salário\nA combinar\n\n### Stack\nArquitetura de IA, LLMs, RAG, bancos vetoriais (Pinecone, ChromaDB, FAISS), Orquestração de agentes, sistemas distribuídos\n\n### Descrição da Vaga\n#### Principais Atividades\n- Projetar a integração entre diferentes componentes de IA, garantindo uma solução escalável, eficiente e alinhada ao negócio.\n\n#### Requisitos Técnicos\n- Arquitetura de IA (LLMs e RAG - Retrieval-Augmented Generation)\n- Experiência com bancos vetoriais (Pinecone, ChromaDB, FAISS)\n- Orquestração de agentes (agent routing / sistemas multi-agente)\n- Sistemas distribuídos (escalabilidade e resiliência)\n- Forte visão de arquitetura e design de soluções\n\n### Como se candidatar\nllongo@techforti.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
