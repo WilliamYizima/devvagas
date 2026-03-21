@@ -1,5 +1,41 @@
 [
   {
+    "id": 93,
+    "title": "Desenvolvedor(a) Backend Python Sênior",
+    "body": "### Empresa\nTechForti\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nPython, FastAPI, FastMCP, Java, Arquitetura de microsserviços, Docker, Kubernetes, OpenShift, AWS, GCP, Azure, Oracle, PostgreSQL, DB2, MongoDB, Redis, Modelagem de dados, otimização de queries, APIs RESTful, integração MCP, Kafka, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nLiderar o desenvolvimento da arquitetura microssegmentada, administrar bancos de dados, e engenheirar APIs que conectam o frontend com agentes de inteligência artificial.\n\n#### Requisitos Técnicos\n+Forte domínio em Python (FastAPI, FastMCP).\n+Conhecimento em Java (diferencial).\n+Arquitetura de microsserviços.\n+Docker & Kubernetes.\n+Nuvem: OpenShift, AWS, GCP, ou Azure.\n+Bancos de dados relacionais como Oracle, PostgreSQL, e DB2.\n+Bancos NoSQL tais como MongoDB e Redis.\n+Modelagem e otimização de queries.\n+Engenharia de APIs RESTful com integração MCP.\n+Experiência no uso do Kafka para mensagem em massa.\n+Mestrado em Git e práticas de CI/CD.\n\n### Como se candidatar\nllongo@techforti.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-21T16:19:37.140Z",
+    "updatedAt": "2026-03-21T16:19:37.140Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "TechForti",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Python",
+      "FastAPI",
+      "FastMCP",
+      "Java",
+      "Arquitetura de microsserviços",
+      "Docker",
+      "Kubernetes",
+      "OpenShift"
+    ],
+    "descricao": "#### Principais Atividades\nLiderar o desenvolvimento da arquitetura microssegmentada, administrar bancos de dados, e engenheirar APIs que conectam o frontend com agentes de inteligência artificial.\n\n#### Requisitos Técnicos\n+Forte domínio em Python (FastAPI, FastMCP).\n+Conhecimento em Java (diferencial).\n+Arquitetura de microsserviços.\n+Docker & Kubernetes.\n+Nuvem: OpenShift, AWS, GCP, ou Azure.\n+Bancos de dados relacionais como Oracle, PostgreSQL, e DB2.\n+Bancos NoSQL tais como MongoDB e Redis.\n+Modelagem e otimização de queries.\n+Engenharia de APIs RESTful com integração MCP.\n+Experiência no uso do Kafka para mensagem em massa.\n+Mestrado em Git e práticas de CI/CD.",
+    "aplicar": "llongo@techforti.com.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-a-backend-python-senior"
+  },
+  {
     "id": 92,
     "title": "Desenvolvedor Data Analytics Sênior",
     "body": "### Empresa\nPasquali Solution\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\n100% Home Office\n\n### Salário\nA combinar\n\n### Stack\nSQL, R, BigQuery, SQL Server\n\n### Descrição da Vaga\n#### Principais Atividades\n- Criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Gerar insights claros a partir de análise de dados\n\n#### Requisitos Técnicos\n- Experiência sólida com SQL (BigQuery ou SQL Server)\n- Conhecimento avançado em R para análises estatísticas\n- Experiência em análises de dados end-to-end (operações, pagamentos, marketing, etc.)\n- Capacidade de criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Experiência com validação de dados críticos e investigação de inconsistências\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Habilidade de comunicação para traduzir dados em insights claros\n- Perfil proativo, com foco em indicadores e geração de valor\n\n### Como se candidatar\njessica.marques@pasqualisolution.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
