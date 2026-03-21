@@ -1,5 +1,37 @@
 [
   {
+    "id": 92,
+    "title": "Desenvolvedor Data Analytics Sênior",
+    "body": "### Empresa\nPasquali Solution\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\n100% Home Office\n\n### Salário\nA combinar\n\n### Stack\nSQL, R, BigQuery, SQL Server\n\n### Descrição da Vaga\n#### Principais Atividades\n- Criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Gerar insights claros a partir de análise de dados\n\n#### Requisitos Técnicos\n- Experiência sólida com SQL (BigQuery ou SQL Server)\n- Conhecimento avançado em R para análises estatísticas\n- Experiência em análises de dados end-to-end (operações, pagamentos, marketing, etc.)\n- Capacidade de criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Experiência com validação de dados críticos e investigação de inconsistências\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Habilidade de comunicação para traduzir dados em insights claros\n- Perfil proativo, com foco em indicadores e geração de valor\n\n### Como se candidatar\njessica.marques@pasqualisolution.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-21T16:18:29.001Z",
+    "updatedAt": "2026-03-21T16:18:29.001Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Pasquali Solution",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "100% Home Office",
+    "salario": "A combinar",
+    "stack": [
+      "SQL",
+      "R",
+      "BigQuery",
+      "SQL Server"
+    ],
+    "descricao": "#### Principais Atividades\n- Criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Gerar insights claros a partir de análise de dados\n\n#### Requisitos Técnicos\n- Experiência sólida com SQL (BigQuery ou SQL Server)\n- Conhecimento avançado em R para análises estatísticas\n- Experiência em análises de dados end-to-end (operações, pagamentos, marketing, etc.)\n- Capacidade de criar, corrigir e otimizar tabelas, pipelines e regras de negócio\n- Experiência com validação de dados críticos e investigação de inconsistências\n- Aplicação de métodos estatísticos e modelos preditivos (Machine Learning)\n- Habilidade de comunicação para traduzir dados em insights claros\n- Perfil proativo, com foco em indicadores e geração de valor",
+    "aplicar": "jessica.marques@pasqualisolution.com.br",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-data-analytics-senior"
+  },
+  {
     "id": 91,
     "title": "Product Owner Sênior",
     "body": "### Empresa\nDualis\n\n### Nível\nEspecialista\n\n### Área\nBusiness\n\n### Tipo\nHíbrido\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Priorização\n- Gestão de backlog\n- Resolução de problemas\n\n#### Requisitos Técnicos\n- Experiência comprovada como Product Owner ou função similar\n- Conhecimento sólido em metodologias ágeis (Scrum)\n- Inglês fluente\n\n### Como se candidatar\nAna.gazetta@dualis.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
