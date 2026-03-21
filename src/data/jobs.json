@@ -1,5 +1,41 @@
 [
   {
+    "id": 94,
+    "title": "Arquiteto(a) / Especialista",
+    "body": "### Empresa\nTechforti\n\n### Nível\nEspecialista\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote\n\n### Salário\nA combinar\n\n### Stack\nArquitetura de IA, LLMs, RAG, bancos vetoriais (Pinecone, ChromaDB, FAISS), Orquestração de agentes, sistemas distribuídos\n\n### Descrição da Vaga\n#### Principais Atividades\n- Projetar a integração entre diferentes componentes de IA, garantindo uma solução escalável, eficiente e alinhada ao negócio.\n\n#### Requisitos Técnicos\n- Arquitetura de IA (LLMs e RAG - Retrieval-Augmented Generation)\n- Experiência com bancos vetoriais (Pinecone, ChromaDB, FAISS)\n- Orquestração de agentes (agent routing / sistemas multi-agente)\n- Sistemas distribuídos (escalabilidade e resiliência)\n- Forte visão de arquitetura e design de soluções\n\n### Como se candidatar\nllongo@techforti.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-21T16:22:46.099Z",
+    "updatedAt": "2026-03-21T16:22:46.099Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Techforti",
+    "nivel": "Especialista",
+    "tipo": "Remoto",
+    "local": "Remote",
+    "salario": "A combinar",
+    "stack": [
+      "Arquitetura de IA",
+      "LLMs",
+      "RAG",
+      "bancos vetoriais (Pinecone",
+      "ChromaDB",
+      "FAISS)",
+      "Orquestração de agentes",
+      "sistemas distribuídos"
+    ],
+    "descricao": "#### Principais Atividades\n- Projetar a integração entre diferentes componentes de IA, garantindo uma solução escalável, eficiente e alinhada ao negócio.\n\n#### Requisitos Técnicos\n- Arquitetura de IA (LLMs e RAG - Retrieval-Augmented Generation)\n- Experiência com bancos vetoriais (Pinecone, ChromaDB, FAISS)\n- Orquestração de agentes (agent routing / sistemas multi-agente)\n- Sistemas distribuídos (escalabilidade e resiliência)\n- Forte visão de arquitetura e design de soluções",
+    "aplicar": "llongo@techforti.com.br",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "arquiteto-a-especialista"
+  },
+  {
     "id": 93,
     "title": "Desenvolvedor(a) Backend Python Sênior",
     "body": "### Empresa\nTechForti\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nPython, FastAPI, FastMCP, Java, Arquitetura de microsserviços, Docker, Kubernetes, OpenShift, AWS, GCP, Azure, Oracle, PostgreSQL, DB2, MongoDB, Redis, Modelagem de dados, otimização de queries, APIs RESTful, integração MCP, Kafka, Git\n\n### Descrição da Vaga\n#### Principais Atividades\nLiderar o desenvolvimento da arquitetura microssegmentada, administrar bancos de dados, e engenheirar APIs que conectam o frontend com agentes de inteligência artificial.\n\n#### Requisitos Técnicos\n+Forte domínio em Python (FastAPI, FastMCP).\n+Conhecimento em Java (diferencial).\n+Arquitetura de microsserviços.\n+Docker & Kubernetes.\n+Nuvem: OpenShift, AWS, GCP, ou Azure.\n+Bancos de dados relacionais como Oracle, PostgreSQL, e DB2.\n+Bancos NoSQL tais como MongoDB e Redis.\n+Modelagem e otimização de queries.\n+Engenharia de APIs RESTful com integração MCP.\n+Experiência no uso do Kafka para mensagem em massa.\n+Mestrado em Git e práticas de CI/CD.\n\n### Como se candidatar\nllongo@techforti.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
