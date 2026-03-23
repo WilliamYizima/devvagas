@@ -1,5 +1,39 @@
 [
   {
+    "id": 104,
+    "title": "Consultor SAP SD Sênior",
+    "body": "### Empresa\nK-Lab Digital\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nABAP, ABAP (debug), ABAP (lógica de programação), ABAP (leitura de programas/funções/tabelas)\n\n### Descrição da Vaga\n#### Principais Atividades\n- Reforma Tributária – novos tributos, cclasstrib, cst, período de transição, regras para 2027 em diante.\n- Implementação de notas técnicas e melhorias no módulo SD.\n- Participação na aplicação de testes unitários/integrados, análise de funcionalidade e elaboração de documentação técnica (português/inglês).\n\n#### Requisitos Técnicos\n- Experiência em suporte no modulo de SD e recebimento de notas fiscais.\n- Elaboração de especificação funcional e técnica (português/inglês).\n- Conhecimento em ABAP, como debug e principais componentes de desenvolvimento (lógica de programação, leitura de programas/funções/tabelas, etc)\n\n#### Diferenciais\n- Conhecer ferramentas de automação de recebimento de NF-e no modulo SD (DRC/GRC).\n\n### Como se candidatar\nkmarcel@k-labdigital.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-23T00:03:27.743Z",
+    "updatedAt": "2026-03-23T00:03:27.743Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "K-Lab Digital",
+    "nivel": "Sênior",
+    "tipo": "Híbrido",
+    "local": "São Paulo - SP",
+    "salario": "A combinar",
+    "stack": [
+      "ABAP",
+      "ABAP (debug)",
+      "ABAP (lógica de programação)",
+      "ABAP (leitura de programas",
+      "funções",
+      "tabelas)"
+    ],
+    "descricao": "#### Principais Atividades\n- Reforma Tributária – novos tributos, cclasstrib, cst, período de transição, regras para 2027 em diante.\n- Implementação de notas técnicas e melhorias no módulo SD.\n- Participação na aplicação de testes unitários/integrados, análise de funcionalidade e elaboração de documentação técnica (português/inglês).\n\n#### Requisitos Técnicos\n- Experiência em suporte no modulo de SD e recebimento de notas fiscais.\n- Elaboração de especificação funcional e técnica (português/inglês).\n- Conhecimento em ABAP, como debug e principais componentes de desenvolvimento (lógica de programação, leitura de programas/funções/tabelas, etc)\n\n#### Diferenciais\n- Conhecer ferramentas de automação de recebimento de NF-e no modulo SD (DRC/GRC).",
+    "aplicar": "kmarcel@k-labdigital.com",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "consultor-sap-sd-senior"
+  },
+  {
     "id": 103,
     "title": "Analista de Suporte Técnico",
     "body": "### Empresa\nInterOp\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nSão Paulo - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n\nPrestar suporte técnico de TI, remoto e presencial, incluindo instalação, configuração, atualização e manutenção de hardware, software e sistemas operacionais; Resolver incidentes em campo, prestando suporte direto aos usuários e participando de reuniões técnicas; Apoiar atividades de infraestrutura de redes (LAN, WAN, WLAN), identificando falhas físicas e dando suporte a cabeamento estruturado; Configurar e manter estações de trabalho, impressoras, periféricos, antivírus e aplicações homologadas; Executar ações de segurança da informação, como rotinas de backup e recuperação de dados; Apoiar o monitoramento de ativos de rede, controle de inventário e organização dos pontos de rede; Orientar usuários sobre demandas de atendimento, boas práticas e utilização de ferramentas tecnológicas; Apoiar inspeções, auditorias internas e abertura de chamados de garantia junto a fornecedores; Contribuir para o cumprimento dos níveis de serviço, atuando de forma colaborativa com equipes técnicas e áreas de gestão; Manter comunicação clara, objetiva e eficaz, demonstrando organização, proatividade e senso de responsabilidade.\n\n#### Requisitos Técnicos\n\nEnsino superior completo em áreas correlatas à TI; Disponibilidade para trabalho presencial na região de fácil acesso para você; Vivência na área de TI, com atuação em suporte técnico, infraestrutura, redes ou ambientes corporativos; Conhecimento em ambientes Windows, redes corporativas e ferramentas de suporte; Perfil analítico, organizado e com bom relacionamento interpessoal.\n\n### Como se candidatar\nhttps://interop.inhire.app/vagas/a64a5046-5ebe-4cbc-b3d3-4e28d5c7beff/analista-de-suporte-tecnico-sao-pauloregiao-metropolitana\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
