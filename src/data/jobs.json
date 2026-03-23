@@ -1,5 +1,41 @@
 [
   {
+    "id": 101,
+    "title": "Consultor Sênior",
+    "body": "### Empresa\nRevna\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nOracle EBS, Oracle Fusion / Cloud, OTM, OIC, OAC, ADW, APEX, EPM, Oracle AI, Redwood UX, Manufacturing Cloud\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuar em projetos de implementação, integrações e migração de ambientes Oracle;\n- Desenvolver soluções estratégicas;\n- Sustentar ambientes e infraestruturas Oracle.\n\n#### Requisitos Técnicos\n- Experiência em Oracle EBS\n- Experiência em Oracle Fusion / Cloud\n- Experiência com OTM, OIC, OAC\n- Experiência com ADW, APEX, EPM\n- Certificações Oracle\n\n### Como se candidatar\ncarolina.uchoa@revna.com.br\n\n### Link para se candidatar\n(11) 96935-2880\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-23T00:00:04.896Z",
+    "updatedAt": "2026-03-23T00:00:04.896Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Revna",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Oracle EBS",
+      "Oracle Fusion",
+      "Cloud",
+      "OTM",
+      "OIC",
+      "OAC",
+      "ADW",
+      "APEX"
+    ],
+    "descricao": "#### Principais Atividades\n- Atuar em projetos de implementação, integrações e migração de ambientes Oracle;\n- Desenvolver soluções estratégicas;\n- Sustentar ambientes e infraestruturas Oracle.\n\n#### Requisitos Técnicos\n- Experiência em Oracle EBS\n- Experiência em Oracle Fusion / Cloud\n- Experiência com OTM, OIC, OAC\n- Experiência com ADW, APEX, EPM\n- Certificações Oracle",
+    "aplicar": "carolina.uchoa@revna.com.br",
+    "linkVaga": "(11) 96935-2880",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "consultor-senior"
+  },
+  {
     "id": 100,
     "title": "Consultor(a) SAP HCM Folha de Pagamento",
     "body": "### Empresa\nHRIN\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto - fulltime\n\n### Salário\nA combinar\n\n### Stack\nSAP HCM\n\n### Descrição da Vaga\n#### Principais Atividades\n- Forte atuação com Esquemas e Regras;\n- Rubricas;\n- Contabilização da folha;\n\n#### Requisitos Técnicos\n- Experiência sólida com SAP HCM Payroll\n- Perfil analítico, organizado e com boa comunicação\n\n### Como se candidatar\nhttps://www.linkedin.com/company/hrin\n\n### Link para se candidatar\nalejandra.helen@hrin.com.br\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
