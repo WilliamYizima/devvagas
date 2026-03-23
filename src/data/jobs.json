@@ -1,5 +1,38 @@
 [
   {
+    "id": 106,
+    "title": "Tester Automático",
+    "body": "### Empresa\nInteger Consulting Portugal\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto (segundo horário português)\n\n### Salário\nA combinar\n\n### Stack\nJava, Selenium, SQL, Cucumber, Gherkin\n\n### Descrição da Vaga\n#### Principais Atividades\nLidando com testes automáticos de aplicações web.\n\n#### Requisitos Técnicos\n+3 anos de experiência em Java/Selenium; Experiência em SQL, Cucumber e Gherkin; Experiência com aplicações Web.\n\n### Como se candidatar\nbruno.carvalho@integer.pt\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-23T00:05:05.971Z",
+    "updatedAt": "2026-03-23T00:05:05.971Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Integer Consulting Portugal",
+    "nivel": "Pleno",
+    "tipo": "Remoto",
+    "local": "Remoto (segundo horário português)",
+    "salario": "A combinar",
+    "stack": [
+      "Java",
+      "Selenium",
+      "SQL",
+      "Cucumber",
+      "Gherkin"
+    ],
+    "descricao": "#### Principais Atividades\nLidando com testes automáticos de aplicações web.\n\n#### Requisitos Técnicos\n+3 anos de experiência em Java/Selenium; Experiência em SQL, Cucumber e Gherkin; Experiência com aplicações Web.",
+    "aplicar": "bruno.carvalho@integer.pt",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "tester-automatico"
+  },
+  {
     "id": 105,
     "title": "Scrum Master Júnior",
     "body": "### Empresa\nStefanini\n\n### Nível\nJúnior\n\n### Área\nDev\n\n### Tipo\nPresencial\n\n### Localização\nSão José dos Pinhais (PR)\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Venha fazer parte da nossa equipe!\n\n#### Requisitos Técnicos\n- Indefinido\n- Indefinido\n\n### Como se candidatar\nhttps://stefanini.gupy.io/jobs/10993467\n\n### Link para se candidatar\nhttps://lnkd.in/dgeHtRGW\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
