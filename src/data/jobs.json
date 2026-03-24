@@ -1,5 +1,34 @@
 [
   {
+    "id": 114,
+    "title": "QA Sênior",
+    "body": "### Empresa\nAbc Technology Group\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nHortolândia - SP\n\n### Salário\nA combinar\n\n### Stack\nIndefinido\n\n### Descrição da Vaga\n#### Principais Atividades\n- Experiência com testes manuais e automatizados\n#### Requisitos Técnicos\n- experiência com testes manuais e automatizados\n\n### Como se candidatar\n(11) 98059-8397\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-24T18:12:06.692Z",
+    "updatedAt": "2026-03-24T18:12:06.692Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Abc Technology Group",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Hortolândia - SP",
+    "salario": "A combinar",
+    "stack": [
+      "Indefinido"
+    ],
+    "descricao": "#### Principais Atividades\n- Experiência com testes manuais e automatizados\n#### Requisitos Técnicos\n- experiência com testes manuais e automatizados",
+    "aplicar": "(11) 98059-8397",
+    "linkVaga": "",
+    "isRemote": false,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "qa-senior"
+  },
+  {
     "id": 113,
     "title": "Desenvolvedor Salesforce",
     "body": "### Empresa\nNexmuv\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nApex, Lightning (LWC/Aura), Visualforce, JavaScript, Health Cloud, Service Cloud, Data Cloud, Agentforce, Git, Azure DevOps\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de automações, bots e atendimento omnichannel (chat, WhatsApp, e-mail e redes sociais)\n- Programação em Apex, Lightning (LWC/Aura), Visualforce, JavaScript e integrações via APIs REST/SOAP\n- Modelagem e unificação de dados com Data Cloud e criação de relatórios e dashboards de KPIs\n- Uso de Git, Azure DevOps e CI/CD para deploys, além de suporte e correção de incidentes em produção\n#### Requisitos Técnicos\n- Experiência em soluções de saúde digital usando Health Cloud, Service Cloud, Data Cloud e Agentforce\nPara se candidatar: bruna.santos@nexmuv.com.br\n\n### Como se candidatar\nbruna.santos@nexmuv.com.br\n\n### Link para se candidatar\n11 93317-8602\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
