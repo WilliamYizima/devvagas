@@ -1,5 +1,41 @@
 [
   {
+    "id": 113,
+    "title": "Desenvolvedor Salesforce",
+    "body": "### Empresa\nNexmuv\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nApex, Lightning (LWC/Aura), Visualforce, JavaScript, Health Cloud, Service Cloud, Data Cloud, Agentforce, Git, Azure DevOps\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolvimento de automações, bots e atendimento omnichannel (chat, WhatsApp, e-mail e redes sociais)\n- Programação em Apex, Lightning (LWC/Aura), Visualforce, JavaScript e integrações via APIs REST/SOAP\n- Modelagem e unificação de dados com Data Cloud e criação de relatórios e dashboards de KPIs\n- Uso de Git, Azure DevOps e CI/CD para deploys, além de suporte e correção de incidentes em produção\n#### Requisitos Técnicos\n- Experiência em soluções de saúde digital usando Health Cloud, Service Cloud, Data Cloud e Agentforce\nPara se candidatar: bruna.santos@nexmuv.com.br\n\n### Como se candidatar\nbruna.santos@nexmuv.com.br\n\n### Link para se candidatar\n11 93317-8602\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-24T18:11:19.441Z",
+    "updatedAt": "2026-03-24T18:11:19.441Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Nexmuv",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "Apex",
+      "Lightning (LWC",
+      "Aura)",
+      "Visualforce",
+      "JavaScript",
+      "Health Cloud",
+      "Service Cloud",
+      "Data Cloud"
+    ],
+    "descricao": "#### Principais Atividades\n- Desenvolvimento de automações, bots e atendimento omnichannel (chat, WhatsApp, e-mail e redes sociais)\n- Programação em Apex, Lightning (LWC/Aura), Visualforce, JavaScript e integrações via APIs REST/SOAP\n- Modelagem e unificação de dados com Data Cloud e criação de relatórios e dashboards de KPIs\n- Uso de Git, Azure DevOps e CI/CD para deploys, além de suporte e correção de incidentes em produção\n#### Requisitos Técnicos\n- Experiência em soluções de saúde digital usando Health Cloud, Service Cloud, Data Cloud e Agentforce\nPara se candidatar: bruna.santos@nexmuv.com.br",
+    "aplicar": "bruna.santos@nexmuv.com.br",
+    "linkVaga": "11 93317-8602",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-salesforce"
+  },
+  {
     "id": 112,
     "title": "Engenheiro Dados Sênior",
     "body": "### Empresa\nK2 Partnering Solutions\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nHíbrido\n\n### Localização\nPinheiros - SP\n\n### Salário\nA combinar\n\n### Stack\nLakehouse, databriks, SQL, ETL/ELT, Python/PySpark, Unity Catalog, cloud, integração BI, modelagem dimensional\n\n### Descrição da Vaga\n#### Principais Atividades\nLidar com projetos de grande porte da área educacional.\n\n#### Requisitos Técnicos\nExperiência em Lakehouse, Databriks, SQL, ETL/ELT, Python/PySpark, SQL, Unity Catalog, cloud, integração BI e modelagem dimensional.\n\n### Como se candidatar\nmparize@k2partnering.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
