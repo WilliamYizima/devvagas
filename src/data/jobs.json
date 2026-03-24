@@ -1,5 +1,35 @@
 [
   {
+    "id": 111,
+    "title": "Desenvolvedor PowerShell Sênior",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nIndefinido\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nPowerShell, Active Directory\n\n### Descrição da Vaga\n#### Principais Atividades\n- Implementar automações\n- Atuar com identidade e acesso\n- Manter scripts complexos\n- Lidar com Active Directory\n\n#### Requisitos Técnicos\n- Experiência em desenvolvimento em PowerShell (mínimo 03 anos)\n- Expertise em leitura, escrita e manutenção de scripts complexos\n- Experiência com suporte a identidade e acesso (IAM)\n\n### Como se candidatar\nconectait.talent@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-24T11:20:55.138Z",
+    "updatedAt": "2026-03-24T11:20:55.138Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Sênior",
+    "tipo": "Indefinido",
+    "local": "Remoto",
+    "salario": "A combinar",
+    "stack": [
+      "PowerShell",
+      "Active Directory"
+    ],
+    "descricao": "#### Principais Atividades\n- Implementar automações\n- Atuar com identidade e acesso\n- Manter scripts complexos\n- Lidar com Active Directory\n\n#### Requisitos Técnicos\n- Experiência em desenvolvimento em PowerShell (mínimo 03 anos)\n- Expertise em leitura, escrita e manutenção de scripts complexos\n- Experiência com suporte a identidade e acesso (IAM)",
+    "aplicar": "conectait.talent@gmail.com",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": false,
+    "isInternacional": false,
+    "slug": "desenvolvedor-powershell-senior"
+  },
+  {
     "id": 110,
     "title": "Desenvolvedor(a) Java - Sênior",
     "body": "### Empresa\nIconIT\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nA combinar\n\n### Stack\nJava, Spring Framework (Spring Boot, Spring Data), Microserviços, PostgreSQL, MySQL, MongoDB, DynamoDB, JUnit, Mockito, Jenkins, GitHub Actions, Grafana, Kibana, Dynatrace, Docker, Kubernetes, AWS (S3, SQS)\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver e manter microserviços utilizando Java 17+ e Spring Framework (Spring Boot, Spring Data)\n- Projetar e implementar APIs REST eficientes e bem documentadas\n- Trabalhar com bancos de dados relacionais (PostgreSQL, MySQL) e NoSQL (MongoDB, DynamoDB)\n- Escrever testes unitários e de integração com JUnit e Mockito\n- Implementar e manter pipelines CI/CD (Jenkins, GitHub Actions)\n- Monitorar aplicações utilizando Grafana, Kibana ou Dynatrace\n- Garantir a escalabilidade das soluções com Docker e Kubernetes\n- Colaborar com o time em metodologias ágeis (Scrum)\n\n#### Requisitos Técnicos\n- Experiência comprovada com Java 17+\n- Domínio do Spring Framework (Spring Boot, Spring Data)\n- Vivência com desenvolvimento de microserviços\n- Conhecimento sólido em bancos de dados SQL e NoSQL\n- Experiência com testes automatizados (JUnit, Mockito)\n- Familiaridade com pipelines CI/CD\n- Conhecimento em monitoramento de aplicações (Grafana, Kibana, Dynatrace)\n- Noções de Docker e Kubernetes\n- Básico de AWS (S3, SQS)\n\n### Como se candidatar\ngiovana.santos@iconit.com.br\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
