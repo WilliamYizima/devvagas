@@ -1,5 +1,41 @@
 [
   {
+    "id": 119,
+    "title": "QA – Automação",
+    "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nSênior\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemote\n\n### Salário\nA combinar\n\n### Stack\n.NET MAUI, Appium, C#, Python, Automação de APIs, Mockoon, CI/CD, SQL Server, Azure, Docker\n\n### Descrição da Vaga\n#### Principais Atividades\n- Atuar com automação de testes para mobile e desktop\n- Desenvolver scripts automatizados em .NET MAUI, Appium, C# e Python\n- Implementar pipelines CI/CD\n\n#### Requisitos Técnicos\n- Inglês avançado/fluente\n- +3 anos com automação de testes\n\n#### Diferenciais\n- Conhecimento em Azure e Docker\n\n### Como se candidatar\nhttps://www.linkedin.com/in/maria-claudia-lages/\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nSim\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
+    "url": "",
+    "createdAt": "2026-03-25T05:38:33.926Z",
+    "updatedAt": "2026-03-25T05:38:33.926Z",
+    "author": {
+      "login": "system",
+      "avatar": "",
+      "url": ""
+    },
+    "labels": [],
+    "empresa": "Empresa indefinida",
+    "nivel": "Sênior",
+    "tipo": "Remoto",
+    "local": "Remote",
+    "salario": "A combinar",
+    "stack": [
+      ".NET MAUI",
+      "Appium",
+      "C#",
+      "Python",
+      "Automação de APIs",
+      "Mockoon",
+      "CI",
+      "CD"
+    ],
+    "descricao": "#### Principais Atividades\n- Atuar com automação de testes para mobile e desktop\n- Desenvolver scripts automatizados em .NET MAUI, Appium, C# e Python\n- Implementar pipelines CI/CD\n\n#### Requisitos Técnicos\n- Inglês avançado/fluente\n- +3 anos com automação de testes\n\n#### Diferenciais\n- Conhecimento em Azure e Docker",
+    "aplicar": "https://www.linkedin.com/in/maria-claudia-lages/",
+    "linkVaga": "",
+    "isRemote": true,
+    "isLinkedin": true,
+    "isInternacional": false,
+    "slug": "qa-automacao"
+  },
+  {
     "id": 118,
     "title": "Desenvolvedor Fullstack",
     "body": "### Empresa\nEmpresa indefinida\n\n### Nível\nPleno\n\n### Área\nDev\n\n### Tipo\nRemoto\n\n### Localização\nRemoto\n\n### Salário\nAté R$ 8.500\n\n### Stack\nAngular, Node.js, AWS\n\n### Descrição da Vaga\n#### Principais Atividades\n- Desenvolver sistemas utilizando Angular (2+)\n- Trabalhar com Node.js\n- Utilizar serviços da AWS para integrações e consumo de serviços\n- Refatorar ou modernizar sistemas legados\n- Desenvolver APIs REST e arquitetura de sistemas\n\n#### Requisitos Técnicos\n- Experiência sólida com Angular (2+)\n- Vivência com AWS (consumo de serviços / integrações)\n- Experiência com refatoração ou modernização de sistemas legados\n- Conhecimento em APIs REST e arquitetura de sistemas\n\n### Como se candidatar\nevabasilio23@gmail.com\n\n### Link para se candidatar\n\n\n### Publicada no LinkedIn\nNão\n\n### Vaga Internacional\nNão\n\n### Confirmação\n- [x] Confirmo que esta é uma vaga real e estou autorizado a divulgá-la",
